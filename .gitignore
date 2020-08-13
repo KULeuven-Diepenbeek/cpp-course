@@ -1,0 +1,15 @@
+*.sublime-project
+*.sublime-workspace
+
+*.class
+
+.idea/
+.gradle/
+out/
+build/
+node_modules/
+
+.DS_Store
+
+#docs/
+resources/
