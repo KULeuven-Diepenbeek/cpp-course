@@ -1,53 +1,45 @@
 ---
-title: 'Software Engineering Skills'
+title: 'Software ontwerp in C/C++'
 ---
-
-# Software Engineering Skills
 
 Laatste aanpassingen voor academiejaar _2020 - 2021_.
 
 ## _Cursus notities_
 
+De hoorcolleges en labo's lopen door elkaar. De theorie die aangeraakt wordt in de slides van de hoorcolleges vindt zijn weg in de tekst van de verschillende labo's. 
+
+### Hoorcolleges
+
+1. [Introductie in C/C++: context, ecosysteem](/teaching/cpp/slides-1/)
+2. [Pointers in C, dynamisch geheugen in C++](/teaching/cpp/slides-2/)
+3. [Introductie in Object-Georiënteerd denken in C++](/teaching/cpp/slides-3/)
+4. [Een introductie in GUI ontwerp met Qt, Samenvatting, examen info](/teaching/cpp/slides-4)
+
 ### Labo noties
 
-#### Software Development: Pre-Requirements
+1. [Introductie in C](/c/labo-1)
+2. [Pointers in C en C++](/c/labo-2)
+3. [GBA Programming in C: een introductie](/gba-in-c/labo-3)
+4. [GBA Programming in C: tilesets, een simpel spel](/gba-in-c/labo-4)
+5. [Introductie in C++](/cpp/labo-5)
+6. [C++ Class Inheritance, operators en templates](/cpp/labo-6)
+7. [Software ontwerpen: denken en testen voor coderen](/cpp/labo-7)
+8. [GBA Programming in C++: een abstractielaag](/gba-in-cpp/labo-8)
+9. [GBA Programming in C++: scrolling backgrounds](/gba-in-cpp/labo-9)
 
-1. [Versie- en issuebeheer](/versiebeheer)
-2. [Dependency Management](/dependency-management) & de [Gradle Build Tool](/dependency-management/gradle/)
-3. [Test-Driven Development](/tdd): Unit-, Integration- (1) en E2E (2) niveau
-4. [TDD In de praktijk: Mockito](/tdd/mockito)
+### Optioneel
 
-#### Algoritmen & Data Structuren
-
-1. Hoorcolleges: zie Toledo Cursusmateriaal
-2. [Test-Driven Development met algoritmes](/tdd/capita): Capita Selecta
-
-#### Design Patterns
-
-[Een introductie tot Design Patterns.](/patterns)
-
-1. [Facade](/patterns/facade) ([<i class='fab fa-github'></i> voorbeeld](https://github.com/KULeuven-Diepenbeek/ses-patterns-facade-template)) (1)
-2. [Dependency Injection](/patterns/di) ([<i class='fab fa-github'></i> voorbeeld](https://github.com/KULeuven-Diepenbeek/ses-patterns-di-template))
-3. [Singleton](/patterns/singleton) ([<i class='fab fa-github'></i> voorbeeld](https://github.com/KULeuven-Diepenbeek/ses-patterns-singleton-template)) (2)
-4. [Decorator](/patterns/decorator) ([<i class='fab fa-github'></i> voorbeeld](https://github.com/KULeuven-Diepenbeek/ses-patterns-decorator-template))
-5. [Factory](/patterns/factory) ([<i class='fab fa-github'></i> voorbeeld](https://github.com/KULeuven-Diepenbeek/ses-patterns-factory-template)) (3)
-
-#### Software Development: Life Cycle
-
-4. [Continuous Integration &amp; Deployment](/lifecycle/ci)
-5. [Software Management](/lifecycle/management): Skills (1), Scrum (2)
-
-#### Aanvullende Oefeningen
-
-1. [De 'SESsy Library' WebApp: uitbreiden](/sessy-extending)
-2. [Taken SES: 2de kans](/2de-kans)
+10. [GUI ontwerp met C++ in Qt: een introductie](/gba-in-cpp/labo-10)
+11. [GUI ontwerp met C++ in Qt: een GBA spel porten naar Qt](/gba-in-cpp/labo-11)
 
 ### Extra informatie
 
-1. [Gebruikte Software: een overzicht](/software)
-1. [De 'SESsy Library' WebApp: installatie & configuratie](/sessy)
-2. [Gradle build tools](/gradle)
-3. [<i class='fab fa-github'></i> Github Classroom links](/github-classroom)
+- [Poll: Ben ik klaar voor mijn examen?](/extra/poll)
+- Hulp, iets werkt niet! Raadpleeg de [FAQ](/extra/faq).
+- [Een introductie in C(++) Build Systemen](/extra/buildsystems)
+- [Installatieinstructies Tools](/extra/installaties)
+- [Project opdracht](/extra/project)
+- Evaluatiecriteria schriftelijk examen
 
 ## Syllabus
 
@@ -55,14 +47,35 @@ Laatste aanpassingen voor academiejaar _2020 - 2021_.
 Coördinerend Verantwoordelijke: prof. dr. Kris Aerts - <a href="mailto:kris.aerts@kuleuven.be">kris.aerts@kuleuven.be</a><br/>
 Onderwijsassistent: Wouter Groeneveld - <a href="mailto:wouter.groeneveld@kuleuven.be">wouter.groeneveld@kuleuven.be</a>
 - **Kantoor**: Technologiecentrum Diepenbeek, Groep ACRO, D.0.35. 
+- **Verplicht handboek**: [C++ Primer](https://www.goodreads.com/book/show/768080.C_Primer), Stanley B. Lippman
 
 #### Cursusbeschrijving
 
-In dit opleidingsonderdeel leer je de nodige skills om een softwareproject op de wereld te brengen volgens de regels van de kunst en met het aandacht voor de courante industriële praktijk. Op microniveau kom je meer te weten over de eigenschappen van algoritmes en datastructuren zodat je zelf de juiste keuze kan maken wanneer je een algoritme moet implementeren. Op macroniveau zorgen design patterns er voor dat je software beter onderhoudbaar wordt en een structuur heeft die herkenbaar is voor experten. Daarnaast gaan we in op de Software Development Life Cycle en het management van zo'n softwareproject met aandacht voor de juiste tools. 
+C is oorspronkelijk ontwikkeld om hardware heel gericht te kunnen aansturen. Later, en zeker met de toevoeging van C++, is C/C++ ook gebruikt voor gewone software. Tegenwoordig wordt die rol eerder overgenomen door Java en .NET en is het belang van C en C++ (terug) verschoven naar de ingebedde systemen.
+
+Vanuit die optiek is het niet meer dan logisch om studenten elektronica/ict vaardigheden in C/C++ te laten verwerven. Vanuit dezelfde verbredende visie doen we dit met Linux als (cross-platform) ontwikkelplatform en met embedded systemen als doelplatform.
+
+C++ wordt aangebracht vanuit de kennis van Java, zoals verworven in eerdere opleidingsonderdelen. Er wordt dan ook geregeld gewezen op de verschillen en gelijkenissen tussen C++ en Java. Een aantal concepten zijn gelijkaardig met (lichtjes) andere syntax, maar er zijn ook fundamenteel andere dingen, zoals pointers, friends, virtuele functies, operator overloading, destructors, STL, ... Voor de GUI wordt gewerkt met QT.
+
+In een latere faze van de oefeningen maakt de student kennis met crosscompilatie zodat de oefening kan draaien op een single board "computer" zoals een Gameboy Advance.
+
+- Imperatief programmeren in C
+    - Controlestructuren, functies, arrays
+    - Pointers en reference variabelen.
+- Object-Georiënteerd programmeren C++ 
+    - Operatoren, virtuele functie, abstracte klasse, uitzonderingen, sjablonen, containers.
+    - De STL bibliotheek
+    - C++ 11 lambda's
+- Het gehele C/C++ Ecosysteem: makefiles, builden, linken. 
+- Software ontwerpen met domein modellen. 
+- Vergelijking tussen C/C++ en Java.
+- Cross-platform-ontwikkeling voor Single Board Computers.
+- Kennismaking met het Qt framework voor GUI ontwerp in C++.
 
 #### Vereiste voorkennis
 
-Het vak '_Software Ontwerp in Java_' (INF1) dient eerst gevolgd te worden. We gaan uit van een basiskennis Java en object-georienteerd programmeren. Werken met commandline en enige kennis van git is een pluspunt.
+- Basiskennis van een Object-Geörienteerde programmeertaal als Java of C#
+- Basiskennis van het UNIX systeem, werken met commandline
 
 #### Doelstellingen
 
@@ -70,52 +83,44 @@ Zie ook [Studiegids UHasselt](https://www.uhasselt.be/studiegids)
     
 De context en het overzicht worden aangereikt in het hoorcollege.
 
+Als practicum wordt een grotere probleemstelling als project uitgewerkt. Alle aan te leren aspecten van C++ komen in dit project aan bod. Studenten kunnen facultatief buiten het practicum extra thematische oefeningen oplossen.
+
 #### Beoordeling en evaluatie
 
-1. Schriftelijke evaluatie tijdens onderwijsperiode: 50%.
-2. Schriftelijk examen: 50%
+Zowel in de eerste als de tweede examenkans is er een project (thuiswerk) en een schriftelijk examen. De verdeling tussen beide is afhankelijk van de omvang van de taak en wordt meegedeeld wanneer de taak wordt opgegeven.
 
-Een uitgebreide beschrijving is beschikbaar in de gids van het [Opleidingsonderdeel](https://uhintra03.uhasselt.be/studiegidswww/opleidingsonderdeel.aspx?a=2019&i=4083&n=4&t=01#anker31362). Zie de **kalender** hieronder voor een kort overzicht rond de evaluatie tijdens de onderwijsperiode.
+Overdracht van het punt op de taak naar de tweede examenkans en een volgend academiejaar vanaf 12/20.
+
+Overdracht van het punt op het examen naar de tweede examenkans vanaf 10/20. Er is geen overdracht naar een volgend academiejaar.
 
 #### Meer leermiddelen
 
-Zie elke sectie '**meer leermateriaal**' in de labo noties voor materiaal per thema.
+Een interessante vergelijkende cursus met nadruk op computer architectuur: [Computer Systems and Architecture](http://ianfinlayson.net/class/cpsc305/) aan de Universiteit Mary Washington. 
+
+##### C in-depth
+
+* [The C Programming Language](https://www.goodreads.com/book/show/515601.The_C_Programming_Language?from_search=true)
+
+##### Embedded GBA Programming in C
+
+* [Tonc: principles of GBA programming](https://www.coranac.com/tonc/text/toc.htm)
+* [GBA Programming for beginners](http://www.loirak.com/gameboy/gbatutor.php)
+
+##### C++ in-depth
+
+* [Effective Modern C++](https://www.goodreads.com/book/show/22800553-effective-modern-c)
+* [Bjarne Stroustrup's C++ Style and Technique FAQ](http://www.stroustrup.com/bs_faq2.html)
+
+##### Qt GUI Programming
+
+* [Qt Examples and Tutorials](http://doc.qt.io/qt-5/qtexamplesandtutorials.html)
+* [Qt Class reference](http://doc.qt.io/qt-5/classes.html)
+
+##### Build Tools
+
+* [Pro Git Book](https://git-scm.com/book/en/v2)
+* [CMake Documentation](https://cmake.org/documentation/)
 
 #### Kalender
 
 Zie [collegeroosters UHasselt](http://collegeroosters.uhasselt.be).
-
-<style>
-table {
-    width: 100%;
-}
-th {
-    border-bottom: 1px solid black;
-}
-td:first-child {
-    border-right: 1px dotted grey;
-}
-</style>
-
-| \# | Onderwerp | Datum | Evaluatie |
-|---|--------|-------|----------|
-| 1 | _HC Introductie_ |  18.02.2020 | / |
-| 2 | Versie- en issuebeheer | 20.02.2020 | / |
-| 3 | Dependency Management | 25.02.2020 | / |
-| 4 | Test-Driven Development: Unit lvl. | 27.02.2020 | / |
-| 5 | Test-Driven Development: E2E lvl. | 03.03.2020 | Github Classroom ex. |
-| 6 | _HC Algoritmes en datastructuren_ |  05.03.2020 | Indienen oefeningen |
-| 7 | _HC Algoritmes en datastructuren_ |  10.03.2020 | Indienen oefeningen |
-| 8 | _HC Algoritmes en datastructuren_ |  12.03.2020 | Indienen oefeningen |
-| 9 | _HC Algoritmes en datastructuren_ |  17.03.2020 | Indienen oefeningen |
-| 10 | TDD met algoritmes (uit VPW '20) | 19.03.2020 | Github Classroom ex. |
-| 11 | Design Patterns: Intro, Facade | 24.03.2020 | Github Classroom ex. |
-| 12 | Design Patterns: DI, Singleton | 26.03.2020 | Github Classroom ex. |
-| 13 | Design Patterns: Decorator, Factory | 31.03.2020 | Github Classroom ex. |
-| 14 | Continuous Integration & Deployment | 02.04.2020 | Github Classroom ex. |
-| 15 | Software Management: the Challenge | 21.04.2020 | (vervalt) |
-| 16 | Software Managenent: Scrum | 23.04.2020 | (vervalt) |
-| 17 | SESsy Library oefeningen | 28.04.2020 | (vervalt) |
-| 18 | SESsy Library oefeningen | 30.04.2020 | (vervalt) |
-| 19 | Vrij werk aan opdrachten | 05.05.2020 | / |
-| 20 | Vrij werk aan opdrachten | 07.05.2020 | / |
