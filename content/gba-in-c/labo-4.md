@@ -4,10 +4,7 @@ accent: "#008eb3"
 disableComments: true
 ---
 
-&laquo;&nbsp;[Terug naar Software ontwerp in C/C++](/teaching/cpp)<br/>
-&raquo;&nbsp;[Naar de labo opgave](#oef)
-
-In [labo 3](/teaching/cpp/labo-3) maakten we kennis met de Gameboy Advance en het ontwikkelplatform - als je het zo kan noemen. We gebruikten mode 3 om pixels te manipuleren. Natuurlijk is dat erg onpraktisch en veel te belastend wanneer er veel op het scherm getekend moet worden. Als doelstelling voor labo 4 willen we een simpel geïntegreerd spelletje maken waar we video **mode 1** en tilesets voor nodig hebben.
+In [labo 3](/gba-in-c/labo-3) maakten we kennis met de Gameboy Advance en het ontwikkelplatform - als je het zo kan noemen. We gebruikten mode 3 om pixels te manipuleren. Natuurlijk is dat erg onpraktisch en veel te belastend wanneer er veel op het scherm getekend moet worden. Als doelstelling voor labo 4 willen we een simpel geïntegreerd spelletje maken waar we video **mode 1** en tilesets voor nodig hebben.
 
 Het overzicht van I/O registers leert ons dat `0x06000000 - 0x06017FFF` 96kb aan Video RAM of VRAM voorziet waar we mee kunnen spelen zonder pixel per pixel te manipuleren.
 
@@ -209,7 +206,7 @@ Character blocks 0 tot 3 (_background RAM_) worden gebruikt voor achtergrond, en
 
 Om van char block naar char block te springen tellen we `0x4000` bij elke block (15de bit - 16kb). Om van screen block naar screen block te springen tellen we `0x800` bij elke block (16de bit, 2kb).
 
-Merk op dat character block 0 en screen block 0 beiden naar adres `0x6000000` verwijzen! Dat wil zeggen dat als tilesets in char block 0 opgeslagen worden, we niet screen block 0 maar bijvoorbeeld 8 of 16 moeten gebruiken voor onze tilemap - opschuiven afhankelijk van de grootte van de tileset. Herinner je de gelijkenis tussen [pointers en arrays](/teaching/cpp/labo-2) uit labo 2.
+Merk op dat character block 0 en screen block 0 beiden naar adres `0x6000000` verwijzen! Dat wil zeggen dat als tilesets in char block 0 opgeslagen worden, we niet screen block 0 maar bijvoorbeeld 8 of 16 moeten gebruiken voor onze tilemap - opschuiven afhankelijk van de grootte van de tileset. Herinner je de gelijkenis tussen [pointers en arrays](/c/labo-2) uit labo 2.
 
 Om het behandelen van deze hexadecimale adressen te vereenvoudigen kunnen we functies schrijven die het adres berekent van blokken zoals [hier](http://cs.umw.edu/~finlayson/class/spring18/cpsc305/notes/13-tiles.html):
 

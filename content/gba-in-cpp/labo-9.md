@@ -94,7 +94,7 @@ De waardes zijn referenties naar de tiles in de tileset met `0x0000` als éérst
 
 ### De map laten scrollen
 
-Een tilemap kan best groot worden, en bijna alle 2D platformers of top-down adventure spellen op de GBA hebben een achtergrond die "scrollt". Herinner je het Castlevania voorbeeld uit [labo 8](/teaching/cpp/labo-8):
+Een tilemap kan best groot worden, en bijna alle 2D platformers of top-down adventure spellen op de GBA hebben een achtergrond die "scrollt". Herinner je het Castlevania voorbeeld uit [labo 8](/gba-in-cpp/labo-8):
 
 <img src="/img/teaching/cpp/aria-of-sorrow.gif" style="width: 100%" class="bordered" />
 
@@ -128,7 +128,7 @@ graph TD;
   Base -.-> C
 {{< /mermaid >}}
 
-De memory manager en het achtergrondpalet zijn gedeeld tussen de backgroundlayer instanties. Uit het schema van [labo 8](/teaching/cpp/labo-8) weten we dat een `GBA` klasse nodig is die de memory manager, achtergrondlagen en paletten aanmaakt en gebruikt. <br/>
+De memory manager en het achtergrondpalet zijn gedeeld tussen de backgroundlayer instanties. Uit het schema van [labo 8](/gba-in-cpp/labo-8) weten we dat een `GBA` klasse nodig is die de memory manager, achtergrondlagen en paletten aanmaakt en gebruikt. <br/>
 In totaal hebben we de volgende gegevens nodig:
 
 De klasse `Palette` met members:

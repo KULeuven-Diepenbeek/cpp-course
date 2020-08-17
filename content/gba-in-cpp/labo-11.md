@@ -5,7 +5,7 @@ weight: 4
 
 ## Eigen widgets implementeren
 
-De objectenboom uit [labo 10](/teaching/cpp/labo-10) leert ons dat heel wat Qt objecten afleiden van `QWidget`. Dat is de ideale startplaats om zelf een widget te implementeren. Veel Qt objecten voorzien een `override` om het tekenen zelf af te kunnen handelen, vergelijkbaar met de while loop in een typisch gameboy spel.
+De objectenboom uit [labo 10](/gba-in-cpp/labo-10) leert ons dat heel wat Qt objecten afleiden van `QWidget`. Dat is de ideale startplaats om zelf een widget te implementeren. Veel Qt objecten voorzien een `override` om het tekenen zelf af te kunnen handelen, vergelijkbaar met de while loop in een typisch gameboy spel.
 
 ```C
 void paintEvent(QPaintEvent *event) override;
@@ -43,9 +43,9 @@ Dit is redelijk _low-level_: `drawLine` , `setPen` en `fillRect` verwachten coö
 
 ## Gebruik maken van een abstractielaag
 
-Herinner je uit [labo 7](/teaching/cpp/labo-7) en [labo 8](/teaching/cpp/labo-8) het gebruik van een abstractielaag om de Gameboy Advance specifieke implementatie te verbergen in een tweede schil. Dit heeft als doel om makkelijk te kunnen switchen van _front-end_: als wij beslissen om onze GUI logica in Qt te schrijven, kunnen we de meeste logica, onze domein objecten, zonder meer overnemen! Dit bespaart ons véél moeite en duplicatie.
+Herinner je uit [labo 7](/cpp/labo-7) en [labo 8](/gba-in-cpp/labo-8) het gebruik van een abstractielaag om de Gameboy Advance specifieke implementatie te verbergen in een tweede schil. Dit heeft als doel om makkelijk te kunnen switchen van _front-end_: als wij beslissen om onze GUI logica in Qt te schrijven, kunnen we de meeste logica, onze domein objecten, zonder meer overnemen! Dit bespaart ons véél moeite en duplicatie.
 
-Een schematische voorstelling van de context met als voorbeeld het Arkanoid spel uit [labo 4](/teaching/cpp/labo-4):
+Een schematische voorstelling van de context met als voorbeeld het Arkanoid spel uit [labo 4](/gba-in-c/labo-4):
 
 {{<mermaid>}}
 graph LR;
@@ -98,8 +98,8 @@ void TetrixBoard::timerEvent(QTimerEvent *event) {
 
 ## <a name="oef"></a>Labo oefeningen
 
-1. Teken in een eigen `QWidget` implementatie een eenvoudig mannetje met hulp van wat simpele rechthoeken. Laat dat mannetje naar links en rechts bewegen door keyboard events op te vangen. Herinner je vanuit [labo 10](/teaching/cpp/labo-10) dat dit met slots en signals kan. Implementeer hiervoor `void keyPressEvent(QKeyEvent *event);` en luister naar `event->key()`.
-2. Download [gba-arkanoid](/teaching/cpp/gba-arkanoid.zip), een C++ implementatie van de oefening uit [labo 4](/teaching/cpp/labo-4#oef). Dit CMake/CLion project is opgesplitst in 2 submappen: _domain_ en _gba_. Het domein bevat methodes als `collidesWith` en `updatePosition`. De OAM GBA impelemntatie leeft in de gba submap. <br/>Port dit werkend minimalistisch spel naar Qt door de domein submap volledig _intact_ te laten! De makkelijkste start is een nieuw project via Qt Creator waarbij je de domein code kopiëert.
+1. Teken in een eigen `QWidget` implementatie een eenvoudig mannetje met hulp van wat simpele rechthoeken. Laat dat mannetje naar links en rechts bewegen door keyboard events op te vangen. Herinner je vanuit [labo 10](/gba-in-cpp/labo-10) dat dit met slots en signals kan. Implementeer hiervoor `void keyPressEvent(QKeyEvent *event);` en luister naar `event->key()`.
+2. Download [gba-arkanoid](/teaching/cpp/gba-arkanoid.zip), een C++ implementatie van de oefening uit [labo 4](/gba-in-c/labo-4#oef). Dit CMake/CLion project is opgesplitst in 2 submappen: _domain_ en _gba_. Het domein bevat methodes als `collidesWith` en `updatePosition`. De OAM GBA impelemntatie leeft in de gba submap. <br/>Port dit werkend minimalistisch spel naar Qt door de domein submap volledig _intact_ te laten! De makkelijkste start is een nieuw project via Qt Creator waarbij je de domein code kopiëert.
 
 ## Denkvragen
 

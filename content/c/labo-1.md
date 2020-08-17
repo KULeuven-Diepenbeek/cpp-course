@@ -209,7 +209,7 @@ jaak.geslacht = 1;
 
 Uiteraard kan je structs ook doorgeven in functies en dan members aanspreken met de puntnotatie.
 
-De vraag is dan, kunnen we ook functies definiëren in een `struct`? Ja en neen. Een functie pointer (zie [labo 2](/teaching/cpp/labo-2)) maakt dit wel mogelijk, maar het is niet zoals een C++ member variabele van een klasse. C functie pointers worden gebruikt als _callback methods_:
+De vraag is dan, kunnen we ook functies definiëren in een `struct`? Ja en neen. Een functie pointer (zie [labo 2](/c/labo-2)) maakt dit wel mogelijk, maar het is niet zoals een C++ member variabele van een klasse. C functie pointers worden gebruikt als _callback methods_:
 
 ```C
 #include <stdio.h>
@@ -434,7 +434,7 @@ graph TD
 {{< /mermaid >}}
 
 
-Functies die in andere source files gedeclareerd zijn moet je dus herdefiniëren (eventueel met het `extern` keyword) in je eigen source file waar je de functie wenst te gebruiken. Zo weet de compiler dat een functie met die signatuur bestaat, maar "zal hij deze nog wel tegenkomen". Hier gaan we nog op verder in [labo 6](/teaching/cpp/labo-6/).
+Functies die in andere source files gedeclareerd zijn moet je dus herdefiniëren (eventueel met het `extern` keyword) in je eigen source file waar je de functie wenst te gebruiken. Zo weet de compiler dat een functie met die signatuur bestaat, maar "zal hij deze nog wel tegenkomen". Hier gaan we nog op verder in [labo 6](/cpp/labo-6/).
 
 ## De boel compileren
 

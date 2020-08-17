@@ -4,9 +4,6 @@ accent: "#008eb3"
 disableComments: true
 ---
 
-&laquo;&nbsp;[Terug naar Software ontwerp in C/C++](/teaching/cpp)<br/>
-&raquo;&nbsp;[Naar de labo opgave](#oef)
-
 In onderstaande schematische voorbeelden zijn de volgende concepten expliciet te onderscheiden:
 
 1. Een **naam** van een variabele
@@ -38,7 +35,7 @@ Waarbij het type, `int`, afhankelijk van het platform een aantal bytes reserveer
 
 C/C++ gebruikt een _pass-by-value_ systeem om variabelen door te geven aan functies. Dit wil zeggen dat de waarde gekopiëerd wordt, en die functie geen wijzigingen kan aanbrengen aan de originele waarde. Dat is iets positief: **separation of concerns**.
 
-Als we denken aan ons persoon voorbeeld van [labo 1](/teaching/cpp/labo-1), wordt die struct dus telkens overgekopiëerd. Dat kan zeer inefficiënt zijn, naargelang de grootte van de data! Om dit te vermijden, gebruiken we een "pointer": een referentie naar de actuele data. Objecten worden in Java standaard _pass-by-reference_ meegegeven - in C moeten we hier nog iets extra voor doen dus.
+Als we denken aan ons persoon voorbeeld van [labo 1](/c/labo-1), wordt die struct dus telkens overgekopiëerd. Dat kan zeer inefficiënt zijn, naargelang de grootte van de data! Om dit te vermijden, gebruiken we een "pointer": een referentie naar de actuele data. Objecten worden in Java standaard _pass-by-reference_ meegegeven - in C moeten we hier nog iets extra voor doen dus.
 
 In plaats van `is_oud(struct Persoon persoon)` wordt de signatuur `is_oud(struct Persoon* persoon)`. Om hier een waarde uit te lezen hebben we twee mogelijkheden:
 
@@ -183,7 +180,7 @@ int main() {
 }
 ```
 
-Laten we de Persoon `struct` van [labo 1](/teaching/cpp/labo-1) eens herbekijken in het licht van pointers (en typedefs):
+Laten we de Persoon `struct` van [labo 1](/c/labo-1) eens herbekijken in het licht van pointers (en typedefs):
 
 ```C
 #include <stdio.h>

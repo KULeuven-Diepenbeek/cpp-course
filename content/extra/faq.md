@@ -4,9 +4,7 @@ accent: "#008eb3"
 disableComments: true
 ---
 
-&laquo;&nbsp;[Terug naar Software ontwerp in C/C++](/teaching/cpp)<br/>
-
-Neem ook eens een kijkje bij de [Installatieinstructies!](/teaching/cpp/installaties)
+Neem ook eens een kijkje bij de [Installatieinstructies!](/extra/installaties)
 
 ### MinGW installatie problemen
 
@@ -26,7 +24,7 @@ C:/Program Files/Git/user/bin/sh.exe
 For MinGW make to work correctly sh.exe must NOT be in your path.
 </pre>
 
-Oorzaak: je Cygwin `/bin` folder zit in de `PATH` omgevingsvariabele, terwijl je MinGW gebruikt als compilatieomgeving. Verwijder de Cygwin bin folder. Zie [Installatieinstructies](/teaching/cpp/installaties). 
+Oorzaak: je Cygwin `/bin` folder zit in de `PATH` omgevingsvariabele, terwijl je MinGW gebruikt als compilatieomgeving. Verwijder de Cygwin bin folder. Zie [Installatieinstructies](/extra/installaties). 
 
 #### Cygheap base mismatch detected
 
@@ -43,7 +41,7 @@ Oorzaak: je werkt met verschillende Cygwin-like omgevingen die niet compatibel z
 Oplossingen:
 
 1. Een van de omgevingen deïnstalleren.
-2. Switch naar MinGW in plaats van Cygwin (zie [Installatieinstructies](/teaching/cpp/installaties)).
+2. Switch naar MinGW in plaats van Cygwin (zie [Installatieinstructies](/extra/installaties)).
 3. Zoek in de Verkenner naar de DLL en verwijder degene die niet gebruikt worden.
 
 ### Het project builden
@@ -94,7 +92,7 @@ C:/Development/github/gba-sprite-engine/test/allocatortest.cpp:79: undefined ref
 
 Oorzaak: je Google Test libraries zijn gecompileerd met **een andere Toolchain** dan waar je het project mee probeert te compileren! Cygwin VS MinGW problemen. 
 
-Oplossing: compileer Google Test opnieuw in dezelfde Toolchain - bijvoorbeeld in MinGW. Ga naar `gooletest\googletest\build`, verwijder alle bestaande bestanden met `rm -rf *` en volg opnieuw de [Installatieinstructies](/teaching/cpp/installaties). 
+Oplossing: compileer Google Test opnieuw in dezelfde Toolchain - bijvoorbeeld in MinGW. Ga naar `gooletest\googletest\build`, verwijder alle bestaande bestanden met `rm -rf *` en volg opnieuw de [Installatieinstructies](/extra/installaties). 
 
 #### CMake was unable to find a build program corresponding to "Unix Makefiles"
 
@@ -193,7 +191,7 @@ CMake Error at /cygdrive/c/Users/11401165/.CLion2018.2/system/cygwin_cmake/share
 
 Het probleem is dat je **Cygwin** gebruikt op een Windows omgeving met een cross-compiler als `arm-none-eabi-g++`. De cross-compiler kan geen UNIX pad interpreteren, zoals `/cygdrive/c/Users/11401165`, maar wel `C:\Users\11401165`. Bijgevolg worden bestanden om te compileren niet gevonden.
 
-De oplossing is switchen van De Cygwin naar de MinGW omgeving. Lees hier meer over in [de installatieinstructies](/teaching/cpp/installaties).
+De oplossing is switchen van De Cygwin naar de MinGW omgeving. Lees hier meer over in [de installatieinstructies](/extra/installaties).
 
 #### CMake: The C++ compiler is not able to compile a simple test program
 

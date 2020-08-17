@@ -6,7 +6,7 @@ disableComments: true
 
 ## C++ Classes revisited
 
-Nu je een [basis van klassen](/teaching/cpp/labo-5) hebt opgedaan in C++ gaan we erving introduceren. Gegeven de volgende modellen:
+Nu je een [basis van klassen](/cpp/labo-5) hebt opgedaan in C++ gaan we erving introduceren. Gegeven de volgende modellen:
 
 {{<mermaid>}}
 graph TD;
@@ -447,7 +447,7 @@ Zie [docs](https://en.cppreference.com/w/cpp/language/parameter_pack).
   2. De punten kunnen gehele of rationale getallen bevatten.
   3. Ik kan punten converteren van 2D naar 3D of omgekeerd (met verlies)
   4. Ik kan punten met elkaar optellen.
-3. _Extra_: Denk terug aan je dierentuin van [labo 5](/teaching/cpp/labo-5). Dieren moeten gevoed worden met de `bool voeder(const Voedsel &voedsel)` methode op dierentuin. De functie geeft `TRUE` terug indien het voedsel voldoende is voor alle dieren en `FALSE` indien het onvoldoende is. Voedsel heeft een `voedingswaarde`. Elk dier eet even veel in voedingswaarde als zijn gewicht. Verzin voedsel **subklassen** om alle edge cases te kunnen testen!
+3. _Extra_: Denk terug aan je dierentuin van [labo 5](/cpp/labo-5). Dieren moeten gevoed worden met de `bool voeder(const Voedsel &voedsel)` methode op dierentuin. De functie geeft `TRUE` terug indien het voedsel voldoende is voor alle dieren en `FALSE` indien het onvoldoende is. Voedsel heeft een `voedingswaarde`. Elk dier eet even veel in voedingswaarde als zijn gewicht. Verzin voedsel **subklassen** om alle edge cases te kunnen testen!
 4. _Extra_: Dieren zijn carnivoren, herbivoren of omnivoren. Voedsel is ofwel plant- ofwel vleesgebaseerd. Wat doe je als je een carnivoor sla geeft, of een herbivoor een stukje kip? Hoe implementeer je deze specificaties?
 5. _Extra_: Dieren zijn allergisch aan bepaald voedsel. Wat doe je als je een dier eten geeft dat het niet verdraagd? Wat doe je in je `voeder()` implementatie? Voorzie een methode `bool isAllergischAan(const Voedsel &voedsel)` in je Dier klasse.
 

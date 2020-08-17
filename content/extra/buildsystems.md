@@ -4,7 +4,7 @@ accent: "#008eb3"
 disableComments: true
 ---
 
-Zie ook [labo 1: (herhaaldelijk) compileren](/teaching/cpp/labo-1#compiling)
+Zie ook [labo 1: (herhaaldelijk) compileren](/c/labo-1#compiling)
 
 Een greep uit de mogelijkheden, schematisch samengevat:
 

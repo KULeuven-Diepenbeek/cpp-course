@@ -17,8 +17,8 @@ Optionele editors (VSCode, Subl) zijn ook via de package tool te installeren. `s
 
 De volgende tools worden verwacht gedownload te worden via git:
 
-* Google Test (zie [labo 7](/teaching/cpp/labo-7))
-* gba-sprite-engine (zie [opdracht](/teaching/cpp/project))
+* Google Test (zie [labo 7](/cpp/labo-7))
+* gba-sprite-engine (zie [opdracht](/extra/project))
 
 De volgende tools worden verwacht manueel te downloaden:
 

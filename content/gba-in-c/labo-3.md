@@ -208,7 +208,7 @@ Het plastieken omhulsel open gevezen geeft zicht op het bord:
     <img src="/img/teaching/cpp/ezflash.jpg" class="bordered" />
 </center>
 
-Dit is een deel van [labo 4](/teaching/cpp/labo-4) op de eigenlijke hardware:
+Dit is een deel van [labo 4](/gba-in-c/labo-4) op de eigenlijke hardware:
 
 <center>
     <img src="/img/teaching/cpp/gba_labo3.gif" style="width: 75%" class="bordered" />
