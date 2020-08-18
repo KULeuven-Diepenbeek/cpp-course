@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1. Introductie in C on Software Ontwerp in C(&#43;&#43;)</title>
+    <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/</link>
+    <description>Recent content in 1. Introductie in C on Software Ontwerp in C(&#43;&#43;)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <managingEditor>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</managingEditor>
+    <webMaster>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</webMaster>
+    
+	<atom:link href="https://kuleuven-diepenbeek.github.io/cpp-course/c/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Labo 1: Introductie in C</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/labo-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/labo-1/</guid>
+      <description>De C programmeertaal De C taal is een programmeertaal in de jaren &amp;lsquo;70 ontwikkeld om makkelijk hardware te kunnen aanspreken. C was/is in essentie niet veel meer dan een kleine abstractielaag bovenop assembly.
+C is een imperatieve programmeertaal. Dat zal je bij het oefenen wel merken: we schrijven instructies als statements. Deze regels of statements zijn gestructureerd in functies en struct types. Het jammere hier aan is dat er weinig declarativiteit aan de pas komt.</description>
+    </item>
+    
+    <item>
+      <title>Labo 2: Pointers in C en C&#43;&#43;</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/labo-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/labo-2/</guid>
+      <description>In onderstaande schematische voorbeelden zijn de volgende concepten expliciet te onderscheiden:
+ Een naam van een variabele Een waarde van een variabele  En de volgende impliciet:
+ Het type van een variabele Het adres van een variabele  Het type van een variabele bepaalt de hoeveelheid geheugen die vrijgemaakt wordt om de waarde te kunnen bewaren. De waarde is ofwel een actuele waarde ofwel een adres dat refereert naar een andere waarde.</description>
+    </item>
+    
+  </channel>
+</rss>
