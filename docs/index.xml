@@ -53,6 +53,42 @@ void paintEvent(QPaintEvent *event) override; In het Textrix Qt Voorbeeld wordt 
     </item>
     
     <item>
+      <title>1. Introductie in C/C&#43;&#43;: context, ecosysteem</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2. Pointers in C, dynamisch geheugen in C&#43;&#43;</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3. Introductie in Object-Georiënteerd denken in C&#43;&#43;</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4. Een introductie in GUI ontwerp met Qt, Samenvatting, examen info</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Een introductie in C(&#43;&#43;) Build Systemen</title>
       <link>https://kuleuven-diepenbeek.github.io/cpp-course/extra/buildsystems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
