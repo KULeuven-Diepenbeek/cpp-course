@@ -4,6 +4,8 @@ Software ontwerp in C/C++: #1
 <img src="/cpp-course/img/kul.svg" style="height: 80px;" />
 <img src="/cpp-course/img/uhasselt.svg" style="width: 165px; height: 80px;"/>
 
+([video link](https://www.loom.com/share/c81929c12682431aa40e1df6c999d47e))
+
 ---
 
 ## Het vak
@@ -65,7 +67,7 @@ ___
   - Lang in gebruik t.o.v. andere moderne talen
   - Andere moderne talen zijn geschreven in... C! 
 - Eenvoud
-  - C heeft weinig om het lijf ([Ref. card](/c-refcard.pdf))
+  - C heeft weinig om het lijf ([Ref. card](https://kuleuven-diepenbeek.github.io/cpp-course/c-refcard.pdf))
   - Te leren in 1 dag
 - Kracht
   - Rechtstreeks hardware aanspreken
