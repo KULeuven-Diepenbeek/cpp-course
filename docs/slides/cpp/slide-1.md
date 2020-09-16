@@ -19,8 +19,17 @@ ___
 * Introductie in C
 * Pointers
 * Introductie in C++
-* Software ontwerpen?
-* GUI ontwerpen in Qt
+* Wat is "Software Ontwerpen"
+* Toepassing: GBA Game
+
+___
+
+## Het vak: Praktisch
+
+* Hoorcolleges 4x, opgenomen (online)
+* Labo's on-campus H-E214, 3u + pauze
+* **Eigen laptop** meebrengen!
+* **Voorbereiding** per blok: zie cursus online 
 
 ---
 
@@ -56,7 +65,7 @@ ___
   - Lang in gebruik t.o.v. andere moderne talen
   - Andere moderne talen zijn geschreven in... C! 
 - Eenvoud
-  - C heeft weinig om het lijf
+  - C heeft weinig om het lijf ([Ref. card](/c-refcard.pdf))
   - Te leren in 1 dag
 - Kracht
   - Rechtstreeks hardware aanspreken
@@ -64,27 +73,7 @@ ___
 
 ---
 
-## C?
-
-```C
-#include <stdio.h>
-#include <stdlib.h>
-
-char* read_file(FILE* ptr) {
-  char* buff = malloc(255);
-  fgets(buff, 255, ptr);
-  fclose(ptr);
-  return buff;
-}
-int main() {
-  printf("%s\n", read_file((FILE*) fopen("bla.txt", "r")));
-  return 0;
-}
-```
-
-___
-
-## Java:
+## Een voorbeeld in Java:
 
 ```Java
 import java.io.IOException;
@@ -108,7 +97,30 @@ class Main {
 
 ___
 
-## C++?
+## C equivalent?
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+char* read_file(FILE* ptr) {
+  char* buff = malloc(255);
+  fgets(buff, 255, ptr);
+  fclose(ptr);
+  return buff;
+}
+int main() {
+  printf("%s\n", read_file((FILE*) fopen("bla.txt", "r")));
+  return 0;
+}
+```
+
+- Gebruik van `*`
+- Gebruik van `malloc`, includes, geen klasses, ...
+
+___
+
+## En in C++?
 
 ```C
 #include <iostream>
@@ -127,6 +139,8 @@ int main() {
   return 0;
 }
 ```
+
+- Mix van Java en C: Object-Oriented met low-lvl access
 
 ___
 
@@ -171,7 +185,7 @@ ___
 Unix: "**GNU C Compiler**". Alternatieven:
 
 - Unix: `clang`
-- Windows: MS' [`cl](https://msdn.microsoft.com/en-us/library/bb384838.aspx)
+- Windows: MS' [`cl`](https://msdn.microsoft.com/en-us/library/bb384838.aspx)
 
 GNU op Windows? [MinGW](http://www.mingw.org)
 
@@ -299,25 +313,21 @@ ___
 
 <img src="/cpp-course/img/teaching/cpp/aria-of-sorrow.gif" style="width: 50%" s/>
 
-Opdracht volgt. Overdracht vanaf 12/20 
+Opdracht volgt. Overdracht vnaf 12/20 
 
 ___
 
-### 1/2de Project
 
-#### Resultaat 2018-19
+#### Resultaat 2019-20 (1/2)
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/392922578" width="640" height="428" frameborder="0" allowfullscreen></iframe>
+
+___
+
+#### Resultaat 2018-19  (2/2)
 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/314203871" width="640" height="428" frameborder="0" allowfullscreen></iframe>
 
-___
-
-### 1/2de Project
-
-#### Evaluatiecriteria?
-
-Studenten evalueren mede-studenten! 
-
-Hoe? Info volgt.
 
 ---
 

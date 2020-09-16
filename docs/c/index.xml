@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Voorbereiding Thuis</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/prep/</guid>
+      <description>Installaties Volg de installatieinstructies en zorg ervoor dat de basisvereisten geïnstalleerd zijn:
+ Een C compiler geïnstalleerd is (build essentials) Je vlot toegang hebt tot cmdline (Op Windows: met cmder, zie bovenstaande instructies) git geïnstalleerd is  Controle  Controleer of git werkt door git version uit te voeren in cmdline. Controleer of je compiler correct is geïnstalleerd door gcc -v uit te voeren, en make -v. Kopiëer het eerste voorbeeld in de tekst van labo 1 (&amp;ldquo;vergelijkingen met Java&amp;rdquo;) en probeer dit zelf te compileren in C met gcc [bestand.</description>
+    </item>
+    
+    <item>
       <title>Labo 1: Introductie in C</title>
       <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/labo-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
