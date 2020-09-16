@@ -4,6 +4,8 @@ Software ontwerp in C/C++: #2
 <img src="/cpp-course/img/kul.svg" style="height: 80px;" />
 <img src="/cpp-course/img/uhasselt.svg" style="width: 165px; height: 80px;"/>
 
+([video link](https://www.loom.com/share/f53d355496a94e4f9e38f59e4074a33a))
+
 ---
 
 ## Wat is een "pointer"?
