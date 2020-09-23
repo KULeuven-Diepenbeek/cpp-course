@@ -12,21 +12,21 @@
     <title>Labo 2: Pointers in C en C&#43;&#43; :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1600250214" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1600250214" rel="stylesheet">
-    <link href="../../css/hybrid.css?1600250214" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1600250214" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1600250214" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1600250214" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1600250214" rel="stylesheet">
-    <link href="../../css/theme.css?1600250214" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1600250214" rel="stylesheet">
+    <link href="../../css/nucleus.css?1600843598" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1600843598" rel="stylesheet">
+    <link href="../../css/hybrid.css?1600843598" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1600843598" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1600843598" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1600843598" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1600843598" rel="stylesheet">
+    <link href="../../css/theme.css?1600843598" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1600843598" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1600250214" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1600843598" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1600250214"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1600843598"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -82,14 +82,14 @@ window.MathJax = {
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1600250214"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1600250214"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1600843598"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1600843598"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1600250214"></script>
+<script type="text/javascript" src="../../js/search.js?1600843598"></script>
 
     
   </div>
@@ -297,6 +297,27 @@ window.MathJax = {
       <li data-nav-id="/c/labo-2/" title="Labo 2: Pointers in C en C&#43;&#43;" class="dd-item active">
         <a href="../../c/labo-2/">
         Labo 2: Pointers in C en C&#43;&#43;
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/stack-vs-heap/" title="Labo 2b: De stack VS de heap" class="dd-item ">
+        <a href="../../c/stack-vs-heap/">
+        Labo 2b: De stack VS de heap
         
         </a>
     </li>
@@ -884,18 +905,23 @@ window.MathJax = {
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-  <ul>
-    <li><a href="#compound-types">&ldquo;Compound&rdquo; types</a>
-      <ul>
-        <li><a href="#reference-types">Reference types</a></li>
-        <li><a href="#pointer-types">Pointer types</a></li>
-        <li><a href="#praktisch-gebruik-van-pointers">Praktisch gebruik van pointers</a></li>
-      </ul>
-    </li>
-    <li><a href="#herhaling-let-op-met-syntax">Herhaling: let op met syntax!</a></li>
-    <li><a href="#a-nameoefalabo-oefeningen"><a name="oef"></a>Labo oefeningen</a></li>
-    <li><a href="#denkvragen">Denkvragen</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#compound-types">&ldquo;Compound&rdquo; types</a>
+<ul>
+<li><a href="#reference-types">Reference types</a></li>
+<li><a href="#pointer-types">Pointer types</a>
+<ul>
+<li><a href="#functie-pointers">Functie pointers</a></li>
+</ul></li>
+<li><a href="#praktisch-gebruik-van-pointers">Praktisch gebruik van pointers</a></li>
+</ul></li>
+<li><a href="#herhaling-let-op-met-syntax">Herhaling: let op met syntax!</a></li>
+<li><a href="#a-name-oef-a-labo-oefeningen"><a name="oef"></a>Labo oefeningen</a></li>
+<li><a href="#denkvragen">Denkvragen</a></li>
+</ul></li>
+</ul>
 </nav>
     </div>
 </div>
@@ -919,17 +945,24 @@ window.MathJax = {
         
 
 
+
+
 <p>In onderstaande schematische voorbeelden zijn de volgende concepten expliciet te onderscheiden:</p>
+
 <ol>
 <li>Een <strong>naam</strong> van een variabele</li>
 <li>Een <strong>waarde</strong> van een variabele</li>
 </ol>
+
 <p>En de volgende impliciet:</p>
+
 <ol>
 <li>Het <strong>type</strong> van een variabele</li>
 <li>Het <strong>adres</strong> van een variabele</li>
 </ol>
+
 <p>Het <strong>type</strong> van een variabele bepaalt de hoeveelheid geheugen die vrijgemaakt wordt om de waarde te kunnen bewaren. De waarde is ofwel een actuele waarde ofwel een adres dat refereert naar een andere waarde. Elke variabele heeft een uniek adres. Variabelen kunnen dus naar elkaar verwijzen.</p>
+
 <script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
@@ -945,7 +978,9 @@ graph TD;
     B{variabelenaam<br/>adres}
 
 </div>
+
 <p>Dit voorbeeld visualiseert <code>int a = 5</code>:</p>
+
 <script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
@@ -960,24 +995,35 @@ graph TD;
     A[a<br/>5]
 
 </div>
+
 <p>Waarbij het type, <code>int</code>, afhankelijk van het platform een aantal bytes reserveert (<code>sizeof(int)</code>) op een bepaald adres. Het adres kunnen we zelfs manipuleren in C/C++ en is essentiëel voor het gebruik van onder andere arrays.</p>
+
 <h2 id="compound-types">&ldquo;Compound&rdquo; types</h2>
+
 <p>C/C++ gebruikt een <em>pass-by-value</em> systeem om variabelen door te geven aan functies. Dit wil zeggen dat de waarde gekopiëerd wordt, en die functie geen wijzigingen kan aanbrengen aan de originele waarde. Dat is iets positief: <strong>separation of concerns</strong>.</p>
+
 <p>Als we denken aan ons persoon voorbeeld van <a href="../../c/labo-1">labo 1</a>, wordt die struct dus telkens overgekopiëerd. Dat kan zeer inefficiënt zijn, naargelang de grootte van de data! Om dit te vermijden, gebruiken we een &ldquo;pointer&rdquo;: een referentie naar de actuele data. Objecten worden in Java standaard <em>pass-by-reference</em> meegegeven - in C moeten we hier nog iets extra voor doen dus.</p>
+
 <p>In plaats van <code>is_oud(struct Persoon persoon)</code> wordt de signatuur <code>is_oud(struct Persoon* persoon)</code>. Om hier een waarde uit te lezen hebben we twee mogelijkheden:</p>
+
 <ol>
 <li>De pointer <em>&ldquo;dereferencen&rdquo;</em>: de eigenlijke waarde opvragen, achter de referentie.</li>
 <li>Via de pointer de members van de struct opvragen met &ldquo;<code>.</code>&rdquo;.</li>
 </ol>
+
 <p>Omdat in C de <code>.</code> operator voorrang heeft op <code>*</code>, moeten we haakjes gebruiken voor optie twee: <code>(*persoon).leeftijd</code>. Dat is vervelend om constant te gebruiken, daarom is er een alternatieve syntax met de arrow <code>-&gt;</code> operator: <code>persoon-&gt;leeftijd</code>.</p>
+
 <p>In Java spreek je members natuurlijk altijd aan met <code>.</code>.</p>
+
 <h3 id="reference-types">Reference types</h3>
+
 <p><strong>Opgelet</strong> - reference types zijn C++ specifiek. Dit is echter een integraal onderdeel van je kennis van compound types en wordt dus hier al uitgelegd. Als je onderstaande voorbeelden wenst te testen, gebruik dan <code>g++</code> in plaats van <code>gcc</code>!</p>
+
 <p>Een referentie variabele is niet meer dan een alternatieve naam voor dezelfde variabele. Ze zijn herkenbaar door <code>&amp;</code> na variabele type. Referenties moeten &ldquo;gebind&rdquo; worden bij declaratie:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> geslacht <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
 <span style="color:#66d9ef">int</span> <span style="color:#f92672">&amp;</span>mannelijkheid <span style="color:#f92672">=</span> geslacht;
-<span style="color:#66d9ef">int</span> <span style="color:#f92672">&amp;</span>vrouwelijkheid;    <span style="color:#75715e">// compiler error
-</span></code></pre></div><script defer src="../../mermaid/mermaid.min.js">
+<span style="color:#66d9ef">int</span> <span style="color:#f92672">&amp;</span>vrouwelijkheid;    <span style="color:#f92672">//</span> compiler error</code></pre></div>
+<script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
 		flowchart: {
@@ -991,15 +1037,19 @@ graph LR;
     A{&mannelijkheid} -->|ref| B[geslacht<br/>10]
 
 </div>
+
 <p>Referenties kan je zien als &ldquo;constante pointers&rdquo; die automatisch de <code>-&gt;</code> toepassen. Het adres van het doel wordt bewaard, niet de eigenlijke waarde. Referenties zijn geen objecten en hebben geen volwaardig adres op de stack.</p>
+
 <p>Je kan nog steeds de waarde van het object wijzigen via de referentie: <code>mannelijkheid = 20;</code> zal de variabele geslacht ook wijzigen - die zijn immers hetzelfde. Als je dat wil vermijden heb je <code>const</code> nodig (p60).</p>
+
 <h3 id="pointer-types">Pointer types</h3>
+
 <p>Een pointer is een &ldquo;veranderbare&rdquo; referentie naar een variabele. Pointers hebben hun eigen geheugenadres op de stack en kunnen op eender welk moment naar iets anders verwijzen: ze zijn niet constant. Ze zijn herkenbaar door <code>*</code> na variabele type.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> jong <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
 <span style="color:#66d9ef">int</span> oud <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>;
 <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>leeftijd <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>jong;
-leeftijd <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>oud;
-</code></pre></div><script defer src="../../mermaid/mermaid.min.js">
+leeftijd <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>oud;</code></pre></div>
+<script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
 		flowchart: {
@@ -1014,18 +1064,23 @@ graph LR;
     A --> |na regel 4| C[oud<br/>80]
 
 </div>
+
 <p>Merk op dat we hier toch nog <code>&amp;</code> gebruiken! Dit is geen referentie type maar de <em>address-of</em> operator om het adres van de variabele jong vast te krijgen. Een pointer verwijst naar een adres, niet naar een waarde.</p>
+
 <p>Wat is de output van <code>printf(&quot;%d&quot;, leeftijd);</code>? 1389434244! Huh? We drukken het <strong>adres</strong> van de pointer af, niet waar de pointer naar verwijst. Om dat te doen heb je weer de <code>*</code> operator nodig: <code>printf(&quot;%d&quot;, *leetijd);</code>. Dit noemen we <em>dereferencen</em>.</p>
+
 <p>De compiler geeft dit ook aan als warning:</p>
+
 <blockquote>
 <p>warning: format specifies type &lsquo;int&rsquo; but the argument has type &lsquo;int *&rsquo; [-Wformat]</p>
 </blockquote>
+
 <p>Pointers kunnen ook verwijzen naar&hellip; pointers naar&hellip; pointers naar &hellip; Genoeg keer <code>*</code> toevoegen.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> jong <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
 <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>ptr <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>jong;
 <span style="color:#66d9ef">int</span> <span style="color:#f92672">**</span>ptr_to_ptr <span style="color:#f92672">=</span> ptr; <span style="color:#75715e">// compiler error
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#f92672">**</span>ptr_to_ptr <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>ptr;
-</code></pre></div><script defer src="../../mermaid/mermaid.min.js">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#f92672">**</span>ptr_to_ptr <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>ptr;</code></pre></div>
+<script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
 		flowchart: {
@@ -1040,14 +1095,20 @@ graph LR;
     B --> |ref| C[jong<br/>10]
 
 </div>
+
 <p>Waar wijst een nieuwe pointer naar die nog niet geïnstantieerd is?:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>ptr;
-printf(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">*</span>ptr); <span style="color:#75715e">// print -122O4735835
-</span></code></pre></div><p>Whoeps. Merk op dat, afhankelijk van de compiler C implementatie (VC++, clang, GNU C, &hellip;), een ongeïnitialiseerde pointer naar <code>0</code> <em>kan</em> evalueren. Ga daar in geen geval van uit, en ken altijd de waarde <code>NULL</code> toe: <code>int *ptr = NULL;</code>.</p>
+printf(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">*</span>ptr); <span style="color:#f92672">//</span> print <span style="color:#f92672">-</span><span style="color:#ae81ff">122</span>O4735835</code></pre></div>
+<p>Whoeps. Merk op dat, afhankelijk van de compiler C implementatie (VC++, clang, GNU C, &hellip;), een ongeïnitialiseerde pointer naar <code>0</code> <em>kan</em> evalueren. Ga daar in geen geval van uit, en ken altijd de waarde <code>NULL</code> toe: <code>int *ptr = NULL;</code>.</p>
+
 <p><code>NULL</code> is een platform-afhankelijke macro die in C verwijst naar 0, meestal in de vorm van een void pointer. Een <code>void*</code> pointer kan naar eender welk type verwijzen en wordt meestal gebruikt om low-level memory aan te spreken, zoals we zullen zien bij de GBA.</p>
+
 <p>De definitie van een pointer schrijft niet voor waar de <code>*</code> precies moet staan: <code>int* leeftijd</code> is hetzelfde als <code>int *leeftijd</code>. Pas om met dingen als <code>int* leeftijd, ouderdom</code>! De laatste veriabele is hier een gewone int, en géén pointer!</p>
+
 <p>Referenties en pointers kan je mixen: <code>int *&amp;ref_to_ptr = ptr</code>. Lees de tekenreeks van rechts naar links: &ldquo;referentie van&rdquo;, &ldquo;pointer&rdquo;.</p>
+
 <h4 id="functie-pointers">Functie pointers</h4>
+
 <p>Een pointer kan ook verwijzen naar een functie (p247), daarvoor heb je dezelfde signatuur definitie nodig:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span>
@@ -1066,8 +1127,9 @@ printf(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f926
     op <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>verdubbel;
     printf(<span style="color:#e6db74">&#34;verdubbel 5: %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, op(<span style="color:#ae81ff">5</span>));
     <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-}
-</code></pre></div><p>De definitie van de op pointer ziet er wat vreemd uit, maar de signatuur voorspelt dat we een <code>int</code> retourneren (meest links), en dat er één parameter nodig is, ook in de vorm van een <code>int</code> (tussen haakjes).</p>
+}</code></pre></div>
+<p>De definitie van de op pointer ziet er wat vreemd uit, maar de signatuur voorspelt dat we een <code>int</code> retourneren (meest links), en dat er één parameter nodig is, ook in de vorm van een <code>int</code> (tussen haakjes).</p>
+
 <p>Functie pointers kan je ook als parameter meegeven, bijvoorbeeld met <code>void exec(int (*op)(int)) {</code>. Een functie kan een functie (pointer) teruggeven, bijvoorbeeld met <code>int (*kies_op(int mod))(int) {</code>. De functie &ldquo;kies_op&rdquo; verwacht 1 int parameter en geeft een functie pointer terug die verwijst naar een functie met 1 int parameter en returnvalue int. Om dat warboeltje te vereenvoudigen wordt meestal <code>typedef</code> gebruikt:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span>
@@ -1093,8 +1155,8 @@ func_type <span style="color:#a6e22e">kies_op</span>(<span style="color:#66d9ef"
     exec(kies_op(<span style="color:#ae81ff">0</span>));       <span style="color:#75715e">// print 6
 </span><span style="color:#75715e"></span>    exec(kies_op(<span style="color:#ae81ff">1</span>));       <span style="color:#75715e">// print 10
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-}
-</code></pre></div><p>Laten we de Persoon <code>struct</code> van <a href="../../c/labo-1">labo 1</a> eens herbekijken in het licht van pointers (en typedefs):</p>
+}</code></pre></div>
+<p>Laten we de Persoon <code>struct</code> van <a href="../../c/labo-1">labo 1</a> eens herbekijken in het licht van pointers (en typedefs):</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span>
@@ -1124,16 +1186,21 @@ Persoon<span style="color:#f92672">*</span> <span style="color:#a6e22e">create_p
     printf(<span style="color:#e6db74">&#34;is jaak oud? %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, jaak<span style="color:#f92672">-&gt;</span>is_oud(jaak));
     free(jaak); <span style="color:#75715e">// niet echt nodig, programma stopt hier toch.
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-}
-</code></pre></div><p>Vergeet niet dat we nog steeds in C aan het programmeren zijn.</p>
+}</code></pre></div>
+<p>Vergeet niet dat we nog steeds in C aan het programmeren zijn.</p>
+
 <p>Wat is er veranderd?</p>
+
 <ol>
 <li><code>Persoon</code> is een typedef geworden.</li>
 <li>Pointers zijn gebruikt om struts door te geven. <code>malloc()</code> komt kijken om geheugen te reserveren voor een nieuwe persoon. Vergeet niet dat we dit zelf moeten terug vrijgeven met <code>free()</code>!</li>
 <li>Het belangrijkste: een <strong>factory method</strong> <code>create_persoon</code> is nodig om een nieuwe persoon te assembleren en de is_oud methode aan de struct te plakken.</li>
 </ol>
+
 <p>Dat ziet er al iets gestroomlijnder uit maar vereist nog steeds te veel boilerplating. Zo&rsquo;n constructies ga je zelden tegen komen in de praktijk. Ontwikkelaars die graag objecten maken zullen C links laten liggen.</p>
+
 <h3 id="praktisch-gebruik-van-pointers">Praktisch gebruik van pointers</h3>
+
 <p>Omdat in C alles <em>by-value</em> doorgegeven wordt, kunnen we met pointers de waarden van variabelen in een functie manipuleren die erbuiten gedeclareerd werd. In Java kan je de waarde van member variabelen in objecten ook wijzigen, maar niet <strong>primitives</strong>! Hoe wissel je twee getallen zonder iets terug te geven?</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">swap</span>(<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>px, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>py) {
     <span style="color:#66d9ef">int</span> temp;
@@ -1143,10 +1210,12 @@ Persoon<span style="color:#f92672">*</span> <span style="color:#a6e22e">create_p
 }
 <span style="color:#66d9ef">int</span> x <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, y <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
 swap(<span style="color:#f92672">&amp;</span>x, <span style="color:#f92672">&amp;</span>y);
-printf(<span style="color:#e6db74">&#34;(%d, %d)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, x, y); <span style="color:#75715e">// print (20, 10)
-</span></code></pre></div><p>Zoiets is ondenkbaar in Java - daar hebben we truckjes voor nodig als een <code>int[]</code> dat toch een object is. Natuurlijk is deze implementatie ook <strong>nadelig</strong>: is het wel duidelijk voor de caller dat variabelen gewijzigd worden?
+printf(<span style="color:#e6db74">&#34;(%d, %d)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, x, y); <span style="color:#f92672">//</span> print (<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">10</span>)</code></pre></div>
+<p>Zoiets is ondenkbaar in Java - daar hebben we truckjes voor nodig als een <code>int[]</code> dat toch een object is. Natuurlijk is deze implementatie ook <strong>nadelig</strong>: is het wel duidelijk voor de caller dat variabelen gewijzigd worden?
 Performante algoritme implementaties profiteren van deze mogelijkheden. Duidelijke domain-driven applicaties niet: daar dient een hogere taal voor.</p>
+
 <p>Pointers en arrays gaan hand-in-hand in C. Op pointers kan je ook operaties als <code>++</code> en <code>--</code> uitvoeren die de pointer in het geheugen één plaatsje naar links of rechts opschuiven. Met <code>char *tekst = &quot;sup&quot;</code> verwijst de pointer naar het eerste karakter:</p>
+
 <script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
@@ -1165,40 +1234,49 @@ graph TD
     A-.->F['\0']
 
 </div>
+
 <p>Een eigen <code>printf(&quot;%s&quot;, tekst)</code> zou het overlopen van de pointer kunnen zijn, tot er niets meer is, en karakter per karakter afdrukken:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">print_tekst</span>(<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>tekst) {
     <span style="color:#66d9ef">while</span>(<span style="color:#f92672">*</span>tekst <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;\0&#39;</span>) {
         printf(<span style="color:#e6db74">&#34;%c&#34;</span>, <span style="color:#f92672">*</span>tekst);
         tekst<span style="color:#f92672">++</span>;
     }
-}
-</code></pre></div><p>In C is <code>a[i]</code> exact hetzelfde als <code>*(a + i)</code>!</p>
+}</code></pre></div>
+<p>In C is <code>a[i]</code> exact hetzelfde als <code>*(a + i)</code>!</p>
+
 <h2 id="herhaling-let-op-met-syntax">Herhaling: let op met syntax!</h2>
+
 <p>Zie pagina 53 - symbolen zoals <code>*</code> en <code>&amp;</code> in C en C++ hebben verschillende betekenissen.</p>
+
 <ul>
 <li><code>int &amp;r = i;</code> - &amp; na een type: dit is een reference type</li>
 <li><code>int *p;</code> - * na een type: dit is een pointer type</li>
 <li><code>p = &amp;i</code> - &amp; gebruikt in een experessie als <em>address-of</em> operatie</li>
 <li><code>*p = i</code> - * gebruikt in een expressie als <em>dereference</em> operatie</li>
 </ul>
+
 <p>Vergeet niet dat de eerste regel enkel geldig is in C++.</p>
-<h2 id="a-nameoefalabo-oefeningen"><a name="oef"></a>Labo oefeningen</h2>
+
+<h2 id="a-name-oef-a-labo-oefeningen"><a name="oef"></a>Labo oefeningen</h2>
+
 <ol>
 <li>Implementeer <code>int strcmp_own(char *s, char *t)</code> van <code>&lt;string.h&gt;</code> zelf. Geef het getal 0 terug indien strings gelijk zijn, een getal kleiner dan 0 (bvb. -1) indien s &lt; t en een getal groter dan 0 (bvb. 1) indien s &gt; t. Gebruik je pointer kennis om snel het geheugen te scannen.</li>
-<li>Jij bent een brave bibliothecaris. En als brave bibliothecaris is het je taak om boeken alfabetisch te sorteren op achternaam. Laat de gebruiker een aantal achternamen ingeven, gescheiden door spatie (tip: <a href="http://www.cplusplus.com/reference/cstring/strtok/">strtok</a>, en druk dan gesorteerd de inventaris af. Uiteraard gebruik je pointers.</li>
-</ol>
+<li>Jij bent een brave bibliothecaris. En als brave bibliothecaris is het je taak om boeken alfabetisch te sorteren op achternaam. Laat de gebruiker een aantal achternamen ingeven, gescheiden door spatie (tip: <a href="http://www.cplusplus.com/reference/cstring/strtok/">strtok</a>, en druk dan gesorteerd de inventaris af. Uiteraard gebruik je pointers.
+
 <ul>
 <li>input: <code>lenaerts zwanskop aerts groeneveld</code></li>
 <li>output: <code>aerts groeneveld lenaerts zwanskop</code></li>
-</ul>
-<ol start="3">
-<li>Ohnee, je broer de stoute bibliothecaris is gearriveerd! Hij maakt een zootje van de bibliotheek en sorteert graag omgekeerd van Z naar A, de smeerlap. Voorzie naast <code>void brave_bibliothecaris(char **auteurs, int aantal)</code> ook een <code>void stoute_bibliothecaris(char **auteurs, int aantal)</code> methode. Vraag de gebruiker eerst of hij stout of braaf geweest is. Gebruik functie pointers om te wisselen van bibliothecaris!</li>
-</ol>
+</ul></li>
+<li>Ohnee, je broer de stoute bibliothecaris is gearriveerd! Hij maakt een zootje van de bibliotheek en sorteert graag omgekeerd van Z naar A, de smeerlap. Voorzie naast <code>void brave_bibliothecaris(char **auteurs, int aantal)</code> ook een <code>void stoute_bibliothecaris(char **auteurs, int aantal)</code> methode. Vraag de gebruiker eerst of hij stout of braaf geweest is. Gebruik functie pointers om te wisselen van bibliothecaris!
+
 <ul>
 <li>input: <code>stout</code> (enter) <code>lenaerts zwanskop aerts groeneveld</code></li>
 <li>output: <code>zwanskop lenaerts groeneveld aerts</code></li>
-</ul>
+</ul></li>
+</ol>
+
 <p>Tips:</p>
+
 <ul>
 <li><a href="https://www.tutorialspoint.com/c_standard_library/c_function_strcmp.htm">Voorbeeld gebruik</a> van de standaard <code>strcmp</code> functie.</li>
 <li>Opnieuw: denk aan de <a href="https://www.gnu.org/prep/standards/html_node/Writing-C.html">GNU Coding Standards</a>!</li>
@@ -1208,7 +1286,9 @@ graph TD
 <li>De stoute bibliothecaris mag de brave zijn werk gebruiken en <em>reversen</em>!</li>
 <li>Pas op met <code>fgets</code> na <code>scanf</code> - deze laat <code>\n</code> nog in de stream achter die de eerste onterecht verwerkt. Gebruik <code>getchar()</code> om dat karakter te negeren.</li>
 </ul>
+
 <h2 id="denkvragen">Denkvragen</h2>
+
 <ol>
 <li>Wat is het verschil tussen <code>char msg[] = &quot;heykes&quot;</code> en <code>char *msg = &quot;heykes&quot;</code>? Verduidelijk je antwoord met een schema.</li>
 <li>Wat is het verschil tussen <code>int a[10][20]</code> en <code>int *b[10]</code>? Kan je ook iets zeggen over het geheugengebruik?</li>
@@ -1397,9 +1477,6 @@ graph TD
             
         
                     
-            
-        
-                    
                         
             
             
@@ -1407,6 +1484,25 @@ graph TD
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1751,7 +1847,7 @@ graph TD
 			<a class="nav nav-prev" href="../../c/labo-1/" title="Labo 1: Introductie in C"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../gba-in-c/" title="2. GBA programming in C" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../c/stack-vs-heap/" title="Labo 2b: De stack VS de heap" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1761,19 +1857,19 @@ graph TD
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1600250214"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1600250214"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1600250214"></script>
-    <script src="../../js/jquery.sticky.js?1600250214"></script>
-    <script src="../../js/featherlight.min.js?1600250214"></script>
-    <script src="../../js/highlight.pack.js?1600250214"></script>
+    <script src="../../js/clipboard.min.js?1600843598"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1600843598"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1600843598"></script>
+    <script src="../../js/jquery.sticky.js?1600843598"></script>
+    <script src="../../js/featherlight.min.js?1600843598"></script>
+    <script src="../../js/highlight.pack.js?1600843598"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1600250214"></script>
-    <script src="../../js/learn.js?1600250214"></script>
-    <script src="../../js/hugo-learn.js?1600250214"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1600843598"></script>
+    <script src="../../js/learn.js?1600843598"></script>
+    <script src="../../js/hugo-learn.js?1600843598"></script>
 
-    <link href="../../mermaid/mermaid.css?1600250214" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1600250214"></script>
+    <link href="../../mermaid/mermaid.css?1600843598" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1600843598"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

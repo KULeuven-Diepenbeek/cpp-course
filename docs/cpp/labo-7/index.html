@@ -12,21 +12,21 @@
     <title>Labo 7: Software ontwerpen :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1600250214" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1600250214" rel="stylesheet">
-    <link href="../../css/hybrid.css?1600250214" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1600250214" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1600250214" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1600250214" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1600250214" rel="stylesheet">
-    <link href="../../css/theme.css?1600250214" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1600250214" rel="stylesheet">
+    <link href="../../css/nucleus.css?1600843598" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1600843598" rel="stylesheet">
+    <link href="../../css/hybrid.css?1600843598" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1600843598" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1600843598" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1600843598" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1600843598" rel="stylesheet">
+    <link href="../../css/theme.css?1600843598" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1600843598" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1600250214" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1600843598" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1600250214"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1600843598"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -82,14 +82,14 @@ window.MathJax = {
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1600250214"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1600250214"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1600843598"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1600843598"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1600250214"></script>
+<script type="text/javascript" src="../../js/search.js?1600843598"></script>
 
     
   </div>
@@ -297,6 +297,27 @@ window.MathJax = {
       <li data-nav-id="/c/labo-2/" title="Labo 2: Pointers in C en C&#43;&#43;" class="dd-item ">
         <a href="../../c/labo-2/">
         Labo 2: Pointers in C en C&#43;&#43;
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/c/stack-vs-heap/" title="Labo 2b: De stack VS de heap" class="dd-item ">
+        <a href="../../c/stack-vs-heap/">
+        Labo 2b: De stack VS de heap
         
         </a>
     </li>
@@ -884,30 +905,37 @@ window.MathJax = {
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-  <ul>
-    <li><a href="#software-modelleren">Software Modelleren</a>
-      <ul>
-        <li><a href="#business-rules-analyseren">Business rules analyseren</a></li>
-      </ul>
-    </li>
-    <li><a href="#software-onderhouden">Software Onderhouden</a>
-      <ul>
-        <li><a href="#code-stockeren">Code stockeren</a></li>
-        <li><a href="#clean-code">Clean Code</a></li>
-      </ul>
-    </li>
-    <li><a href="#software-testen">Software Testen</a>
-      <ul>
-        <li><a href="#acceptatie-testen">Acceptatie testen</a></li>
-        <li><a href="#debug-statements">Debug statements</a></li>
-        <li><a href="#unit-testen">Unit testen</a></li>
-        <li><a href="#regressie-tegen-gaan-met-testen">Regressie tegen gaan met testen</a></li>
-        <li><a href="#debuggen-in-c">Debuggen in C++</a></li>
-      </ul>
-    </li>
-    <li><a href="#a-nameoefalabo-oefeningen"><a name="oef"></a>Labo oefeningen</a></li>
-    <li><a href="#denkvragen">Denkvragen</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#software-modelleren">Software Modelleren</a>
+<ul>
+<li><a href="#business-rules-analyseren">Business rules analyseren</a></li>
+</ul></li>
+<li><a href="#software-onderhouden">Software Onderhouden</a>
+<ul>
+<li><a href="#code-stockeren">Code stockeren</a></li>
+<li><a href="#clean-code">Clean Code</a></li>
+</ul></li>
+<li><a href="#software-testen">Software Testen</a>
+<ul>
+<li><a href="#acceptatie-testen">Acceptatie testen</a></li>
+<li><a href="#debug-statements">Debug statements</a></li>
+<li><a href="#unit-testen">Unit testen</a>
+<ul>
+<li><a href="#in-clion">In CLion</a></li>
+<li><a href="#in-commandline-met-cmake">In commandline met CMake</a></li>
+</ul></li>
+<li><a href="#regressie-tegen-gaan-met-testen">Regressie tegen gaan met testen</a></li>
+<li><a href="#debuggen-in-c">Debuggen in C++</a>
+<ul>
+<li><a href="#handmatig">Handmatig</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#a-name-oef-a-labo-oefeningen"><a name="oef"></a>Labo oefeningen</a></li>
+<li><a href="#denkvragen">Denkvragen</a></li>
+</ul></li>
+</ul>
 </nav>
     </div>
 </div>
@@ -931,12 +959,20 @@ window.MathJax = {
         
 
 
+
+
 <p>Een programmeertaal als C++ leren vereist het achteroverslaan van heel wat syntaxtische cryptologie als <code>decltype()</code>, <code>template&lt;typename T&gt;</code> en <code>*(x-&gt;o)</code>. Met programmeren alleen kom je er echter niet: software <strong>ontwerpen</strong> vereist heel wat meer inzicht dan de juiste code op de juiste plaats typen.</p>
+
 <h2 id="software-modelleren">Software Modelleren</h2>
+
 <p>Als software ontwikkelaar ben jij de uitvoerende kracht die vereisten van de klant implementeert in het software systeem. Een analist staat tussen de klant en de ontwikkelaar in die de vertaalslag tussen de grillen van klanten en vereisten in de vorm van business regels maakt.</p>
+
 <p>Het is onze taak als ontwikkelaar om die regels met succes te verwerken in de code. Een software ontwikkelteam bestaat uit meer dan één ontwikkelaar, daarom is het belangrijk dat alles op een uniforme manier geïmplementeerd wordt. Collega&rsquo;s moeten eenvoudig concepten kunnen localiseren. De source files veranderen immers dagelijks, vaak jaren aan één stuk.</p>
+
 <h3 id="business-rules-analyseren">Business rules analyseren</h3>
+
 <p>Een analyse document van software uit de interimsector zou er zo kunnen uit zien:</p>
+
 <pre>
 STR006. Gebruikers kiezen zelf het werknemernummer
 
@@ -953,13 +989,17 @@ Acceptatiecriteria:
 - Bij het kopiëren van het contract wordt het werknemernummer overgenomen van het broncontract
 - ...
 </pre>
+
 <p>Het is jouw taak als ontwikkelaar om dit document te bestuderen en de criteria te vertalen naar concrete code. Welke aspecten zijn hierin van groot belang?</p>
+
 <ol>
 <li><strong>Entiteiten</strong>: belangrijke concepten die herhaaldelijk terugkomen in de criteria zijn opmerkelijk genoeg om hun eigen klasse te verdienen.</li>
 <li><strong>Relaties</strong> tussen entiteiten. Die bepalen of object#1 in object#2 leeft of andersom, of object#3 een collectie van object#2 heeft, &hellip;</li>
 <li><strong>Acties</strong> tussen entiteiten. Welke mogelijkheden zijn er?</li>
 </ol>
+
 <p>Welke entiteiten leiden we af uit bovenstaande analyse?</p>
+
 <script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
@@ -976,8 +1016,11 @@ graph TD;
   C[Contract]
 
 </div>
+
 <p>Als woorden als &ldquo;werknemer&rdquo; en &ldquo;persoon&rdquo; (&ldquo;persoonsfiche&rdquo;) door elkaar gebruikt worden zal je de analist hierop moeten aanspreken en dit uitklaren. Iedereen moet bij het woord &ldquo;werknemer&rdquo; onmiddellijk aan hetzelfde denken.</p>
+
 <p>Welke relaties hebben de entiteiten?</p>
+
 <script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
@@ -997,7 +1040,9 @@ graph TD;
   C -->|in context van één|A
 
 </div>
+
 <p>Welke acties kan men met de entiteiten uitvoeren?</p>
+
 <script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
@@ -1023,6 +1068,7 @@ graph TD;
   F -.-> B
 
 </div>
+
 <p>Gegeven bovenstaande modellen extraheren we de volgende C++ klassen definities en methodes:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">class Statuut {
 public:
@@ -1040,14 +1086,21 @@ class Contract {
 public:
     Contract();
     Contract <span style="color:#a6e22e">Kopieer</span>() {}
-}
-</code></pre></div><h2 id="software-onderhouden">Software Onderhouden</h2>
+}</code></pre></div>
+<h2 id="software-onderhouden">Software Onderhouden</h2>
+
 <p>Productie code leeft véél langer dan je gemiddeld project op de universiteit, afhankelijk van de sector en de grootte van het project. Het kan goed zijn dat er nog 10 jaar lang verder gewerkt wordt aan één pakket. Dat betekent dat het van enorm belang is om ordelijk en doordacht tewerk te gaan.</p>
+
 <p>Besef dat doorheen de jaren compilers komen en gaan en standaarden komen en gaan. C++11 is van 2011 geleden, De <a href="https://isocpp.org/std/status">C++17 standaard</a> introduceert weer een hele hoop nieuwigheden, en C++20 is onderweg, die we niet gaan behandelen maar misschien wel in dat project kunnen toegevoegd worden.</p>
+
 <p>Flexibiliteit naar onderhoud toe is belangrijk voor de succes van een project op lange termijn.</p>
+
 <h3 id="code-stockeren">Code stockeren</h3>
+
 <p><strong><a href="https://en.wikipedia.org/wiki/Version_control">Source Control</a></strong> is een sleutelbegrip voor ontwikkelteams. Het stelt iedereen in staat om aan dezelfde source file te werken zonder bestanden op- en neer te sturen, voorziet backups, maakt het mogelijk om releases en branches uit te rollen, &hellip;</p>
+
 <p>Vanaf nu wordt verondersteld dat labo oefeningen gecommit worden in <code>git</code> op <a href="https://github.com">Github</a>: een zeer populair open source software ontwikkelingsplatform dat gebruiksvriendelijk is. Het <a href="https://git-scm.com/book/en/v2">Pro Git</a> handboek leert je alles over de werking van git. Een typische workflow is als volgt:</p>
+
 <ol>
 <li><code>git clone [url]</code>: Maakt een lokale repository aan die je op Github hebt gecreëerd. Het commando maakt een subdirectory aan.</li>
 <li>Doe je programmeerwerk.</li>
@@ -1057,7 +1110,9 @@ public:
 <li><code>git push</code>: push lokale commits naar de Github server.</li>
 <li><code>git pull</code>: pull remote changes naar je lokale repository.</li>
 </ol>
+
 <p>De output van <code>git status</code> ziet er zo uit:</p>
+
 <pre>
 Wouters-MacBook-Air:brainbaking wgroenev$ git status
 On branch master
@@ -1076,7 +1131,9 @@ Changes not staged for commit:
     deleted:    docs/CNAME
     deleted:    docs/essays/i-am-jealous-of-my-dog/index.html
 </pre>
+
 <p>De output van <code>git diff</code> ziet er zo uit:</p>
+
 <pre>
     Wouters-MacBook-Air:brainbaking wgroenev$ git diff
 diff --git a/content/teaching/cpp/labo-1.md b/content/teaching/cpp/labo-1.md
@@ -1091,21 +1148,27 @@ index 654a4f6..11f0597 100644
 +&laquo;&nbsp;[Terug naar Software ontwerp in C/C++](/teaching/cpp)<br/>
  &raquo;&nbsp;[Naar de labo opgave](#oef)
 </pre>
+
 <h3 id="clean-code">Clean Code</h3>
+
 <p>Een quote uit het Clean Code boek van Robert C. Martin verduidelijkt het woordgebruik:</p>
+
 <blockquote>
 <p>Even bad code can function. But if code isn t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn t have to be that way.</p>
 </blockquote>
+
 <p>Raadpleeg het boek <a href="https://www.goodreads.com/book/show/3735293-clean-code?ac=1&amp;from_search=true">Clean Code</a> voor meer informatie.</p>
+
 <p>Inderdaad, slechte code compileert ook en wordt ook uitgevoerd, maar dit komt onderhoudbaarheid helemaal niet ten goede. Er is voor &ldquo;Modern C++&rdquo; (C++11) zelfs een aparte <a href="http://clean-cpp.org">clean-cpp</a> blog toegeweid aan proper C++ gebruik.</p>
+
 <p>Een voorbeeld ter verduidelijking:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">process</span>(Cl <span style="color:#f92672">&amp;</span>c, <span style="color:#66d9ef">int</span> times) {
     <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> times; i<span style="color:#f92672">++</span>) {
         <span style="color:#66d9ef">if</span>(login(c.user, c.pass)) { <span style="color:#66d9ef">break</span>;
         } wait();
     }
-}
-</code></pre></div><p>Dit is een simpele functie, maar zie jij op het eerste zicht wat dit doet?</p>
+}</code></pre></div>
+<p>Dit is een simpele functie, maar zie jij op het eerste zicht wat dit doet?</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">tryToLoginAmountOfTimes</span>(<span style="color:#66d9ef">const</span> User <span style="color:#f92672">&amp;</span>user, <span style="color:#66d9ef">int</span> maxTimes) {
     <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> maxTimes; i<span style="color:#f92672">++</span>) {
         <span style="color:#66d9ef">if</span>(user.tryToLogin()) {
@@ -1113,8 +1176,9 @@ index 654a4f6..11f0597 100644
         }
         wait();
     }
-}
-</code></pre></div><p>Subtiele verschillen maken vaak een wereld van verschil:</p>
+}</code></pre></div>
+<p>Subtiele verschillen maken vaak een wereld van verschil:</p>
+
 <ul>
 <li>Naamgeving is zéér belangrijk.</li>
 <li>Objecten die niet gewijzigd mogen worden voorzie je van <code>const</code>.</li>
@@ -1122,7 +1186,9 @@ index 654a4f6..11f0597 100644
 <li>Formattering in code maakt het lezen aangenamer.</li>
 <li>Denk na over de juiste plaats: waarom parameters doorgeven als <code>login</code> bij de gebruiker klasse kan horen?</li>
 </ul>
-<p><strong>Kritisch denken</strong> brengt je een heel eind. Wees streng genoeg: stel constant de vraag &ldquo;is dit wel nodig?&quot;. <code>maxTimes</code> is bijvoorbeeld nutteloos als de methode altijd aangeroepen wordt met eenzelfde constante waarde.</p>
+
+<p><strong>Kritisch denken</strong> brengt je een heel eind. Wees streng genoeg: stel constant de vraag &ldquo;is dit wel nodig?&rdquo;. <code>maxTimes</code> is bijvoorbeeld nutteloos als de methode altijd aangeroepen wordt met eenzelfde constante waarde.</p>
+
 <p>Een laatste voorbeeld uit de realiteit gegrepen:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#">PermissionItem CreatePermission(<span style="color:#66d9ef">const</span> std::<span style="color:#66d9ef">string</span>&amp; key, <span style="color:#66d9ef">bool</span> visible, <span style="color:#66d9ef">const</span> DBType type = DBType.Default) { }
 
@@ -1136,26 +1202,40 @@ PermissionItem CreateInvisiblePermission(<span style="color:#66d9ef">const</span
 <span style="color:#75715e">// gebruik:
 </span><span style="color:#75715e"></span>auto pi1 = CreateVisiblePermission(<span style="color:#e6db74">&#34;some_key&#34;</span>);
 auto pi2 = CreateInvisiblePermission(<span style="color:#e6db74">&#34;bla_key&#34;</span>);
-</code></pre></div><p>Het verschil is hemel en aarde:</p>
+</code></pre></div>
+<p>Het verschil is hemel en aarde:</p>
+
 <ol>
 <li>Het woord &ldquo;visible&rdquo; of &ldquo;invisible&rdquo; in de methodenaam <strong>verduidelijkt</strong> enorm veel. Vermijd altijd magische <code>bool</code> flags! Vergeet niet dat de methode definitie ergens in een header file leeft en er naar navigeren om te begrijpen wat welk argument doet véél tijd kost.</li>
 <li>Wees kritisch met parameters. Als een parameter altijd met default waardes wordt meegegeven kan je het net zo goed weglaten.</li>
 </ol>
+
 <p>Zie ook de verkorte <a href="https://wgroeneveld.github.io/cleancode-course/">Clean Code cursus</a> slides.</p>
+
 <h2 id="software-testen">Software Testen</h2>
+
 <p>Hoe weet ik of mijn feature in de software wel werkt? <br/>
 Door het te testen.</p>
+
 <h3 id="acceptatie-testen">Acceptatie testen</h3>
+
 <p>De eenvoudigste manier waarop je tot nu toe altijd tewerk bent gegaan is een vorm van &ldquo;acceptatie testen&rdquo;: het programma simpelweg proberen opstarten en navigeren tot waar je de code wijziging hebt doorgevoerd. Dit werkt natuurlijk, maar brengt een aantal nadelen met zich mee:</p>
+
 <ol>
 <li>Tijdverlies. Constant moeten navigeren tot aan het scherm waar je aan gewerkt hebt kan minuten in beslag nemen bij grote programma&rsquo;s.</li>
 <li>Vervelend. Je verliest je aandacht na een tijdje vanwege het herhaaldelijk werk dat eigenlijk geautomatiseerd kan worden.</li>
 </ol>
+
 <p>Natuurlijk veronderstelt men dat je tenminste één keer je programma <em>end-to-end</em> hebt doorlopen om controles uit te voeren, maar niet constant bij het schrijven van elke nieuwe lijn code. Wat zijn de alternatieven?</p>
+
 <h3 id="debug-statements">Debug statements</h3>
+
 <p>Een mogelijkheid is <code>cout &lt;&lt; var &lt;&lt; endl</code> rondstrooien, hopelijk met een of andere vorm van <code>#ifdef _DEBUG</code>, maar zoals Peter Ritchie zegt: &ldquo;If You’re Using “#if DEBUG”, You’re Doing it Wrong&rdquo;.</p>
+
 <p>Herinner je de belangrijkheid van Clean Code. Je Code is alles behalve Clean als het vol staat met debug statements om te controleren of een variabele een bepaalde state heeft dat jij niet kan achterhalen. Daar dient de debugger zelf voor (zie later).</p>
+
 <h3 id="unit-testen">Unit testen</h3>
+
 <p>Met een &ldquo;unit test&rdquo; automatiseer je in feite een klein stuk van een acceptatie scenario dat je zelf samenstelt. Met frameworks als <a href="https://github.com/google/googletest/blob/master/googletest/docs/primer.md">Google Test</a> schrijf je in code wat je verwacht dat bepaalde functies teruggeven in termen van <strong>gedrag</strong>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">Factorial</span>(<span style="color:#66d9ef">int</span> n);  <span style="color:#75715e">// Returns the factorial of n
 </span><span style="color:#75715e"></span>
@@ -1170,30 +1250,36 @@ Door het te testen.</p>
   EXPECT_EQ(Factorial(<span style="color:#ae81ff">2</span>), <span style="color:#ae81ff">2</span>);
   EXPECT_EQ(Factorial(<span style="color:#ae81ff">3</span>), <span style="color:#ae81ff">6</span>);
   EXPECT_EQ(Factorial(<span style="color:#ae81ff">8</span>), <span style="color:#ae81ff">40320</span>);
-}
-</code></pre></div><p>Google Test is deel van het xUnit framework dat we kennen in de Java wereld van JUnit. Zie bovenstaande link voor assertion documentatie. <a href="https://github.com/google/googletest/releases">Download De laatste Google Test Release</a> op Github.</p>
+}</code></pre></div>
+<p>Google Test is deel van het xUnit framework dat we kennen in de Java wereld van JUnit. Zie bovenstaande link voor assertion documentatie. <a href="https://github.com/google/googletest/releases">Download De laatste Google Test Release</a> op Github.</p>
+
 <h4 id="in-clion">In CLion</h4>
+
 <p><img src="../../img/teaching/cpp/clion_gtest.png" class="bordered" /></p>
+
 <p>Volg de volgende stappen:</p>
+
 <ul>
 <li>Download en compileer googletest:
+
 <ul>
 <li>Download een release of clone de github repository</li>
 <li><code>cd googletest</code></li>
 <li>Maak een build directory: <code>mkdir build</code> <strong>in de map googletest</strong></li>
 <li>Build cmake: <code>cd build &amp;&amp; cmake ./../</code></li>
-<li>Build google test: <code>make</code>. Dit geeft <code>libgtest.a</code> en <code>libgtest_main.a</code></li>
-</ul>
-</li>
+<li>Build google test: <code>make</code>. Dit geeft <code>libgtest.a</code> en <code>libgtest_main.a</code><br /></li>
+</ul></li>
 <li>Integreer googletest in je CLion project met CMake:
+
 <ul>
 <li>Include de gtest headers met <code>include_directories()</code></li>
 <li>Link de libraries met <code>target_link_libraries()</code></li>
 <li>En (voor later) voorzie een omgevingsvariabele <code>$GTEST_DIR</code>.</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <p>Het CMakeLists.txt ziet er dan als volgt uit:</p>
+
 <pre>
 cmake_minimum_required(VERSION 3.10)
 project(unittest)
@@ -1205,6 +1291,7 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(unittest main.cpp test.cpp)
 target_link_libraries(unittest ${google_test_dir}/build/libgtest.a ${google_test_dir}/build/libgtest_main.a)
 </pre>
+
 <p>Merk op dat we googlemock achterwege laten, de repository bevat 2 test frameworks. Om testen uit te voeren heb je een main functie nodig die google test opstart:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">// main.cpp
 </span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;gtest/gtest.h&#34;</span><span style="color:#75715e">
@@ -1212,8 +1299,8 @@ target_link_libraries(unittest ${google_test_dir}/build/libgtest.a ${google_test
 <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">int</span> argc, <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>argv[]) {
     <span style="color:#f92672">::</span>testing<span style="color:#f92672">::</span>InitGoogleTest(<span style="color:#f92672">&amp;</span>argc, argv);
     <span style="color:#66d9ef">return</span> RUN_ALL_TESTS();
-}
-</code></pre></div><p>De testen in de screenshot leven in test.cpp:</p>
+}</code></pre></div>
+<p>De testen in de screenshot leven in test.cpp:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">// test.cpp
 </span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;gtest/gtest.h&#34;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span>
@@ -1232,9 +1319,11 @@ class SuiteName : public <span style="color:#f92672">::</span>testing<span style
 <span style="color:#75715e">// losstaande test
 </span><span style="color:#75715e"></span>TEST(AddTest, ShouldAddOneAndTo) {
     EXPECT_EQ(add(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>), <span style="color:#ae81ff">5</span>);
-}
-</code></pre></div><h4 id="in-commandline-met-cmake">In commandline met CMake</h4>
+}</code></pre></div>
+<h4 id="in-commandline-met-cmake">In commandline met CMake</h4>
+
 <p>Bovenstaande procedure moet je ook volgen los van CLion. De binary die uit het build proces komt voert alle testen uit (zie main code). Testen worden commandline uitgevoerd:</p>
+
 <pre>
 Wouters-MacBook-Air:unittest wgroenev$ ./cmake-build-debug/unittest
 [==========] Running 2 tests from 2 test cases.
@@ -1261,14 +1350,20 @@ To be equal to: 5
 
  1 FAILED TEST
 </pre>
+
 <p>Enkele verbeterpunten:</p>
+
 <ul>
 <li>Het is vervelend dat je de gtest libraries manueel moet builden. <a href="https://crascit.com/2015/07/25/cmake-gtest/">CMake kan dit ook automatisch</a></li>
 <li>Je main binary voert nu testen uit in plaats van productie code. Een typisch C++ project is opgesplitst in een map <code>src</code> en een map <code>test</code>, en build 2 binaries. <a href="../../teaching/cpp/unittest_example.zip">Download hier een voorbeeld</a> met opgesplitste CMake files.</li>
 </ul>
+
 <h3 id="regressie-tegen-gaan-met-testen">Regressie tegen gaan met testen</h3>
+
 <p>Een bug oplossen betekent niet dat deze bug nooit meer kan voorkomen. Zeker wanneer je met meerdere mensen aan dezelfde source code werkt, kan het zijn dat per ongeluk bepaalde wijzigingen de bug laten terugkomen. Dit noemt men &ldquo;regressie&rdquo; en is een hel voor klanten die betalen voor software!</p>
+
 <p>Regressie is eenvoudig tegen te gaan met unit testen. Een test die faalt alarmeert onmiddellijk iemand dat bepaalde verwachte functionaliteit niet meer werkt. Een geïntegreerde build server zorgt voor het automatisch opvolgen van die testen.</p>
+
 <p>Gegeven de volgende klasse:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">class Interval {
 private:
@@ -1278,8 +1373,8 @@ public:
     <span style="color:#66d9ef">bool</span> inclusief(<span style="color:#66d9ef">int</span> ander) {
         <span style="color:#66d9ef">return</span> ander <span style="color:#f92672">&gt;</span> begin <span style="color:#f92672">&amp;&amp;</span> ander <span style="color:#f92672">&lt;=</span> einde;
     }
-};
-</code></pre></div><p>We verwachten dat voor een interval [5-10] de getallen 5 en 10 ook nog in die range zitten. Dit zijn de testen voor de functie <code>inclusief()</code>:</p>
+};</code></pre></div>
+<p>We verwachten dat voor een interval [5-10] de getallen 5 en 10 ook nog in die range zitten. Dit zijn de testen voor de functie <code>inclusief()</code>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">class IntervalSuite : public <span style="color:#f92672">::</span>testing<span style="color:#f92672">::</span>Test {
 protected:
     Interval <span style="color:#f92672">*</span>interval;
@@ -1307,21 +1402,31 @@ TEST_F(IntervalSuite, GetalGroterDanEindeZitNietInInterval) {
 }
 TEST_F(IntervalSuite, GetalKleinerDanBeginZitNietInInterval) {
     ASSERT_FALSE(interval<span style="color:#f92672">-&gt;</span>inclusief(<span style="color:#ae81ff">2</span>));
-}
-</code></pre></div><p>Waarvan <code>BeginZitInInterval</code> faalt. Verander in de implementatie <code>&gt;</code> door <code>&gt;=</code> en de suite zorgt er voor dat deze code altijd correct is.</p>
+}</code></pre></div>
+<p>Waarvan <code>BeginZitInInterval</code> faalt. Verander in de implementatie <code>&gt;</code> door <code>&gt;=</code> en de suite zorgt er voor dat deze code altijd correct is.</p>
+
 <h3 id="debuggen-in-c">Debuggen in C++</h3>
+
 <p>De stack bekijken, lokale variabelen inspecteren, &hellip; kennen we van IDEs als NetBeans of IntelliJ. In CLion is dit exact hetzelfde. Zet een breakpoint in productie code en stap er door met de ingebouwde debugging tools:</p>
+
 <p><img src="../../img/teaching/cpp/clion_debugging.png" class="bordered" /></p>
+
 <h4 id="handmatig">Handmatig</h4>
+
 <p>De compiler toolchain voorziet een commandline debugger <code>gdb</code>. Daarvoor moet je debug informatie genereren bij compilatie met <code>g++</code> flag <code>-g</code>. De tool is vrij rudimentair in gebruik. Zie <a href="https://www.gnu.org/software/gdb/documentation/">documentatie</a> voor informatie rond commando&rsquo;s.</p>
-<h2 id="a-nameoefalabo-oefeningen"><a name="oef"></a>Labo oefeningen</h2>
+
+<h2 id="a-name-oef-a-labo-oefeningen"><a name="oef"></a>Labo oefeningen</h2>
+
 <p>Er wordt verwacht aan unit testen te denken voor (simpele) logica. Experimenteer dus eerst met Google Test en probeer de voorbeelden op deze pagina zelf. Maak voor de oefeningen een nieuwe Github repository aan, of een nieuwe submap in een bestaande als dat al gebeurd is.</p>
+
 <ol>
 <li>Gegeven het <a href="../../teaching/cpp/labo-7-analyse1.txt">volgende analyse document</a>: werk een implementatie uit. Begin met een model te tekenen en denk aan de relaties!</li>
 <li>Compileer Google Test <a href="../../extra/installaties">volgens de instructies</a>. <br/><a href="../../teaching/cpp/labo-7-unittest.zip">Download het CMake startproject</a> - open dit in CLion. Voorzie de <code>operator +</code> methode, die een nieuw interval berekent door de som te nemen van beide intervallen. <br/>Dus: <code>[3, 7]</code> + <code>[4, 9]</code> = <code>[3, 9]</code>. <br/>Schrijf <strong>eerst unit testen</strong> in GTest hiervoor, en denk aan <em>alle</em> mogelijke gevallen (elk geval is een nieuwe test). Wat met dezelfde beginwaardes? Of met negatieve waardes?</li>
 <li>Gegeven <a href="../../teaching/cpp/labo-7-analyse2.txt">de vervolganalyse</a>. Herwerk je implementatie en breid uit.</li>
 </ol>
+
 <h2 id="denkvragen">Denkvragen</h2>
+
 <ol>
 <li>Hoe komt het dat bij <code>TEST_F(Suite, TestNaam)</code> de test naam niet tussen quotes moet?</li>
 <li>Waarom is in het test suite voorbeeld <code>*Interval</code> een pointer en geen gewone instance van de klasse <code>Interval</code>? In dat geval hoeven we toch geen <code>delete</code> uit te voeren en is de tear down methode irrelevant&hellip;</li>
@@ -1454,6 +1559,22 @@ TEST_F(IntervalSuite, GetalKleinerDanBeginZitNietInInterval) {
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1872,19 +1993,19 @@ TEST_F(IntervalSuite, GetalKleinerDanBeginZitNietInInterval) {
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1600250214"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1600250214"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1600250214"></script>
-    <script src="../../js/jquery.sticky.js?1600250214"></script>
-    <script src="../../js/featherlight.min.js?1600250214"></script>
-    <script src="../../js/highlight.pack.js?1600250214"></script>
+    <script src="../../js/clipboard.min.js?1600843599"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1600843599"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1600843599"></script>
+    <script src="../../js/jquery.sticky.js?1600843599"></script>
+    <script src="../../js/featherlight.min.js?1600843599"></script>
+    <script src="../../js/highlight.pack.js?1600843599"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1600250214"></script>
-    <script src="../../js/learn.js?1600250214"></script>
-    <script src="../../js/hugo-learn.js?1600250214"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1600843599"></script>
+    <script src="../../js/learn.js?1600843599"></script>
+    <script src="../../js/hugo-learn.js?1600843599"></script>
 
-    <link href="../../mermaid/mermaid.css?1600250214" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1600250214"></script>
+    <link href="../../mermaid/mermaid.css?1600843599" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1600843599"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -19,7 +19,7 @@
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
       <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/prep/</guid>
       <description>Installaties Volg de installatieinstructies en zorg ervoor dat de devkitPro tools geïnstalleerd zijn:
- DevkitPro installatie om te cross-compilen en toe te voegen aan je PATH variabele. Download een GBA emulator, bij voorkeur mGBA, via mgba.io.  Controle  Controleer in cmdnline of arm-eabi-none-gcc in eender welke locatie werkt. Ga naar de labo 3 opgave en probeer eerste opgave te downloaden en compileren met de Makefile. Oplossen hoeft nog niet. Controleer of de .</description>
+ DevkitPro installatie om te cross-compilen en toe te voegen aan je PATH variabele. Download een GBA emulator, bij voorkeur mGBA, via mgba.io.  Controle  Controleer in cmdnline of arm-eabi-none-gcc in eender welke locatie werkt. Ga naar de labo 3 opgave en probeer eerste opgave te downloaden en compileren met de Makefile. Oplossen hoeft nog niet.</description>
     </item>
     
     <item>

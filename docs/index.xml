@@ -28,8 +28,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
       <guid>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/prep/</guid>
-      <description>Installaties Volg de installatieinstructies en zorg ervoor dat:
- CMake geïnstalleerd is een C++ compiler geïnstalleerd is De google test instructies doorgelopen zijn en geïnstalleerd is  Controle  Controleer of g++ werkt in cmdline. Download gcctest.cpp en compileer het met de g++ compiler (++ gcctest.cpp &amp;amp;&amp;amp; ./a.out). Is de output &amp;ldquo;het werkt!&amp;quot;, dan is alles ok.  </description>
+      <description> Installaties Volg de installatieinstructies en zorg ervoor dat:
+ CMake geïnstalleerd is een C++ compiler geïnstalleerd is De google test instructies doorgelopen zijn en geïnstalleerd is  Controle  Controleer of g++ werkt in cmdline. Download gcctest.cpp en compileer het met de g++ compiler (++ gcctest.cpp &amp;amp;&amp;amp; ./a.out). Is de output &amp;ldquo;het werkt!&amp;rdquo;, dan is alles ok.  </description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
       <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/prep/</guid>
       <description>Installaties Volg de installatieinstructies en zorg ervoor dat de devkitPro tools geïnstalleerd zijn:
- DevkitPro installatie om te cross-compilen en toe te voegen aan je PATH variabele. Download een GBA emulator, bij voorkeur mGBA, via mgba.io.  Controle  Controleer in cmdnline of arm-eabi-none-gcc in eender welke locatie werkt. Ga naar de labo 3 opgave en probeer eerste opgave te downloaden en compileren met de Makefile. Oplossen hoeft nog niet. Controleer of de .</description>
+ DevkitPro installatie om te cross-compilen en toe te voegen aan je PATH variabele. Download een GBA emulator, bij voorkeur mGBA, via mgba.io.  Controle  Controleer in cmdnline of arm-eabi-none-gcc in eender welke locatie werkt. Ga naar de labo 3 opgave en probeer eerste opgave te downloaden en compileren met de Makefile. Oplossen hoeft nog niet.</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
       <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/prep/</guid>
-      <description>Installaties Volg de installatieinstructies en zorg ervoor dat:
+      <description> Installaties Volg de installatieinstructies en zorg ervoor dat:
  CLion geïnstalleerd is indien gewenst (of een Een andere geïntegreerde IDE geïnstalleerd is)  Controle  Compileer gba-sprite-engine Lees de README Controleer of de demo&amp;rsquo;s werken door een .gba bestand te openen in de mGBA emulator  </description>
     </item>
     
@@ -191,6 +191,17 @@ C is een imperatieve programmeertaal. Dat zal je bij het oefenen wel merken: we 
       <description>In onderstaande schematische voorbeelden zijn de volgende concepten expliciet te onderscheiden:
  Een naam van een variabele Een waarde van een variabele  En de volgende impliciet:
  Het type van een variabele Het adres van een variabele  Het type van een variabele bepaalt de hoeveelheid geheugen die vrijgemaakt wordt om de waarde te kunnen bewaren. De waarde is ofwel een actuele waarde ofwel een adres dat refereert naar een andere waarde.</description>
+    </item>
+    
+    <item>
+      <title>Labo 2b: De stack VS de heap</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/stack-vs-heap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/stack-vs-heap/</guid>
+      <description>De Stack en de Heap Dit hoofdstuk is een kopie van hoofdstuk 8.1: Stack VS Heap uit het vak Besturingssystemen en C voor 2de bachelor ICT/Electronica. Voor het vak Softwareontwerp in C/C++ wordt er eveneens verwacht de nodige kennis te bezitten over de werking van de stack en de heap.
+Optionele begeleidende videos en oefeningen zijn beschikbaar in hoofdstuk 8.2 en 8.3 in bovesntaande cursus.
+Program Memory  Compiled computer programs are divided into different sections, each with their own specific needs and properties.</description>
     </item>
     
     <item>
