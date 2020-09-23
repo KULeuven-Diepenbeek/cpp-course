@@ -8,7 +8,9 @@ Laatste aanpassingen voor academiejaar _2020 - 2021_.
 
 De hoorcolleges en labo's lopen door elkaar. De theorie die aangeraakt wordt in de slides van de hoorcolleges vindt zijn weg in de tekst van de verschillende labo's. 
 
-### Hoorcolleges
+### [Hoorcolleges](/hoorcolleges)
+
+[Index pagina](/hoorcolleges) met videos van opgenomen colleges.
 
 1. [Introductie in C/C++: context, ecosysteem](/hoorcolleges/slides-1/)
 2. [Pointers in C, dynamisch geheugen in C++](/hoorcolleges/slides-2/)

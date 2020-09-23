@@ -16,7 +16,9 @@ pygmentsCodefences = true
 enableGitInfo = true
 
 [markup]
-  defaultMarkdownHandler = "goldmark"
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackFriday]
+    skipHTML = false
   
   [markup.goldmark.renderer]
     unsafe= true
