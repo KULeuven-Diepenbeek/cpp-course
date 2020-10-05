@@ -9,7 +9,7 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>FAQ :: Software Ontwerp in C(&#43;&#43;)</title>
+    <title>Project opdracht :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
     <link href="../../css/nucleus.css?1601904350" rel="stylesheet">
@@ -61,7 +61,7 @@ window.MathJax = {
 
 <script src=../../js/osc.js></script>
   </head>
-  <body class="" data-url="/extra/faq/">
+  <body class="" data-url="/extra/project/">
     <nav id="sidebar" class="">
 
 
@@ -724,7 +724,7 @@ window.MathJax = {
  
   
     
-      <li data-nav-id="/extra/project/" title="Project opdracht" class="dd-item ">
+      <li data-nav-id="/extra/project/" title="Project opdracht" class="dd-item active">
         <a href="../../extra/project/">
         Project opdracht
         
@@ -787,7 +787,7 @@ window.MathJax = {
  
   
     
-      <li data-nav-id="/extra/faq/" title="FAQ" class="dd-item active">
+      <li data-nav-id="/extra/faq/" title="FAQ" class="dd-item ">
         <a href="../../extra/faq/">
         FAQ
         
@@ -912,7 +912,7 @@ window.MathJax = {
             
           
           
-            <a href='../../'>Software ontwerp in C/C++</a> > <a href='../../extra/'>5. Extras</a> > FAQ
+            <a href='../../'>Software ontwerp in C/C++</a> > <a href='../../extra/'>5. Extras</a> > Project opdracht
           
         
           
@@ -929,28 +929,11 @@ window.MathJax = {
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href="#mingw-installatie-problemen">MinGW installatie problemen</a>
-<ul>
-<li><a href="#error-res-fout-op-win-omgevingen">Error RES Fout op Win omgevingen</a></li>
-</ul></li>
-<li><a href="#problemen-met-build-omgevingen">Problemen met build omgevingen</a>
-<ul>
-<li><a href="#sh-exe-was-found-in-your-path">SH.exe was found in your path</a></li>
-<li><a href="#cygheap-base-mismatch-detected">Cygheap base mismatch detected</a></li>
-</ul></li>
-<li><a href="#het-project-builden">Het project builden</a>
-<ul>
-<li><a href="#google-test-compile-faalt-op-mac">Google Test Compile faalt op Mac</a></li>
-<li><a href="#zeer-veel-google-test-fouten-bij-het-linken">Zeer veel Google Test fouten bij het linken</a></li>
-<li><a href="#cmake-was-unable-to-find-a-build-program-corresponding-to-unix-makefiles">CMake was unable to find a build program corresponding to &ldquo;Unix Makefiles&rdquo;</a></li>
-<li><a href="#no-rule-to-make-target-ligbtest-a-needed-by-test-unittest-stop">No rule to make target ligbtest.a needed by test/unittest. Stop.</a></li>
-<li><a href="#bij-linken-met-google-test-undefined-reference-to-pthread-setspecific">Bij linken met Google Test: undefined reference to `pthread_setspecific&rsquo;</a></li>
-<li><a href="#cmake-check-for-working-c-compiler-broken">CMake: Check for working C++ compiler: broken</a></li>
-<li><a href="#cmake-the-c-compiler-is-not-able-to-compile-a-simple-test-program">CMake: The C++ compiler is not able to compile a simple test program</a></li>
-</ul></li>
-</ul></li>
+<li><a href="#project-opdracht-academiejaar-2020-2021">Project opdracht academiejaar 2020 - 2021</a></li>
+<li><a href="#minimumvereisten">Minimumvereisten</a></li>
+<li><a href="#evaluatiecriteria">Evaluatiecriteria</a></li>
+<li><a href="#inleverformaat">Inleverformaat</a></li>
+<li><a href="#praktische-tips">Praktische tips</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -969,7 +952,7 @@ window.MathJax = {
           
             <h1>
               
-              FAQ
+              Project opdracht
             </h1>
           
 
@@ -978,217 +961,84 @@ window.MathJax = {
 
 
 
-<p>Neem ook eens een kijkje bij de <a href="../../extra/installaties">Installatieinstructies!</a></p>
+<h2 id="project-opdracht-academiejaar-2020-2021">Project opdracht academiejaar 2020 - 2021</h2>
 
-<h3 id="mingw-installatie-problemen">MinGW installatie problemen</h3>
+<p>Om jullie recent opgedane object-geörienteerde technieken te toetsen gaan jullie een <strong>GBA spel</strong> ontwerpen en ontwikkelen in C++11. De focus van de opdracht ligt niet op correcte low-level IO mapping maar op kritisch denken en testen zoals gezien in <a href="../../cpp/labo-7">labo 7</a>. Uiteraard komen zowel pointers en GBA programming technieken van de vroegere labo&rsquo;s, als C++ class inheritance en abstractie lagen uit de latere labo&rsquo;s aan bod.</p>
 
-<h4 id="error-res-fout-op-win-omgevingen">Error RES Fout op Win omgevingen</h4>
+<p>Vertrek vanuit de <a href="https://github.com/wgroeneveld/gba-sprite-engine/">gba-sprite-engine</a> library op <i class='fa fa-github'></i> Github door een <i class='fa fa-code-fork'></i> Fork te nemen met de knop rechtsboven. Op die manier bespaar je veel werk met een nieuw GBA project op te zetten en alle IO adressen opnieuw te mappen. Er is een README voorzien voor meer info. De engine gebruikt <a href="https://www.coranac.com/tonc/text/toc.htm">Tonc</a> achterliggend.</p>
 
-<p>Zie ook <a href="https://sourceforge.net/p/mingw-w64/bugs/413/">https://sourceforge.net/p/mingw-w64/bugs/413/</a> - &lsquo;oplossing&rsquo; is een aantal keer hetzelfde bestand opnieuw te proberen downloaden &amp; installeren. Antivirus die moeilijk doet kan ook een probleem zijn.</p>
+<p>Wat voor soort spel het moet zijn laat ik volledig aan jullie over. Het spreekt voor zich dat complexiteit (en originaliteit!) mee in rekening gebracht wordt: zie evaluatiecriteria. Inspiratie nodig?</p>
 
-<h3 id="problemen-met-build-omgevingen">Problemen met build omgevingen</h3>
+<ul>
+<li><a href="../../cpp-course/hoorcolleges/">GBA Projecten vorige jaren videos</a></li>
+<li><a href="https://www.youtube.com/watch?v=2-R-F-A48FI">Top 10 Gameboy Advance games in 10 minutes</a></li>
+<li><a href="http://www.denofgeek.com/us/games/game-boy-advance/256070/25-best-game-boy-advance-games-ever">25 Best Gameboy Advance games Ever</a></li>
+</ul>
 
-<h4 id="sh-exe-was-found-in-your-path">SH.exe was found in your path</h4>
+<p>Werk in <strong>groepen van 2</strong> of indien oneven 3.</p>
 
-<p>Fout:</p>
+<h2 id="minimumvereisten">Minimumvereisten</h2>
 
-<pre>
-sh.exe was found in your PATH, here:
-C:/Program Files/Git/user/bin/sh.exe
-For MinGW make to work correctly sh.exe must NOT be in your path.
-</pre>
-
-<p>Oorzaak: je Cygwin <code>/bin</code> folder zit in de <code>PATH</code> omgevingsvariabele, terwijl je MinGW gebruikt als compilatieomgeving. Verwijder de Cygwin bin folder. Zie <a href="../../extra/installaties">Installatieinstructies</a>.</p>
-
-<h4 id="cygheap-base-mismatch-detected">Cygheap base mismatch detected</h4>
-
-<p>Fout:</p>
-
-<pre>
-  2 [main] git 2004 C:/cygwin/lib/git-core/git.exe *** fatal error - cygheap base mismatch detected - 0x61242860/0x6123790.
-This problem is probably due to using incompatible versions of the cygwin DLL.
-Search fro cygwin1.dll using the WIndows Start->Find/Search facility and delete all bu the most recent version.  The most recent version *should* reside in x:\cygwin\bin, where 'x' is the drive on which you have installed the cygwin distrubtion. Rebooting is also suggested if you are unable to find another cygwin DLL.  
-</pre>
-
-<p>Oorzaak: je werkt met verschillende Cygwin-like omgevingen die niet compatibel zijn met elkaar. Bijvoorbeeld Cmder.exe en Cygwin, of CLion en Cmder en Cygwin, of zelfs WAMP Server. Elke omgeving komt met een eigen <code>cygwin1.dll</code> bestand.</p>
-
-<p>Oplossingen:</p>
+<p>Lees dit goed na: projecten die niet voldoen aan de volgende vereisten zullen niet geëvalueerd worden.</p>
 
 <ol>
-<li>Een van de omgevingen deïnstalleren.</li>
-<li>Switch naar MinGW in plaats van Cygwin (zie <a href="../../extra/installaties">Installatieinstructies</a>).</li>
-<li>Zoek in de Verkenner naar de DLL en verwijder degene die niet gebruikt worden.</li>
+<li>De code leeft in een repository op Github onder jullie username met de <a href="https://help.github.com/articles/licensing-a-repository/#disclaimer">MIT</a> license.</li>
+<li>Je vertrekt vanuit <code>gba-sprite-engine</code> - zie hierboven. Daarbij blijf je binnen GBA <code>MODE0</code> en werk je met sprites. C++11 is hiermee ook een vereiste.</li>
+<li>Indien je je baseert op andere bestaande code doe je aan <strong>bronvermelding</strong>! Plagiaat wordt zeer ernstig bestraft.</li>
+<li>Je project moet uiteraard minstens compileren.</li>
+<li>Je repository <code>README.md</code> bevat een kleine functionele beschrijving van jullie spel.</li>
+<li>Naast de functionele beschrijving upload je ook een schets van je <strong>domein model</strong>, gepaard met verklarende tekst.</li>
 </ol>
 
-<h3 id="het-project-builden">Het project builden</h3>
+<p>Het is <strong>niet</strong> de bedoeling om je te baseren op één van de engine demo&rsquo;s en die simpelweg verder uit te werken. Dat biedt onvoldoende uitdaging en originaliteit.</p>
 
-<h4 id="google-test-compile-faalt-op-mac">Google Test Compile faalt op Mac</h4>
+<p>Omdat als vereiste elk project op Github leeft kunnen jullie elkaar&rsquo;s repository, of die van vorig jaar, ook raadplegen. Of jullie daar gebruik van willen maken laat ik aan jullie over: onthoud <em>sharing is caring</em> en vergeet de bronvermelding niet. Het is geen race voor het beste waarbij je je code zorgvuldig moet afschermen: iedereen vertrekt vanuit dezelfde basis en iedereen kiest een ander soort spel. Als het onderwijsteam vermoedt dat er zonder nadenken een kopie genomen wordt van een bestaand spel zal dit resulteren in een onvoldoende.</p>
 
-<p>Fout:</p>
+<h2 id="evaluatiecriteria">Evaluatiecriteria</h2>
 
-<pre>
-Wouters-Air:build wgroeneveld$ make
-[ 25%] Building CXX object CMakeFiles/gtest.dir/src/gtest-all.cc.o
-In file included from /Users/jefklak/development/KUL/cpp/labo7/googletest/googletest/src/gtest-all.cc:38:
-In file included from /Users/jefklak/development/KUL/cpp/labo7/googletest/googletest/include/gtest/gtest.h:62:
-In file included from /Users/jefklak/development/KUL/cpp/labo7/googletest/googletest/include/gtest/internal/gtest-internal.h:40:
-/Users/jefklak/development/KUL/cpp/labo7/googletest/googletest/include/gtest/internal/gtest-port.h:825:12: error: no
-      member named 'make_tuple' in namespace 'std'
-using std::make_tuple;
-      ~~~~~^
-/Users/jefklak/development/KUL/cpp/labo7/googletest/googletest/include/gtest/internal/gtest-port.h:826:12: error: no
-      member named 'tuple' in namespace 'std'
-using std::tuple;
-      ~~~~~^
-...
-</pre>
-
-<p>Oorzaak: Master branch van Google Test is recent overgeschakeld naar C++11. In hun CMakeLists.txt moet je dit toevoegen: <code>set(CMAKE_CXX_STANDARD 17)</code>. Dan build dir verwijderen en opnieuw <code>cmake</code> voor <code>make</code> uitvoeren.</p>
-
-<h4 id="zeer-veel-google-test-fouten-bij-het-linken">Zeer veel Google Test fouten bij het linken</h4>
-
-<p>Fout:</p>
-
-<pre>
-[100%] Linking CXX executable flyingstuff.elf
-cd /d C:\Development\github\gba-sprite-engine\cmake-build-debug\demos\demo1-basicfeatures && "C:\Program Files\JetBrains\CLion 2018.2.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\flyingstuff.elf.dir\link.txt --verbose=1
-CMakeFiles/unittest.dir/gbatest.cpp.obj: In function `GBASuite_AssertionWorks_Test::TestBody()':
-C:/Development/github/gba-sprite-engine/test/gbatest.cpp:15: undefined reference to `testing::internal::GetBoolAssertionFailureMessage[abi:cxx11](testing::AssertionResult const&, char const*, char const*, char const*)'
-CMakeFiles/unittest.dir/spritetest.cpp.obj: In function `SpriteSuite_CollidesWith_B_Right_Of_A_Does_Not_Collide_Test::TestBody()':
-C:/Development/github/gba-sprite-engine/test/spritetest.cpp:227: undefined reference to `testing::internal::GetBoolAssertionFailureMessage[abi:cxx11](testing::AssertionResult const&, char const*, char const*, char const*)'
-CMakeFiles/unittest.dir/spritetest.cpp.obj: In function `SpriteSuite_CollidesWith_B_Half_In_A_On_X_Axis_Collides_Test::TestBody()':
-C:/Development/github/gba-sprite-engine/test/spritetest.cpp:234: undefined reference to `testing::internal::GetBoolAssertionFailureMessage[abi:cxx11](testing::AssertionResult const&, char const*, char const*, char const*)'
-CMakeFiles/unittest.dir/spritetest.cpp.obj: In function `testing::AssertionResult testing::internal::CmpHelperEQFailure<int, unsigned int>(char const*, char const*, int const&, unsigned int const&)':
-C:/Development/github/googletest/googletest/include/gtest/gtest.h:1435: undefined reference to `testing::internal::EqFailure(char const*, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)'
-CMakeFiles/unittest.dir/scenetest.cpp.obj: In function `testing::AssertionResult testing::internal::CmpHelperEQFailure<int, unsigned long long>(char const*, char const*, int const&, unsigned long long const&)':
-C:/Development/github/googletest/googletest/include/gtest/gtest.h:1435: undefined reference to `testing::internal::EqFailure(char const*, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)'
-CMakeFiles/unittest.dir/allocatortest.cpp.obj: In function `AllocatorSuite_Allocate_Sprite_Pointers_Reservers_Some_Tile_Space_Test::TestBody()':
-C:/Development/github/gba-sprite-engine/test/allocatortest.cpp:79: undefined reference to `testing::internal::GetBoolAssertionFailureMessage[abi:cxx11](testing::AssertionResult const&, char const*, char const*, char const*)'
-</pre>
-
-<p>Oorzaak: je Google Test libraries zijn gecompileerd met <strong>een andere Toolchain</strong> dan waar je het project mee probeert te compileren! Cygwin VS MinGW problemen.</p>
-
-<p>Oplossing: compileer Google Test opnieuw in dezelfde Toolchain - bijvoorbeeld in MinGW. Ga naar <code>gooletest\googletest\build</code>, verwijder alle bestaande bestanden met <code>rm -rf *</code> en volg opnieuw de <a href="../../extra/installaties">Installatieinstructies</a>.</p>
-
-<h4 id="cmake-was-unable-to-find-a-build-program-corresponding-to-unix-makefiles">CMake was unable to find a build program corresponding to &ldquo;Unix Makefiles&rdquo;</h4>
-
-<p>Bij uitvoeren CMake commando met het <code>-G</code> argument in Windows omgevingen.</p>
-
-<p>Fout:</p>
-
-<pre>
-C:\Users\x\Documents\3ABA\C en C++\les7\googletest\googletest\build>cmake -G "Unix Makefiles" -DCMAKE_SH="CMAKE_SH-NOTFOUND" ./../
-CMake Warning at CMakeLists.txt:54 (project):
-  VERSION keyword not followed by a value or was followed by a value that
-  expanded to nothing.
-
-
-CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
-CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
-CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
--- Configuring incomplete, errors occurred!
-See also "C:/Users/x/Documents/3ABA/C en C++/les7/googletest/googletest/build/CMakeFiles/CMakeOutput.log".
-</pre>
-
-<p>Oorzaken:</p>
+<p>Punten worden op twee keer op <code>/20</code> gegeven. Eenmalig een globaal cijfer, eenmalig een genormaliseerd cijfer, rekening houdend met de volgende subcriteria en gewichten:</p>
 
 <ol>
-<li><code>gcc</code> compiler staat niet in <code>%PATH%</code>, of je voert dit niet uit vanuit de MinGW command prompt.</li>
-<li><code>make</code> commando niet gevonden. In dat geval dien je <code>make-mingw32.exe</code> uit de MinGW install bin directory (bvb. <code>C:\Program Files\mingw-64\mingw64\bin</code>) te kopiëren (naar dezelfde dir) en te hernoemen naar <code>make.exe</code>.</li>
+<li><code>O.4</code> Design<br/>
+Hoe is je Object-Oriented design en domein model?<br/>
+<span style="color: lightgrey; font-style: italic;">Hoge score: duidelijk herkenbare objecten, terug te vinden in domein model, met gescheiden verantwoordelijkheden.<br/>Lage score: Alles in enkele objecten gestopt, onduidelijk wie wat doet, nauwelijks of geen model. </span></li>
+<li><code>O.5</code> Clean Code<br/>
+Hoe leesbaar is je code?<br/>
+<span style="color: lightgrey; font-style: italic;">Hoge score: eenvoudig begrijpbare variabelen, methodes, klassen. <br/>Lage score: Te veel herlezen is nodig om te begrijpen wat er gebeurt.</span></li>
+<li><code>0.4</code> Complexiteit <br/>
+Hoe moeilijk heb je het gemaakt?<br/>
+<span style="color: lightgrey; font-style: italic;">Hoge score: gekozen voor een uitdaging in de plaats van een eenvoudige implementatie. <br/>Lage score: Het pad met de kleinste weerstand bewandeld, de lat te laag gelegd.</span></li>
+<li><code>0.3</code> Originaliteit <br/>
+Hoe origineel en creatief is je idee?<br/>
+<span style="color: lightgrey; font-style: italic;">Hoge score: een origineel idee uitgewerkt in plaats van een kloon van een standaard 2D platformer.<br/>Lage score: gekozen voor een weinig inspirerend ontwerp, alles gebaseerd op iets bestaand inclusief sprites. </span></li>
+<li><code>0.2</code> GBA UI <br/>
+Hoe uitgebreid is de multimedia presentatie?<br/>
+<span style="color: lightgrey; font-style: italic;">Hoge score: alle UI/geluid technieken uitgebreid toegepast: tiles, sprites, scrolling backgrounds, &hellip;<br/>Lage score: Weinig tot geen animatie/backgrounds, eentonig ontwerp. </span></li>
 </ol>
 
-<p>Verwijder de build directory waar CMake files in genereerde, met eventuele <code>CMakeCache.txt</code> files, en voer <code>cmake -G</code> terug uit met de juiste argumenten.</p>
+<p>Waarbij beide cijfers herleid worden tot één.<br/>
+De tekst in het lichtgrijs dient ter ondersteuning bij het geven van een quotering op dat bepaald criterium, waar concrete voorbeelden met een <em>lage</em> en <em>hoge</em> score zijn uitgewerkt.</p>
 
-<h4 id="no-rule-to-make-target-ligbtest-a-needed-by-test-unittest-stop">No rule to make target ligbtest.a needed by test/unittest. Stop.</h4>
+<h2 id="inleverformaat">Inleverformaat</h2>
 
-<p>Fout:</p>
+<p>Datum te bepalen, evenals verdedigingsdata.</p>
 
-<pre>
+<ul>
+<li>Je mailt je github repository URL door, samen met een gecompileerde <code>.gba</code> ROM die je zelf getest hebt.</li>
+<li>De gecompileerde ROM upload je ook naar Toledo.</li>
+<li>Er hangt ook een kleine verdediging aan vast zodat ik kan valideren of je voldoende kennis hebt over de code van je eigen spel. We spelen samen het spel en overlopen de code, waarbij er geantwoord wordt op enkele vragen die invloed uitoefenen op het globaal cijfer.</li>
+</ul>
 
-mingw32-make.exe[2]: *** No rule to make target 'C:\Development\github\googletest\googletest/build/libgtest.a', needed by 'test/unittest'.  Stop.
-mingw32-make.exe[1]: *** [CMakeFiles\Makefile2:148: test/CMakeFiles/unittest.dir/all] Error 2
-mingw32-make.exe[1]: *** Waiting for unfinished jobs....
-mingw32-make.exe[2]: Entering directory 'C:/Development/github/gba-sprite-engine/cmake-build-debug'
-mingw32-make.exe[2]: Leaving directory 'C:/Development/github/gba-sprite-engine/cmake-build-debug'
-mingw32-make.exe: *** [Makefile:132: all] Error 2
-</pre>
+<h2 id="praktische-tips">Praktische tips</h2>
 
-<p>Oorzaken:</p>
-
-<ol>
-<li>Je hebt Google Test nog niet gecompileerd</li>
-<li>Je <code>GTEST_DIR</code> omgevingsvariabele staat niet naar de juiste Google Test submap</li>
-<li><code>libgtest.a</code> en <code>libgtest_main.a</code> zitten niet in de build subfolder van de Google Test map</li>
-</ol>
-
-<h4 id="bij-linken-met-google-test-undefined-reference-to-pthread-setspecific">Bij linken met Google Test: undefined reference to `pthread_setspecific&rsquo;</h4>
-
-<p>Fout:</p>
-
-<pre>
-(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x29): undefined reference to `pthread_getspecific'
-/usr/bin/ld: gtest-all.cc:(.text._ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv[_ZNK7testing8internal11ThreadLocalIPNS_31TestPartResultReporterInterfaceEE16GetOrCreateValueEv]+0x8c): undefined reference to `pthread_setspecific'
-collect2: error: ld returned 1 exit status
-make[2]: *** [test/CMakeFiles/unittest.dir/build.make:314: test/unittest] Error 1
-make[1]: *** [CMakeFiles/Makefile2:146: test/CMakeFiles/unittest.dir/all] Error 2
-</pre>
-
-<p>Komt enkel voor op Linux distributies zoals Ubuntu.</p>
-
-<p>Some Linux distributions seem to miss the default link to pthread that should be added manually in that case. When you see errors like &ldquo;undefined reference to &lsquo;pthread_setspecific&rsquo;&rdquo; while linking Google Test, change target_link_libraries in the CMakeLists.txt file of the subdir test to: <code>target_link_libraries(unittest ${GTEST_LIBRARY}/build/libgtest.a ${GTEST_LIBRARY}/build/libgtest_main.a pthread)</code>.</p>
-
-<h4 id="cmake-check-for-working-c-compiler-broken">CMake: Check for working C++ compiler: broken</h4>
-
-<p>Fout:</p>
-
-<pre>
-C:\Users\11401165\.CLion2018.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=C:/devkitPro/devkitARM/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=C:/devkitPro/devkitARM/bin/arm-none-eabi-g++.exe -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/11401165/Desktop/gba-sprite-engine-master/gba-sprite-engine-master
--- The CXX compiler identification is GNU 8.1.0
--- Check for working CXX compiler: /cygdrive/c/devkitPro/devkitARM/bin/arm-none-eabi-g++.exe
--- Check for working CXX compiler: /cygdrive/c/devkitPro/devkitARM/bin/arm-none-eabi-g++.exe -- broken
-CMake Error at /cygdrive/c/Users/11401165/.CLion2018.2/system/cygwin_cmake/share/cmake-3.12.2/Modules/CMakeTestCXXCompiler.cmake:45 (message):
-  The C++ compiler
- 
-    "/cygdrive/c/devkitPro/devkitARM/bin/arm-none-eabi-g++.exe"
- 
-  is not able to compile a simple test program.
- 
-  It fails with the following output:
- 
-    Change Dir: /cygdrive/c/Users/11401165/Desktop/gba-sprite-engine-master/gba-sprite-engine-master/cmake-build-debug/CMakeFiles/CMakeTmp
-    Run Build Command:"/usr/bin/make.exe" "cmTC_a9bf5/fast"
-    /usr/bin/make -f CMakeFiles/cmTC_a9bf5.dir/build.make CMakeFiles/cmTC_a9bf5.dir/build
-    make[1]: Entering directory '/cygdrive/c/Users/11401165/Desktop/gba-sprite-engine-master/gba-sprite-engine-master/cmake-build-debug/CMakeFiles/CMakeTmp'
-    Building CXX object CMakeFiles/cmTC_a9bf5.dir/testCXXCompiler.cxx.obj
-    /cygdrive/c/devkitPro/devkitARM/bin/arm-none-eabi-g++.exe    -Wno-narrowing    -std=gnu++11 -o CMakeFiles/cmTC_a9bf5.dir/testCXXCompiler.cxx.obj -c /cygdrive/c/Users/11401165/Desktop/gba-sprite-engine-master/gba-sprite-engine-master/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-    arm-none-eabi-g++.exe: error: /cygdrive/c/Users/11401165/Desktop/gba-sprite-engine-master/gba-sprite-engine-master/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx: No such file or directory
-    arm-none-eabi-g++.exe: fatal error: no input files
-    compilation terminated.
-    make[1]: *** [CMakeFiles/cmTC_a9bf5.dir/build.make:66: CMakeFiles/cmTC_a9bf5.dir/testCXXCompiler.cxx.obj] Error 1
-    make[1]: Leaving directory '/cygdrive/c/Users/11401165/Desktop/gba-sprite-engine-master/gba-sprite-engine-master/cmake-build-debug/CMakeFiles/CMakeTmp'
-    make: *** [Makefile:121: cmTC_a9bf5/fast] Error 2
-</pre>
-
-<p>Het probleem is dat je <strong>Cygwin</strong> gebruikt op een Windows omgeving met een cross-compiler als <code>arm-none-eabi-g++</code>. De cross-compiler kan geen UNIX pad interpreteren, zoals <code>/cygdrive/c/Users/11401165</code>, maar wel <code>C:\Users\11401165</code>. Bijgevolg worden bestanden om te compileren niet gevonden.</p>
-
-<p>De oplossing is switchen van De Cygwin naar de MinGW omgeving. Lees hier meer over in <a href="../../extra/installaties">de installatieinstructies</a>.</p>
-
-<h4 id="cmake-the-c-compiler-is-not-able-to-compile-a-simple-test-program">CMake: The C++ compiler is not able to compile a simple test program</h4>
-
-<p>Fout:</p>
-
-<pre>
--- The CXX compiler identification is GNU 8.1.0
--- Check for working CXX compiler: C:/Development/devkitpro/devkitARM/bin/arm-none-eabi-gcc.exe
-CMake Error: Generator: execution of make failed. Make command was: "nmake" "/nologo" "cmTC_e5080\fast"   
-The C++ Compiler
-
-"C:/Development/devkitpro/devkitARM/bin/arm-none-eabi-gcc.exe"
-
-is not able to compile a simple test program.
-</pre>
-
-<p>Herkenbaar aan: <strong>nmake</strong> keyword. Probleem? CMake wilt <code>nmake</code> gebruiken, de Visual Studio variant, niet <code>make</code>. Oplossing: start het commando met <code>cmake ./../ -G &quot;Unix Makefiles&quot;</code> of voeg <code>SET(CMAKE_GENERATOR &quot;Unix Makefiles&quot;)</code> toe aan je CMakeLists.txt.</p>
+<ul>
+<li>Begin bij het begin: werk een concept uit <strong>op papier</strong> en teken dan een ruw model uit. Dit model is onderhevig aan verandering naargelang de ontwikkeling. Vergeet het finale model niet toe te voegen aan de <code>README</code>.</li>
+<li><strong>Hou het simpel</strong> en werk gradueel iets complexer uit. Wees niet te overmoedig: een zeer goede implementatie scoort hoger dan een slappe complexe.</li>
+<li>Denk voor stukjes met logica eerst aan unit testen. Een test die slaagt helpt je al een heel eind verder.</li>
+<li>Test je spel tijdig op de mGBA emulator, of in de GBA zelf met een flashcard (uit te lenen bij de lesgever).</li>
+<li>Gebruik het voordeel van git: check in op regelmatige tijdstippen, zelfs meerdere keren per dag, wanneer iets werkt. Op die manier bespaar je jezelf een hoop werk als er iets teruggedraaid moet worden.</li>
+<li>Denk aan concepten die je geleerd hebt in andere programmeervakken, zoals Model-View-Controller (MVC) in &ldquo;Software ontwerp in Java&rdquo;. <a href="https://en.wikipedia.org/wiki/Separation_of_concerns">Separation of Concerns</a> is ook in C++ van toepassing.</li>
+</ul>
 
 
 <footer class="footline">
@@ -1643,6 +1493,23 @@ is not able to compile a simple test program.
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
                     
@@ -1693,26 +1560,6 @@ is not able to compile a simple test program.
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1753,10 +1600,10 @@ is not able to compile a simple test program.
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../extra/buildsystems/" title="Een introductie in C(&#43;&#43;) Build Systemen"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../extra/" title="5. Extras"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../extra/installaties/" title="Installatieinstructies op Linux" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../extra/cheatsheet/" title="C Cheat Sheet" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
