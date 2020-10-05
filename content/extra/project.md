@@ -1,39 +1,9 @@
 ---
-title: 'Software ontwerp in C/C++: Project opdracht 2019-20'
-draft: true
+title: 'Project opdracht'
+date: 2020-10-05
 ---
 
-## Project opdracht - tweede kans <br/>Academiejaar 2019 - 2020
-
-Dezelfde **minimumvereisten** gelden als de opdracht in eerste kans. Werk met een volledig _nieuwe_ Github repository, en vertrek opnieuw vanaf de `gba-sprite-engine`. Geregistreerde tijd bijhouden is niet meer nodig. 
-
-De opdracht is _niet_ vrij te kiezen. Het criteria 'originaliteit' zal beoordeeld worden op de manier waarop je deze vaste opdracht hebt ingekleurd. De opdracht is _individueel_ en niet in groep zoals eerste kans. De mondelinge projectverdediging zal ook individueel verlopen. 
-
-#### Opdracht beschrijving
-
-Ontwerp een **Mario Party kloon**. In dit _bordspel_ gaan spelers op een klassieke manier het bord rond om punten te verzamelen. De structuur van het bord is gelijkaardig aan een Ganzenbord spel. Elke plek waar de speler zijn of haar pion terecht komt, brengt een bepaalde actie met zich mee. In Mario Party wordt er meestal een minigame gespeeld, dat indien gewonnen punten oplevert. Hier is een video van de officiële GBA implementatie:
-
-{{< youtube dvC4hgoNOfE >}}
-
-<br/>
-Wat moet minimaal aanwezig zijn?
-
-* Een titelscherm.
-* Een bord. De layout maak je zo simpel of complex als je zelf wenst. 
-* Een pion die de speler voorstelt. De mogelijkheid om vakjes te verschuiven. 
-* Tenminste één (zeer eenvoudig) minigame. De inhoud mag je zelf bepalen. 
-* Zichtbaarheid van de score. 
-
-Wat is optioneel (maar levert extra punten op)?
-
-* Extra spelers in de vorm van AI. 
-* Extra minigames. 
-* Keuze van de pion.
-* Animaties en geluid.
-
-Inleverformaat op dezelfde manier als in de eerste kans. Deadline op vrijdag, 14 augustus 2020, 12u 's middags.
-
-## Project opdracht - eerste kans<br/>Academiejaar 2019 - 2020
+## Project opdracht academiejaar 2020 - 2021
 
 Om jullie recent opgedane object-geörienteerde technieken te toetsen gaan jullie een **GBA spel** ontwerpen en ontwikkelen in C++11. De focus van de opdracht ligt niet op correcte low-level IO mapping maar op kritisch denken en testen zoals gezien in [labo 7](/cpp/labo-7). Uiteraard komen zowel pointers en GBA programming technieken van de vroegere labo's, als C++ class inheritance en abstractie lagen uit de latere labo's aan bod. 
 
@@ -41,21 +11,12 @@ Vertrek vanuit de [gba-sprite-engine](https://github.com/wgroeneveld/gba-sprite-
 
 Wat voor soort spel het moet zijn laat ik volledig aan jullie over. Het spreekt voor zich dat complexiteit (en originaliteit!) mee in rekening gebracht wordt: zie evaluatiecriteria. Inspiratie nodig? 
 
+* [GBA Projecten vorige jaren videos](/cpp-course/hoorcolleges/)
 * [Top 10 Gameboy Advance games in 10 minutes](https://www.youtube.com/watch?v=2-R-F-A48FI)
 * [25 Best Gameboy Advance games Ever](http://www.denofgeek.com/us/games/game-boy-advance/256070/25-best-game-boy-advance-games-ever)
 
 Werk in **groepen van 2** of indien oneven 3. 
 
-#### Tijdsregistratie
-
-In het kader van onderzoek naar onderwijs ﻿vragen wij jullie je tijd gespendeerd aan het project bij houden in een bestandje. Dit mag niet veel administratie vragen: enkel in een simpele CSV bijhouden op welke dag jullie hoeveel tijd werk aan het project spendeerden is voldoende. De eenheid is in uren - een halfuur kan bijvoorbeeld met 0.5 uitgedrukt worden. 
-Dit is een voorbeeld bestandje:
-[https://github.com/wgroeneveld/gba-sprite-engine/blob/master/timespent.csv](https://github.com/wgroeneveld/gba-sprite-engine/blob/master/timespent.csv). 
-
-Wanneer jullie het project in Github overnemen komt deze file automatisch mee. 
-Werk dit tijdig bij, dat voorkomt moeten gokken. Dit is individueel dus als jullie samen aan een project werken, maak dan twee files aan! Als er in de labo's tijd wordt voorzien om aan het project te werken, tel je dit ook mee. 
-
-Bedankt om mee te werken aan een beter onderwijs!
 
 ## Minimumvereisten
 
@@ -67,7 +28,6 @@ Lees dit goed na: projecten die niet voldoen aan de volgende vereisten zullen ni
 4. Je project moet uiteraard minstens compileren.
 5. Je repository `README.md` bevat een kleine functionele beschrijving van jullie spel.
 6. Naast de functionele beschrijving upload je ook een schets van je **domein model**, gepaard met verklarende tekst. 
-7. Je repository `timespent.csv` bevat jullie **individueel** geregistreerde tijd in uren.  
 
 Het is **niet** de bedoeling om je te baseren op één van de engine demo's en die simpelweg verder uit te werken. Dat biedt onvoldoende uitdaging en originaliteit. 
 
