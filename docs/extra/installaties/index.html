@@ -9,24 +9,24 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Installatieinstructies op Linux :: Software Ontwerp in C(&#43;&#43;)</title>
+    <title>Installatieinstructies :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1601904350" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1601904350" rel="stylesheet">
-    <link href="../../css/hybrid.css?1601904350" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1601904350" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1601904350" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1601904350" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1601904350" rel="stylesheet">
-    <link href="../../css/theme.css?1601904350" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1601904350" rel="stylesheet">
+    <link href="../../css/nucleus.css?1601978992" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1601978992" rel="stylesheet">
+    <link href="../../css/hybrid.css?1601978992" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1601978992" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1601978992" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1601978992" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1601978992" rel="stylesheet">
+    <link href="../../css/theme.css?1601978992" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1601978992" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1601904350" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1601978992" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1601904350"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1601978992"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -82,14 +82,14 @@ window.MathJax = {
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1601904350"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1601904350"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1601978992"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1601978992"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1601904350"></script>
+<script type="text/javascript" src="../../js/search.js?1601978992"></script>
 
     
   </div>
@@ -808,9 +808,9 @@ window.MathJax = {
  
   
     
-      <li data-nav-id="/extra/installaties/" title="Installatieinstructies op Linux" class="dd-item active">
+      <li data-nav-id="/extra/installaties/" title="Installatieinstructies" class="dd-item active">
         <a href="../../extra/installaties/">
-        Installatieinstructies op Linux
+        Installatieinstructies
         
         </a>
     </li>
@@ -912,7 +912,7 @@ window.MathJax = {
             
           
           
-            <a href='../../'>Software ontwerp in C/C++</a> > <a href='../../extra/'>5. Extras</a> > Installatieinstructies op Linux
+            <a href='../../'>Software ontwerp in C/C++</a> > <a href='../../extra/'>5. Extras</a> > Installatieinstructies
           
         
           
@@ -954,6 +954,7 @@ window.MathJax = {
 </ul></li>
 <li><a href="#wijzigingen-in-het-bash-profiel">Wijzigingen in het Bash profiel</a></li>
 </ul></li>
+<li><a href="#begeleidende-filmpjes">Begeleidende filmpjes</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -972,7 +973,7 @@ window.MathJax = {
           
             <h1>
               
-              Installatieinstructies op Linux
+              Installatieinstructies
             </h1>
           
 
@@ -1078,13 +1079,13 @@ For MinGW make to work correctly sh.exe must NOT be in your path.
 
 <p>Deze stappen zijn onafhankelijk van je gekozen besturingssysteem, zodra je de basis gcc toolchain én CMake gecompileerd hebt.</p>
 
-<p>Volg de volgende stappen na een <code>git clone https://github.com/google/googletest</code>:</p>
+<p>Volg de volgende stappen nadat je de release 1.10.x downloadde via <a href="https://github.com/google/googletest">https://github.com/google/googletest</a></p>
 
 <ul>
 <li>Download en compileer googletest:
 
 <ul>
-<li><code>cd googletest/googletest</code></li>
+<li><code>cd googletest/googletest</code> (<strong>opgelet</strong> dus <em>NIET</em> de root, we moeten <code>googlemock</code> niet hebben)</li>
 <li>Maak een build directory: <code>mkdir build</code> <strong>in de map googletest</strong></li>
 <li>Build cmake: <code>cd build &amp;&amp; cmake ./../</code>. <br/>Vergeet niet op Windows de <code>-G</code> optie mee te geven (zie boven)</li>
 <li>Build google test: <code>make</code>. Dit geeft <code>libgtest.a</code> en <code>libgtest_main.a</code><br /></li>
@@ -1124,6 +1125,32 @@ PATH="$DEVKITPATH:$CMAKE_HOME/bin:$PATH"
 </pre>
 
 <p>Bovenstaande variabelen worden onder andere verwacht aanwezig te zijn op systeem niveau in de gba sprite engine. Voor windows pas je dit aan in het &ldquo;System Configuration&rdquo; scherm en klik je op &ldquo;Environment Variables&rdquo; om wijzigingen door te voeren (admin rechten vereist).</p>
+
+<h2 id="begeleidende-filmpjes">Begeleidende filmpjes</h2>
+
+<p>Onderstaande filmpjes verduidelijken de installatieinstructies voor Windows 10 gebruikers.</p>
+
+<p>De <code>gba-sprite-engine</code> compileren op Win10:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://player.vimeo.com/video/465312799" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ </div>
+
+
+<p>Bovenstaande instructies raken ook kort MinGW en CMake aan.</p>
+
+<p>De <code>google-test</code> library compileren op Win10:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://player.vimeo.com/video/465315414" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ </div>
+
+
+<p><strong>Vergeet niet</strong> dat in Windows <code>$PATH</code> gelijk gesteld is aan <code>%PATH%</code>!</p>
+
+<p>Lukt het nog steeds niet? Controleer dan <a href="../../extra/faq">de FAQs</a>.</p>
 
 
 <footer class="footline">
@@ -1701,19 +1728,19 @@ PATH="$DEVKITPATH:$CMAKE_HOME/bin:$PATH"
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1601904350"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1601904350"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1601904350"></script>
-    <script src="../../js/jquery.sticky.js?1601904350"></script>
-    <script src="../../js/featherlight.min.js?1601904350"></script>
-    <script src="../../js/highlight.pack.js?1601904350"></script>
+    <script src="../../js/clipboard.min.js?1601978992"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1601978992"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1601978992"></script>
+    <script src="../../js/jquery.sticky.js?1601978992"></script>
+    <script src="../../js/featherlight.min.js?1601978992"></script>
+    <script src="../../js/highlight.pack.js?1601978992"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1601904350"></script>
-    <script src="../../js/learn.js?1601904350"></script>
-    <script src="../../js/hugo-learn.js?1601904350"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1601978992"></script>
+    <script src="../../js/learn.js?1601978992"></script>
+    <script src="../../js/hugo-learn.js?1601978992"></script>
 
-    <link href="../../mermaid/mermaid.css?1601904350" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1601904350"></script>
+    <link href="../../mermaid/mermaid.css?1601978992" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1601978992"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
