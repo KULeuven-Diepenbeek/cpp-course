@@ -33,6 +33,8 @@ Datum: **29/09/2020**
 
 Datum: **06/10/2020**
 
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/9b20da5adb9b40ec979cfc8bdf0b98a2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 #### 4. [Een introductie in GUI ontwerp met Qt, Samenvatting, examen info](/hoorcolleges/slides-4)
 
 Datum: **13/10/2020**

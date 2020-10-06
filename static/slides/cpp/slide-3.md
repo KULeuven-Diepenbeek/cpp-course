@@ -4,6 +4,8 @@ Software ontwerp in C/C++: #3
 <img src="/cpp-course/img/kul.svg" style="height: 80px;" />
 <img src="/cpp-course/img/uhasselt.svg" style="width: 165px; height: 80px;"/>
 
+([video link](https://www.loom.com/share/9b20da5adb9b40ec979cfc8bdf0b98a2))
+
 ---
 
 ## Wat is "Software Ontwerp"?
@@ -376,7 +378,7 @@ ___
 
 Vermijd **overengineering**!
 
-![overengineering](/slides/img/overengineering.png)
+![overengineering](/cpp-course/slides/img/overengineering.png)
 
 ---
 

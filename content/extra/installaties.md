@@ -1,5 +1,5 @@
 ---
-title: 'Installatieinstructies op Linux'
+title: 'Installatieinstructies'
 accent: "#008eb3"
 disableComments: true
 ---
@@ -91,10 +91,10 @@ Het kan zijn dat `cmake` niet voldoende is of je compilers niet kan vinden maar 
 
 Deze stappen zijn onafhankelijk van je gekozen besturingssysteem, zodra je de basis gcc toolchain én CMake gecompileerd hebt. 
 
-Volg de volgende stappen na een `git clone https://github.com/google/googletest`:
+Volg de volgende stappen nadat je de release 1.10.x downloadde via https://github.com/google/googletest 
 
 * Download en compileer googletest:
-  * `cd googletest/googletest`
+  * `cd googletest/googletest` (**opgelet** dus _NIET_ de root, we moeten `googlemock` niet hebben)
   * Maak een build directory: `mkdir build` **in de map googletest**
   * Build cmake: `cd build && cmake ./../`. <br/>Vergeet niet op Windows de `-G` optie mee te geven (zie boven)
   * Build google test: `make`. Dit geeft `libgtest.a` en `libgtest_main.a`   
@@ -129,3 +129,21 @@ PATH="$DEVKITPATH:$CMAKE_HOME/bin:$PATH"
 </pre>
 
 Bovenstaande variabelen worden onder andere verwacht aanwezig te zijn op systeem niveau in de gba sprite engine. Voor windows pas je dit aan in het "System Configuration" scherm en klik je op "Environment Variables" om wijzigingen door te voeren (admin rechten vereist). 
+
+## Begeleidende filmpjes
+
+Onderstaande filmpjes verduidelijken de installatieinstructies voor Windows 10 gebruikers. 
+
+De `gba-sprite-engine` compileren op Win10: 
+
+{{< vimeo 465312799 >}}
+
+Bovenstaande instructies raken ook kort MinGW en CMake aan. 
+
+De `google-test` library compileren op Win10:
+
+{{< vimeo 465315414 >}}
+
+**Vergeet niet** dat in Windows `$PATH` gelijk gesteld is aan `%PATH%`!
+
+Lukt het nog steeds niet? Controleer dan [de FAQs](/extra/faq). 
