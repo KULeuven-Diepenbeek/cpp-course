@@ -227,6 +227,8 @@ Dat ziet er al iets gestroomlijnder uit maar vereist nog steeds te veel boilerpl
 
 ### Praktisch gebruik van pointers
 
+#### 1. Snel gegevens wisselen
+
 Omdat in C alles _by-value_ doorgegeven wordt, kunnen we met pointers de waarden van variabelen in een functie manipuleren die erbuiten gedeclareerd werd. In Java kan je de waarde van member variabelen in objecten ook wijzigen, maar niet **primitives**! Hoe wissel je twee getallen zonder iets terug te geven?
 
 ```C
@@ -243,6 +245,8 @@ printf("(%d, %d)\n", x, y); // print (20, 10)
 
 Zoiets is ondenkbaar in Java - daar hebben we truckjes voor nodig als een `int[]` dat toch een object is. Natuurlijk is deze implementatie ook **nadelig**: is het wel duidelijk voor de caller dat variabelen gewijzigd worden?
 Performante algoritme implementaties profiteren van deze mogelijkheden. Duidelijke domain-driven applicaties niet: daar dient een hogere taal voor.
+
+#### 2. Snel door char arrays loopen
 
 Pointers en arrays gaan hand-in-hand in C. Op pointers kan je ook operaties als `++` en `--` uitvoeren die de pointer in het geheugen één plaatsje naar links of rechts opschuiven. Met `char *tekst = "sup"` verwijst de pointer naar het eerste karakter:
 
@@ -267,6 +271,52 @@ void print_tekst(char *tekst) {
 ```
 
 In C is `a[i]` exact hetzelfde als `*(a + i)`!
+
+#### 3. Structuren aan elkaar linken
+
+Een _gelinkte lijst_ is een lijst waarbij het volgende element gekoppeld wordt aan het huidige door middel van pointers. Er is geen 'array', de data structuur is het object zelf. In C wordt hier typisch een `struct` voor gebruikt:
+
+```C
+struct itm {
+    void* data;
+    struct itm* next;
+};
+```
+
+Elk element bevat data, wat het element zelf voorstelt, en bijkomend een link naar het (eventuele) volgende element. Een _dubbel gelinkte lijst_ verwijst zowel naar het volgende als het vorige item. Dit heeft voor- en nadelen. Denk bijvoorbeeld aan wat de waarde van `next` is bij het laatste item. Denk ook aan performantie: wat als ik van het laatste item naar het eerste wil gaan? Er wordt altijd in context van _head_ en _tail_ gesproken. 
+
+Enkele link:
+
+{{<mermaid>}}
+graph LR
+    A[itm1]
+    B[itm2]
+    C[itm3]
+    E{NULL}
+    A-->|next|B
+    B-->|next|C
+    C-->|next|E
+{{< /mermaid >}}
+
+Dubbele link:
+
+{{<mermaid>}}
+graph LR
+    AA{NULL}
+    A[itm1]
+    B[itm2]
+    C[itm3]
+    E{NULL}
+    A-->|prev|AA
+    A-->|next|B
+    B-->|prev|A
+    B-->|next|C
+    C-->|prev|B
+    C-->|next|E
+{{< /mermaid >}}
+
+
+**Meer uitleg** en praktische voorbeelden via [zentut.com C linked list informatie](https://www.zentut.com/c-tutorial/c-linked-list/).
 
 ## Herhaling: let op met syntax!
 
@@ -305,4 +355,4 @@ Tips:
 2. Wat is het verschil tussen `int a[10][20]` en `int *b[10]`? Kan je ook iets zeggen over het geheugengebruik?
 3. Hoe zouden we de bibliothecaris kunnen veralgemenen naar een sorteerder van eender welk datatype in plaats van enkel char? Denk aan Java's generics.
 4. In welk geval zou jij zeker pointers gebruiken in C, en in welk geval niet? Beargumenteer je keuze.
-5. Als ik mijn eigen gelinkte lijst wens te implementeren, hoe ziet mijn data structuur er dan uit? Teken ook een schema van zo'n lijst als voorbeeld.
+5. Als ik mijn eigen [gelinkte lijst](https://www.zentut.com/c-tutorial/c-linked-list/) wens te implementeren, hoe ziet mijn data structuur er dan uit? Teken ook een schema van zo'n lijst als voorbeeld. Hint: zie [zentut.com C linked list informatie](https://www.zentut.com/c-tutorial/c-linked-list/).

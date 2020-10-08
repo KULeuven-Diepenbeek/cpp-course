@@ -12,21 +12,21 @@
     <title>Labo 2: Pointers in C en C&#43;&#43; :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1601978992" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1601978992" rel="stylesheet">
-    <link href="../../css/hybrid.css?1601978992" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1601978992" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1601978992" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1601978992" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1601978992" rel="stylesheet">
-    <link href="../../css/theme.css?1601978992" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1601978992" rel="stylesheet">
+    <link href="../../css/nucleus.css?1602156724" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1602156724" rel="stylesheet">
+    <link href="../../css/hybrid.css?1602156724" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1602156724" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1602156724" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1602156724" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1602156724" rel="stylesheet">
+    <link href="../../css/theme.css?1602156724" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1602156724" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1601978992" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1602156724" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1601978992"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1602156724"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -82,14 +82,14 @@ window.MathJax = {
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1601978992"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1601978992"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1602156724"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1602156724"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1601978992"></script>
+<script type="text/javascript" src="../../js/search.js?1602156724"></script>
 
     
   </div>
@@ -936,7 +936,12 @@ window.MathJax = {
 <ul>
 <li><a href="#functie-pointers">Functie pointers</a></li>
 </ul></li>
-<li><a href="#praktisch-gebruik-van-pointers">Praktisch gebruik van pointers</a></li>
+<li><a href="#praktisch-gebruik-van-pointers">Praktisch gebruik van pointers</a>
+<ul>
+<li><a href="#1-snel-gegevens-wisselen">1. Snel gegevens wisselen</a></li>
+<li><a href="#2-snel-door-char-arrays-loopen">2. Snel door char arrays loopen</a></li>
+<li><a href="#3-structuren-aan-elkaar-linken">3. Structuren aan elkaar linken</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#herhaling-let-op-met-syntax">Herhaling: let op met syntax!</a></li>
 <li><a href="#a-name-oef-a-labo-oefeningen"><a name="oef"></a>Labo oefeningen</a></li>
@@ -1222,6 +1227,8 @@ Persoon<span style="color:#f92672">*</span> <span style="color:#a6e22e">create_p
 
 <h3 id="praktisch-gebruik-van-pointers">Praktisch gebruik van pointers</h3>
 
+<h4 id="1-snel-gegevens-wisselen">1. Snel gegevens wisselen</h4>
+
 <p>Omdat in C alles <em>by-value</em> doorgegeven wordt, kunnen we met pointers de waarden van variabelen in een functie manipuleren die erbuiten gedeclareerd werd. In Java kan je de waarde van member variabelen in objecten ook wijzigen, maar niet <strong>primitives</strong>! Hoe wissel je twee getallen zonder iets terug te geven?</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">swap</span>(<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>px, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>py) {
     <span style="color:#66d9ef">int</span> temp;
@@ -1234,6 +1241,8 @@ swap(<span style="color:#f92672">&amp;</span>x, <span style="color:#f92672">&amp
 printf(<span style="color:#e6db74">&#34;(%d, %d)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, x, y); <span style="color:#f92672">//</span> print (<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">10</span>)</code></pre></div>
 <p>Zoiets is ondenkbaar in Java - daar hebben we truckjes voor nodig als een <code>int[]</code> dat toch een object is. Natuurlijk is deze implementatie ook <strong>nadelig</strong>: is het wel duidelijk voor de caller dat variabelen gewijzigd worden?
 Performante algoritme implementaties profiteren van deze mogelijkheden. Duidelijke domain-driven applicaties niet: daar dient een hogere taal voor.</p>
+
+<h4 id="2-snel-door-char-arrays-loopen">2. Snel door char arrays loopen</h4>
 
 <p>Pointers en arrays gaan hand-in-hand in C. Op pointers kan je ook operaties als <code>++</code> en <code>--</code> uitvoeren die de pointer in het geheugen één plaatsje naar links of rechts opschuiven. Met <code>char *tekst = &quot;sup&quot;</code> verwijst de pointer naar het eerste karakter:</p>
 
@@ -1264,6 +1273,67 @@ graph TD
     }
 }</code></pre></div>
 <p>In C is <code>a[i]</code> exact hetzelfde als <code>*(a + i)</code>!</p>
+
+<h4 id="3-structuren-aan-elkaar-linken">3. Structuren aan elkaar linken</h4>
+
+<p>Een <em>gelinkte lijst</em> is een lijst waarbij het volgende element gekoppeld wordt aan het huidige door middel van pointers. Er is geen &lsquo;array&rsquo;, de data structuur is het object zelf. In C wordt hier typisch een <code>struct</code> voor gebruikt:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">struct</span> itm {
+    <span style="color:#66d9ef">void</span><span style="color:#f92672">*</span> data;
+    <span style="color:#66d9ef">struct</span> itm<span style="color:#f92672">*</span> next;
+};</code></pre></div>
+<p>Elk element bevat data, wat het element zelf voorstelt, en bijkomend een link naar het (eventuele) volgende element. Een <em>dubbel gelinkte lijst</em> verwijst zowel naar het volgende als het vorige item. Dit heeft voor- en nadelen. Denk bijvoorbeeld aan wat de waarde van <code>next</code> is bij het laatste item. Denk ook aan performantie: wat als ik van het laatste item naar het eerste wil gaan? Er wordt altijd in context van <em>head</em> en <em>tail</em> gesproken.</p>
+
+<p>Enkele link:</p>
+
+<script defer src="../../mermaid/mermaid.min.js">
+	mermaid.initialize({
+		startOnLoad: true,
+		flowchart: {
+			useMaxWidth: true
+		}
+	});
+</script>
+<div class="mermaid" align="center" >
+	
+graph LR
+    A[itm1]
+    B[itm2]
+    C[itm3]
+    E{NULL}
+    A-->|next|B
+    B-->|next|C
+    C-->|next|E
+
+</div>
+
+<p>Dubbele link:</p>
+
+<script defer src="../../mermaid/mermaid.min.js">
+	mermaid.initialize({
+		startOnLoad: true,
+		flowchart: {
+			useMaxWidth: true
+		}
+	});
+</script>
+<div class="mermaid" align="center" >
+	
+graph LR
+    AA{NULL}
+    A[itm1]
+    B[itm2]
+    C[itm3]
+    E{NULL}
+    A-->|prev|AA
+    A-->|next|B
+    B-->|prev|A
+    B-->|next|C
+    C-->|prev|B
+    C-->|next|E
+
+</div>
+
+<p><strong>Meer uitleg</strong> en praktische voorbeelden via <a href="https://www.zentut.com/c-tutorial/c-linked-list/">zentut.com C linked list informatie</a>.</p>
 
 <h2 id="herhaling-let-op-met-syntax">Herhaling: let op met syntax!</h2>
 
@@ -1315,7 +1385,7 @@ graph TD
 <li>Wat is het verschil tussen <code>int a[10][20]</code> en <code>int *b[10]</code>? Kan je ook iets zeggen over het geheugengebruik?</li>
 <li>Hoe zouden we de bibliothecaris kunnen veralgemenen naar een sorteerder van eender welk datatype in plaats van enkel char? Denk aan Java&rsquo;s generics.</li>
 <li>In welk geval zou jij zeker pointers gebruiken in C, en in welk geval niet? Beargumenteer je keuze.</li>
-<li>Als ik mijn eigen gelinkte lijst wens te implementeren, hoe ziet mijn data structuur er dan uit? Teken ook een schema van zo&rsquo;n lijst als voorbeeld.</li>
+<li>Als ik mijn eigen <a href="https://www.zentut.com/c-tutorial/c-linked-list/">gelinkte lijst</a> wens te implementeren, hoe ziet mijn data structuur er dan uit? Teken ook een schema van zo&rsquo;n lijst als voorbeeld. Hint: zie <a href="https://www.zentut.com/c-tutorial/c-linked-list/">zentut.com C linked list informatie</a>.</li>
 </ol>
 
 
@@ -1894,19 +1964,19 @@ graph TD
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1601978992"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1601978992"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1601978992"></script>
-    <script src="../../js/jquery.sticky.js?1601978992"></script>
-    <script src="../../js/featherlight.min.js?1601978992"></script>
-    <script src="../../js/highlight.pack.js?1601978992"></script>
+    <script src="../../js/clipboard.min.js?1602156724"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1602156724"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1602156724"></script>
+    <script src="../../js/jquery.sticky.js?1602156724"></script>
+    <script src="../../js/featherlight.min.js?1602156724"></script>
+    <script src="../../js/highlight.pack.js?1602156724"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1601978992"></script>
-    <script src="../../js/learn.js?1601978992"></script>
-    <script src="../../js/hugo-learn.js?1601978992"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1602156724"></script>
+    <script src="../../js/learn.js?1602156724"></script>
+    <script src="../../js/hugo-learn.js?1602156724"></script>
 
-    <link href="../../mermaid/mermaid.css?1601978992" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1601978992"></script>
+    <link href="../../mermaid/mermaid.css?1602156724" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1602156724"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
