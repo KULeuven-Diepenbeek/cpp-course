@@ -39,3 +39,5 @@ Datum: **06/10/2020**
 
 Datum: **13/10/2020**
 
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/b11fdd48df1a49df8e5805174f3aba69" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+

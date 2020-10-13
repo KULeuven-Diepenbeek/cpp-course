@@ -4,6 +4,8 @@ Software ontwerp in C/C++: #4
 <img src="/cpp-course/img/kul.svg" style="height: 80px;" />
 <img src="/cpp-course/img/uhasselt.svg" style="width: 165px; height: 80px;"/>
 
+([video link](https://www.loom.com/share/b11fdd48df1a49df8e5805174f3aba69))
+
 ___
 
 ## Wat schaft de pot vandaag?
@@ -532,22 +534,17 @@ Deadline: 1 dag voor examen, 12h 's middags
 - Groepen van 2 (3)
 - Git, fork van `gba-sprite-engine`, C++11
 - Volledige vrijheid in opdracht.
-- Tijdsregistratie vereist (onderzoek)
 
 Min. vereisten e.a.:
-https://brainbaking.com/teaching/cpp/project/
+https://kuleuven-diepenbeek.github.io/cpp-course/extra/project/
 
 ___
 
-### Project Evaluatie - elkaar evalueren?
+### Project Evaluatie
 
-Evaluatieformulier uitgedeeld, met criteria:
+Criteria:
 
 > Design (1), Clean Code (2), C++ Conventies (3), Complexiteit (4), Originaliteit (5), UI (6).
-
-= zelfde als lesgevers hanteren. 
-
-Presenteren aan elkaar in **3 minuten**!
 
 Datum, plaats, ... via Toledo. 
 
@@ -555,8 +552,7 @@ ___
 
 ### Totale Puntenverdeling
 
-* `27%` evaluatie project mede-studenten
-* `23%` evaluatie project docent
+* `50%` evaluatie project
 * `50%` evaluatie examen
 
 ---
