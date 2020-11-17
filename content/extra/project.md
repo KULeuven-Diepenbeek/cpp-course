@@ -5,6 +5,8 @@ date: 2020-10-05
 
 ## Project opdracht academiejaar 2020 - 2021
 
+**Deadline**: (strict!) woensdag 27/01/2021, 12u 's middags.
+
 Om jullie recent opgedane object-geörienteerde technieken te toetsen gaan jullie een **GBA spel** ontwerpen en ontwikkelen in C++11. De focus van de opdracht ligt niet op correcte low-level IO mapping maar op kritisch denken en testen zoals gezien in [labo 7](/cpp/labo-7). Uiteraard komen zowel pointers en GBA programming technieken van de vroegere labo's, als C++ class inheritance en abstractie lagen uit de latere labo's aan bod. 
 
 Vertrek vanuit de [gba-sprite-engine](https://github.com/wgroeneveld/gba-sprite-engine/) library op <i class='fa fa-github'></i> Github door een <i class='fa fa-code-fork'></i> Fork te nemen met de knop rechtsboven. Op die manier bespaar je veel werk met een nieuw GBA project op te zetten en alle IO adressen opnieuw te mappen. Er is een README voorzien voor meer info. De engine gebruikt [Tonc](https://www.coranac.com/tonc/text/toc.htm) achterliggend. 

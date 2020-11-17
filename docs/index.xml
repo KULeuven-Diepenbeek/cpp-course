@@ -98,7 +98,8 @@ void paintEvent(QPaintEvent *event) override; In het Textrix Qt Voorbeeld wordt 
       <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
       <guid>https://kuleuven-diepenbeek.github.io/cpp-course/extra/project/</guid>
-      <description>Project opdracht academiejaar 2020 - 2021 Om jullie recent opgedane object-geörienteerde technieken te toetsen gaan jullie een GBA spel ontwerpen en ontwikkelen in C++11. De focus van de opdracht ligt niet op correcte low-level IO mapping maar op kritisch denken en testen zoals gezien in labo 7. Uiteraard komen zowel pointers en GBA programming technieken van de vroegere labo&amp;rsquo;s, als C++ class inheritance en abstractie lagen uit de latere labo&amp;rsquo;s aan bod.</description>
+      <description>Project opdracht academiejaar 2020 - 2021 Deadline: (strict!) woensdag 27/01/2021, 12u &amp;rsquo;s middags.
+Om jullie recent opgedane object-geörienteerde technieken te toetsen gaan jullie een GBA spel ontwerpen en ontwikkelen in C++11. De focus van de opdracht ligt niet op correcte low-level IO mapping maar op kritisch denken en testen zoals gezien in labo 7. Uiteraard komen zowel pointers en GBA programming technieken van de vroegere labo&amp;rsquo;s, als C++ class inheritance en abstractie lagen uit de latere labo&amp;rsquo;s aan bod.</description>
     </item>
     
     <item>
