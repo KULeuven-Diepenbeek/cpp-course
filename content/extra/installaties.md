@@ -147,3 +147,6 @@ De `google-test` library compileren op Win10:
 **Vergeet niet** dat in Windows `$PATH` gelijk gesteld is aan `%PATH%`!
 
 Lukt het nog steeds niet? Controleer dan [de FAQs](/extra/faq). 
+
+
+Run Configuratie van CLion voor GBA projecten te runnen in de emulator: zie [labo 8](/gba-in-cpp/labo-8), onderaan bij oefeningen.

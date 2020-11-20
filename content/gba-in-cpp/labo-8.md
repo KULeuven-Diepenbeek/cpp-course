@@ -204,6 +204,22 @@ Er zal dus ook een soort van OAM manager nodig zijn die beide sprites aan elkaar
 
 Voor oefening 1 is er een alternatief met CLion en CMake: Verterk vanuit deze template: [labo8-gbagplusplus.zip](/teaching/cpp/labo8-gbagplusplus.zip). 
 
+In CLion kan je rechtstreeks de emulator uitvoeren door de `.gba` file als argument mee te geven. Dat doe je via menu "Run as..." (met drie puntjes) onder "Run":
+
+![](/img/runmgba.png)
+
+Als je **Edit Run Configurations** selecteert, verschijnt het volgende venster:
+
+![](/img/runmenu.png)
+
+Daar stel je de volgende waardes in:
+
+1. Executable: `mgba` (of `.exe` voor Windows machines), volledig pad naar de binary
+2. Working Directory: de juiste `cmake-build-debug/...` subfolder waar de `.gba` file staat
+3. Target: het uit te voeren project, onder `.elf`
+4. Program Arguments: bestandsnaam van de `.gba` file
+
+Hier kan je ook **nieuwe configs** toevoegen met het `+` symbool linksboven. 
 
 ## Denkvragen
 
