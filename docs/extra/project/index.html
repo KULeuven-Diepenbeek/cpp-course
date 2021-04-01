@@ -12,21 +12,21 @@
     <title>Project opdracht :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1614860355" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1614860355" rel="stylesheet">
-    <link href="../../css/hybrid.css?1614860355" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1614860355" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1614860355" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1614860355" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1614860355" rel="stylesheet">
-    <link href="../../css/theme.css?1614860355" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1614860355" rel="stylesheet">
+    <link href="../../css/nucleus.css?1617260502" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1617260502" rel="stylesheet">
+    <link href="../../css/hybrid.css?1617260502" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1617260502" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1617260502" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1617260502" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1617260502" rel="stylesheet">
+    <link href="../../css/theme.css?1617260502" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1617260502" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1614860355" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1617260502" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1614860355"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1617260502"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -82,14 +82,14 @@ window.MathJax = {
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1614860355"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1614860355"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1617260502"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1617260502"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1614860355"></script>
+<script type="text/javascript" src="../../js/search.js?1617260502"></script>
 
     
   </div>
@@ -929,7 +929,14 @@ window.MathJax = {
 <ul>
 <li>
 <ul>
-<li><a href="#project-opdracht-academiejaar-2020-2021">Project opdracht academiejaar 2020 - 2021</a></li>
+<li><a href="#project-opdracht-tweede-kans">Project opdracht - tweede kans</a>
+<ul>
+<li>
+<ul>
+<li><a href="#opdracht-beschrijving">Opdracht beschrijving</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#project-opdracht-eerste-kans">Project opdracht - eerste kans</a></li>
 <li><a href="#minimumvereisten">Minimumvereisten</a></li>
 <li><a href="#evaluatiecriteria">Evaluatiecriteria</a></li>
 <li><a href="#inleverformaat">Inleverformaat</a></li>
@@ -961,7 +968,51 @@ window.MathJax = {
 
 
 
-<h2 id="project-opdracht-academiejaar-2020-2021">Project opdracht academiejaar 2020 - 2021</h2>
+<p>Laatst geupdate voor <strong>Academiejaar 2020 - 2021</strong>.</p>
+
+<h2 id="project-opdracht-tweede-kans">Project opdracht - tweede kans</h2>
+
+<p>Dezelfde <strong>minimumvereisten</strong> gelden als de opdracht in eerste kans. Werk met een volledig <em>nieuwe</em> Github repository, en vertrek opnieuw vanaf de <code>gba-sprite-engine</code>.</p>
+
+<p>De opdracht is <em>niet</em> vrij te kiezen. Het criteria &lsquo;originaliteit&rsquo; zal beoordeeld worden op de manier waarop je deze vaste opdracht hebt ingekleurd. De opdracht is <em>individueel</em> en niet in groep zoals eerste kans. De mondelinge projectverdediging zal ook individueel verlopen.</p>
+
+<h4 id="opdracht-beschrijving">Opdracht beschrijving</h4>
+
+<p>Ontwerp een eenvoudige  <strong>Harvest Moon clone</strong>. Het GBA spel is <em>Harvest Moon: Friends of Mineral Town</em> - er zijn veel Harvest Moon varianten. In dit <em>farming simulatie spel</em>, erg lijkend op bekende games zoals Stardew Valley, bouwen spelers een boerderij uit, waar je groenten kan zaaien, oogsten en verkopen. Het stadje waar je deel van uitmaakt bevat inwoners die zaken kopen, tips of zaad geven, en af en toe een praatje willen slaan.</p>
+
+<p>Hier is een video van de officiële GBA implementatie:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube-nocookie.com/embed/Y2c-A3O-OoA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p><br/>
+Er zitten erg veel aspecten in het GBA Harvest Moon spel, waarvan je uiteraard niet alles hoeft te implementeren. Wat moet <strong>minimaal</strong> aanwezig zijn?</p>
+
+<ul>
+<li>Scene 1: Een titelscherm.</li>
+<li>Scene 2: Het weiland waar je dingen kan zaaien en verzamelen als de groeten rijp voor de oogst zijn. Het erf moet groter dan het GBA scherm zijn, scrolling is dus een vereiste.</li>
+<li>Een primitieve vorm van een inventory systeem.</li>
+<li>Scene 3: Je huis aan het erf, dat je kan betreden om te slapen.</li>
+</ul>
+
+<p>Wat is optioneel (maar levert extra punten op)?</p>
+
+<ul>
+<li>Dieren op het erf.</li>
+<li>Het gebruik van tools die de oogst/groei versnellen: schup, gieter, &hellip;</li>
+<li>Buurtbewoners in de vorm van AI die producten aanbieden.</li>
+<li>Weer effecten die je oogst beïnvloeden.</li>
+<li>&hellip; Verzin maar iets!</li>
+</ul>
+
+<p>Assets mag je zelf maken, maar dat moet niet. Dit kan je ook lenen van andere populaire farming simulator games. Verlies hier niet te veel tijd mee!</p>
+
+<p>Inleverformaat op dezelfde manier als in de eerste kans. Deadline op vrijdag, <em>13 augustus 2021, 12u &rsquo;s middags</em>.</p>
+
+<h2 id="project-opdracht-eerste-kans">Project opdracht - eerste kans</h2>
 
 <p><strong>Deadline</strong>: (strict!) woensdag 27/01/2021, 12u &rsquo;s middags.</p>
 
@@ -1615,19 +1666,19 @@ De tekst in het lichtgrijs dient ter ondersteuning bij het geven van een quoteri
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1614860355"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1614860355"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1614860355"></script>
-    <script src="../../js/jquery.sticky.js?1614860355"></script>
-    <script src="../../js/featherlight.min.js?1614860355"></script>
-    <script src="../../js/highlight.pack.js?1614860355"></script>
+    <script src="../../js/clipboard.min.js?1617260502"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1617260502"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1617260502"></script>
+    <script src="../../js/jquery.sticky.js?1617260502"></script>
+    <script src="../../js/featherlight.min.js?1617260502"></script>
+    <script src="../../js/highlight.pack.js?1617260502"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1614860355"></script>
-    <script src="../../js/learn.js?1614860355"></script>
-    <script src="../../js/hugo-learn.js?1614860355"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1617260502"></script>
+    <script src="../../js/learn.js?1617260502"></script>
+    <script src="../../js/hugo-learn.js?1617260502"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1614860355"></script>
+            <script src="../../mermaid/mermaid.js?1617260502"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
