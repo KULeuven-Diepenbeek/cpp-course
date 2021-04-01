@@ -3,7 +3,43 @@ title: 'Project opdracht'
 date: 2020-10-05
 ---
 
-## Project opdracht academiejaar 2020 - 2021
+Laatst geupdate voor **Academiejaar 2020 - 2021**.
+
+## Project opdracht - tweede kans
+
+Dezelfde **minimumvereisten** gelden als de opdracht in eerste kans. Werk met een volledig _nieuwe_ Github repository, en vertrek opnieuw vanaf de `gba-sprite-engine`. 
+
+De opdracht is _niet_ vrij te kiezen. Het criteria 'originaliteit' zal beoordeeld worden op de manier waarop je deze vaste opdracht hebt ingekleurd. De opdracht is _individueel_ en niet in groep zoals eerste kans. De mondelinge projectverdediging zal ook individueel verlopen. 
+
+#### Opdracht beschrijving
+
+Ontwerp een eenvoudige  **Harvest Moon clone**. Het GBA spel is _Harvest Moon: Friends of Mineral Town_ - er zijn veel Harvest Moon varianten. In dit _farming simulatie spel_, erg lijkend op bekende games zoals Stardew Valley, bouwen spelers een boerderij uit, waar je groenten kan zaaien, oogsten en verkopen. Het stadje waar je deel van uitmaakt bevat inwoners die zaken kopen, tips of zaad geven, en af en toe een praatje willen slaan. 
+
+Hier is een video van de officiële GBA implementatie:
+
+{{< youtube Y2c-A3O-OoA >}}
+
+<br/>
+Er zitten erg veel aspecten in het GBA Harvest Moon spel, waarvan je uiteraard niet alles hoeft te implementeren. Wat moet **minimaal** aanwezig zijn?
+
+* Scene 1: Een titelscherm.
+* Scene 2: Het weiland waar je dingen kan zaaien en verzamelen als de groeten rijp voor de oogst zijn. Het erf moet groter dan het GBA scherm zijn, scrolling is dus een vereiste. 
+* Een primitieve vorm van een inventory systeem.
+* Scene 3: Je huis aan het erf, dat je kan betreden om te slapen.
+
+Wat is optioneel (maar levert extra punten op)?
+
+* Dieren op het erf. 
+* Het gebruik van tools die de oogst/groei versnellen: schup, gieter, ...
+* Buurtbewoners in de vorm van AI die producten aanbieden. 
+* Weer effecten die je oogst beïnvloeden.
+* ... Verzin maar iets!
+
+Assets mag je zelf maken, maar dat moet niet. Dit kan je ook lenen van andere populaire farming simulator games. Verlies hier niet te veel tijd mee!
+
+Inleverformaat op dezelfde manier als in de eerste kans. Deadline op vrijdag, _13 augustus 2021, 12u 's middags_.
+
+## Project opdracht - eerste kans
 
 **Deadline**: (strict!) woensdag 27/01/2021, 12u 's middags.
 
