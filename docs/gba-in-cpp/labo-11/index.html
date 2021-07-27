@@ -12,21 +12,19 @@
     <title>Labo 11: een GBA spel porten naar Qt :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1617260502" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1617260502" rel="stylesheet">
-    <link href="../../css/hybrid.css?1617260502" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1617260502" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1617260502" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1617260502" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1617260502" rel="stylesheet">
-    <link href="../../css/theme.css?1617260502" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1617260502" rel="stylesheet">
+    <link href="../../css/nucleus.css?1627373191" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1627373191" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1627373191" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1627373191" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1627373191" rel="stylesheet">
+    <link href="../../css/theme.css?1627373191" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1627373191" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1617260502" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1627373191" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1617260502"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1627373191"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -38,28 +36,7 @@
         }
       
     </style>
-      <script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-
-<script>
-window.MathJax = {
-  chtml: {
-    scale: 2,                      
-    minScale: .5,                  
-    matchFontHeight: true,         
-    mtextInheritFont: false,       
-    merrorInheritFont: true,       
-    mathmlSpacing: false,          
-    skipAttributes: {},            
-    exFactor: .5,                  
-    displayAlign: 'center',        
-    displayIndent: '0'             
-  }
-};
-</script>
-
-<script src=../../js/osc.js></script>
+    
   </head>
   <body class="" data-url="../../gba-in-cpp/labo-11/">
     <nav id="sidebar" class="">
@@ -82,14 +59,14 @@ window.MathJax = {
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1617260502"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1617260502"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1627373191"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1627373191"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1617260502"></script>
+<script type="text/javascript" src="../../js/search.js?1627373191"></script>
 
     
   </div>
@@ -926,16 +903,13 @@ window.MathJax = {
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#eigen-widgets-implementeren">Eigen widgets implementeren</a></li>
-<li><a href="#gebruik-maken-van-een-abstractielaag">Gebruik maken van een abstractielaag</a></li>
-<li><a href="#werken-met-timers-voor-updates">Werken met timers voor updates</a></li>
-<li><a href="#a-name-oef-a-labo-oefeningen"><a name="oef"></a>Labo oefeningen</a></li>
-<li><a href="#denkvragen">Denkvragen</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#eigen-widgets-implementeren">Eigen widgets implementeren</a></li>
+    <li><a href="#gebruik-maken-van-een-abstractielaag">Gebruik maken van een abstractielaag</a></li>
+    <li><a href="#werken-met-timers-voor-updates">Werken met timers voor updates</a></li>
+    <li><a href="#a-nameoefalabo-oefeningen"><a name="oef"></a>Labo oefeningen</a></li>
+    <li><a href="#denkvragen">Denkvragen</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -959,44 +933,36 @@ window.MathJax = {
         
 
 
-
-
 <h2 id="eigen-widgets-implementeren">Eigen widgets implementeren</h2>
-
 <p>De objectenboom uit <a href="../../gba-in-cpp/labo-10">labo 10</a> leert ons dat heel wat Qt objecten afleiden van <code>QWidget</code>. Dat is de ideale startplaats om zelf een widget te implementeren. Veel Qt objecten voorzien een <code>override</code> om het tekenen zelf af te kunnen handelen, vergelijkbaar met de while loop in een typisch gameboy spel.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">paintEvent</span>(QPaintEvent <span style="color:#f92672">*</span>event) override;</code></pre></div>
-<p>In het <a href="http://doc.qt.io/qt-5/qtwidgets-widgets-tetrix-example.html">Textrix Qt Voorbeeld</a> wordt er gebruikt gemaakt van custom <code>QFrame</code> en <code>QWidget</code> implementaties die eigen objecten bijhouden die de tetris blokken voorstellen. Het tekenen van die blokken wordt aan de eigen code overgelaten. De <code>QPainter</code> klasse handelt het low-level tekenen af.</p>
-
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#00a8c8">void</span> <span style="color:#75af00">paintEvent</span><span style="color:#111">(</span><span style="color:#111">QPaintEvent</span> <span style="color:#f92672">*</span><span style="color:#111">event</span><span style="color:#111">)</span> <span style="color:#111">override</span><span style="color:#111">;</span>
+</code></pre></div><p>In het <a href="http://doc.qt.io/qt-5/qtwidgets-widgets-tetrix-example.html">Textrix Qt Voorbeeld</a> wordt er gebruikt gemaakt van custom <code>QFrame</code> en <code>QWidget</code> implementaties die eigen objecten bijhouden die de tetris blokken voorstellen. Het tekenen van die blokken wordt aan de eigen code overgelaten. De <code>QPainter</code> klasse handelt het low-level tekenen af.</p>
 <p>Dit voorbeeld, uit het voorbeeld genomen, tekent een tetris &ldquo;shape&rdquo; op het spelbord voor een gegeven painter instantie:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> TetrixBoard<span style="color:#f92672">::</span>drawSquare(QPainter <span style="color:#f92672">&amp;</span>painter, <span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y, TetrixShape shape)
-{
-    <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">const</span> QRgb colorTable[<span style="color:#ae81ff">8</span>] <span style="color:#f92672">=</span> {
-        <span style="color:#ae81ff">0x000000</span>, <span style="color:#ae81ff">0xCC6666</span>, <span style="color:#ae81ff">0x66CC66</span>, <span style="color:#ae81ff">0x6666CC</span>,
-        <span style="color:#ae81ff">0xCCCC66</span>, <span style="color:#ae81ff">0xCC66CC</span>, <span style="color:#ae81ff">0x66CCCC</span>, <span style="color:#ae81ff">0xDAAA00</span>
-    };
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#00a8c8">void</span> <span style="color:#111">TetrixBoard</span><span style="color:#f92672">::</span><span style="color:#111">drawSquare</span><span style="color:#111">(</span><span style="color:#111">QPainter</span> <span style="color:#f92672">&amp;</span><span style="color:#111">painter</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">y</span><span style="color:#111">,</span> <span style="color:#111">TetrixShape</span> <span style="color:#111">shape</span><span style="color:#111">)</span>
+<span style="color:#111">{</span>
+    <span style="color:#00a8c8">static</span> <span style="color:#00a8c8">const</span> <span style="color:#111">QRgb</span> <span style="color:#111">colorTable</span><span style="color:#111">[</span><span style="color:#ae81ff">8</span><span style="color:#111">]</span> <span style="color:#f92672">=</span> <span style="color:#111">{</span>
+        <span style="color:#ae81ff">0x000000</span><span style="color:#111">,</span> <span style="color:#ae81ff">0xCC6666</span><span style="color:#111">,</span> <span style="color:#ae81ff">0x66CC66</span><span style="color:#111">,</span> <span style="color:#ae81ff">0x6666CC</span><span style="color:#111">,</span>
+        <span style="color:#ae81ff">0xCCCC66</span><span style="color:#111">,</span> <span style="color:#ae81ff">0xCC66CC</span><span style="color:#111">,</span> <span style="color:#ae81ff">0x66CCCC</span><span style="color:#111">,</span> <span style="color:#ae81ff">0xDAAA00</span>
+    <span style="color:#111">};</span>
 
-    QColor color <span style="color:#f92672">=</span> colorTable[<span style="color:#66d9ef">int</span>(shape)];
-    painter.fillRect(x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, squareWidth() <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>, squareHeight() <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>,
-                     color);
+    <span style="color:#111">QColor</span> <span style="color:#111">color</span> <span style="color:#f92672">=</span> <span style="color:#111">colorTable</span><span style="color:#111">[</span><span style="color:#00a8c8">int</span><span style="color:#111">(</span><span style="color:#111">shape</span><span style="color:#111">)];</span>
+    <span style="color:#111">painter</span><span style="color:#111">.</span><span style="color:#111">fillRect</span><span style="color:#111">(</span><span style="color:#111">x</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">y</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">squareWidth</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span> <span style="color:#111">squareHeight</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span><span style="color:#111">,</span>
+                     <span style="color:#111">color</span><span style="color:#111">);</span>
 
-    painter.setPen(color.light());
-    painter.drawLine(x, y <span style="color:#f92672">+</span> squareHeight() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, x, y);
-    painter.drawLine(x, y, x <span style="color:#f92672">+</span> squareWidth() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, y);
+    <span style="color:#111">painter</span><span style="color:#111">.</span><span style="color:#111">setPen</span><span style="color:#111">(</span><span style="color:#111">color</span><span style="color:#111">.</span><span style="color:#111">light</span><span style="color:#111">());</span>
+    <span style="color:#111">painter</span><span style="color:#111">.</span><span style="color:#111">drawLine</span><span style="color:#111">(</span><span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#111">y</span> <span style="color:#f92672">+</span> <span style="color:#111">squareHeight</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#111">y</span><span style="color:#111">);</span>
+    <span style="color:#111">painter</span><span style="color:#111">.</span><span style="color:#111">drawLine</span><span style="color:#111">(</span><span style="color:#111">x</span><span style="color:#111">,</span> <span style="color:#111">y</span><span style="color:#111">,</span> <span style="color:#111">x</span> <span style="color:#f92672">+</span> <span style="color:#111">squareWidth</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">y</span><span style="color:#111">);</span>
 
-    painter.setPen(color.dark());
-    painter.drawLine(x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, y <span style="color:#f92672">+</span> squareHeight() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>,
-                     x <span style="color:#f92672">+</span> squareWidth() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, y <span style="color:#f92672">+</span> squareHeight() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>);
-    painter.drawLine(x <span style="color:#f92672">+</span> squareWidth() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, y <span style="color:#f92672">+</span> squareHeight() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>,
-                     x <span style="color:#f92672">+</span> squareWidth() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
-}</code></pre></div>
-<p>Dit is redelijk <em>low-level</em>: <code>drawLine</code> , <code>setPen</code> en <code>fillRect</code> verwachten coördinaten als input. In Qt is het ook mogelijk om met <a href="http://doc.qt.io/qt-5/qtopengl-index.html">OpenGL</a> te werken maar dat valt buiten deze cursus.</p>
-
+    <span style="color:#111">painter</span><span style="color:#111">.</span><span style="color:#111">setPen</span><span style="color:#111">(</span><span style="color:#111">color</span><span style="color:#111">.</span><span style="color:#111">dark</span><span style="color:#111">());</span>
+    <span style="color:#111">painter</span><span style="color:#111">.</span><span style="color:#111">drawLine</span><span style="color:#111">(</span><span style="color:#111">x</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">y</span> <span style="color:#f92672">+</span> <span style="color:#111">squareHeight</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span>
+                     <span style="color:#111">x</span> <span style="color:#f92672">+</span> <span style="color:#111">squareWidth</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">y</span> <span style="color:#f92672">+</span> <span style="color:#111">squareHeight</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+    <span style="color:#111">painter</span><span style="color:#111">.</span><span style="color:#111">drawLine</span><span style="color:#111">(</span><span style="color:#111">x</span> <span style="color:#f92672">+</span> <span style="color:#111">squareWidth</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">y</span> <span style="color:#f92672">+</span> <span style="color:#111">squareHeight</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span>
+                     <span style="color:#111">x</span> <span style="color:#f92672">+</span> <span style="color:#111">squareWidth</span><span style="color:#111">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">y</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#111">);</span>
+<span style="color:#111">}</span>
+</code></pre></div><p>Dit is redelijk <em>low-level</em>: <code>drawLine</code> , <code>setPen</code> en <code>fillRect</code> verwachten coördinaten als input. In Qt is het ook mogelijk om met <a href="http://doc.qt.io/qt-5/qtopengl-index.html">OpenGL</a> te werken maar dat valt buiten deze cursus.</p>
 <h2 id="gebruik-maken-van-een-abstractielaag">Gebruik maken van een abstractielaag</h2>
-
 <p>Herinner je uit <a href="../../cpp/labo-7">labo 7</a> en <a href="../../gba-in-cpp/labo-8">labo 8</a> het gebruik van een abstractielaag om de Gameboy Advance specifieke implementatie te verbergen in een tweede schil. Dit heeft als doel om makkelijk te kunnen switchen van <em>front-end</em>: als wij beslissen om onze GUI logica in Qt te schrijven, kunnen we de meeste logica, onze domein objecten, zonder meer overnemen! Dit bespaart ons véél moeite en duplicatie.</p>
-
 <p>Een schematische voorstelling van de context met als voorbeeld het Arkanoid spel uit <a href="../../gba-in-c/labo-4">labo 4</a>:</p>
-
 <script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
@@ -1027,36 +993,28 @@ graph LR;
     end
 
 </div>
-
 <p>Als alles perfect gescheiden is kan je de klassen aan de linkerkant van het schema volledig herbruiken. Dit betekent dat we géén specifieke GBA of Qt <code>#include</code> gebruiken en alle logica puur op de objecten zelf doen! Een potentiële <code>collidesWith()</code> zal dus op <code>posx</code> en <code>posy</code> checken en <strong>niet in OAM</strong> gaan kijken want dat bestaat niet in Qt. Omgekeerd zal het ook niet de QWidget of QFrame positie gebruiken want dat bestaat niet op de GBA.</p>
-
 <p>Dit concept van stricte scheiding noemen we &ldquo;<strong>separation of concerns</strong>&rdquo; en is een veel gebruikt <a href="https://en.wikipedia.org/wiki/Separation_of_concerns">Design Pattern</a>. In de industrie wordt logica vaak gesplitst om een HTML frontend of een Android of iOS frontend makkelijk te kunnen opbouwen. Op die manier heb je 3 applicaties waarvan de belangrijkste basis, het domein, hetzelfde blijft.</p>
-
 <p>Merk op dat dit eenvoudiger klinkt dan het in werkelijkheid er aan toe gaat: de <a href="https://github.com/wgroeneveld/gba-sprite-engine">gba-sprite-engine</a> die jullie gaan gebruiken voor het project voorziet wel degelijk een scheiding van low-level en high-level GBA implementatie, maar géén stricte scheiding: in scenes gebruik je sprites (zie <a href="https://github.com/wgroeneveld/gba-sprite-engine/blob/master/demos/demo1-basicfeatures/src/flying_stuff_scene.h">demo voorbeeld code</a>, en die sprites hebben een OAM buffer. Die zijn dus ongeschikt om in Qt te kunnen werken. Waarom is dit hier niet gedaan? Omdat het natuurlijk nooit voorkomt dat iemand die een GBA spel ontwerpt dit wil porten naar Qt. Wanneer is dit wel van belang? Als iemand een Nintendo Switch spel maakt en het ook op Steam of in de Playstation Store wil publiceren.</p>
-
 <h2 id="werken-met-timers-voor-updates">Werken met timers voor updates</h2>
-
 <p>In ons GBA spel hebben we één centrale <code>while(1) {}</code> loop waar constant alles opnieuw getekend wordt. In Qt wordt de paint methode automatisch aangeroepen, maar daarvoor moeten natuurlijk wel nog variabelen van waarde veranderen. In het Tetrix voorbeeld wordt hiervoor een <code>QBasicTimer</code> instance gebruikt:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C">QBasicTimer timer;
-timer.start(timeoutTime(), this);</code></pre></div>
-<p>Om <code>this</code> te kunnen meegeven moet je een <code>void timerEvent(QTimerEvent *event)</code> implementatie voorzien waarin je je logica schrijft om bijvoorbeeld zwaartekracht te imiteren. Elk <code>QObject</code> heeft zo&rsquo;n implementatie: het is dus zaak om je niet te vergissen en enkel je eigen timer specifieke dingen af te handelen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> TetrixBoard<span style="color:#f92672">::</span>timerEvent(QTimerEvent <span style="color:#f92672">*</span>event) {
-    <span style="color:#66d9ef">if</span> (event<span style="color:#f92672">-&gt;</span>timerId() <span style="color:#f92672">==</span> timer.timerId()) {
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#111">QBasicTimer</span> <span style="color:#111">timer</span><span style="color:#111">;</span>
+<span style="color:#111">timer</span><span style="color:#111">.</span><span style="color:#111">start</span><span style="color:#111">(</span><span style="color:#111">timeoutTime</span><span style="color:#111">(),</span> <span style="color:#111">this</span><span style="color:#111">);</span>
+</code></pre></div><p>Om <code>this</code> te kunnen meegeven moet je een <code>void timerEvent(QTimerEvent *event)</code> implementatie voorzien waarin je je logica schrijft om bijvoorbeeld zwaartekracht te imiteren. Elk <code>QObject</code> heeft zo&rsquo;n implementatie: het is dus zaak om je niet te vergissen en enkel je eigen timer specifieke dingen af te handelen:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#00a8c8">void</span> <span style="color:#111">TetrixBoard</span><span style="color:#f92672">::</span><span style="color:#111">timerEvent</span><span style="color:#111">(</span><span style="color:#111">QTimerEvent</span> <span style="color:#f92672">*</span><span style="color:#111">event</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+    <span style="color:#00a8c8">if</span> <span style="color:#111">(</span><span style="color:#111">event</span><span style="color:#f92672">-&gt;</span><span style="color:#111">timerId</span><span style="color:#111">()</span> <span style="color:#f92672">==</span> <span style="color:#111">timer</span><span style="color:#111">.</span><span style="color:#111">timerId</span><span style="color:#111">())</span> <span style="color:#111">{</span>
         <span style="color:#75715e">// do stuff, evt timer restarten
-</span><span style="color:#75715e"></span>    } <span style="color:#66d9ef">else</span> {
+</span><span style="color:#75715e"></span>    <span style="color:#111">}</span> <span style="color:#00a8c8">else</span> <span style="color:#111">{</span>
         <span style="color:#75715e">// parent timing
-</span><span style="color:#75715e"></span>        QFrame<span style="color:#f92672">::</span>timerEvent(event);
-    }
-}</code></pre></div>
-<h2 id="a-name-oef-a-labo-oefeningen"><a name="oef"></a>Labo oefeningen</h2>
-
+</span><span style="color:#75715e"></span>        <span style="color:#111">QFrame</span><span style="color:#f92672">::</span><span style="color:#111">timerEvent</span><span style="color:#111">(</span><span style="color:#111">event</span><span style="color:#111">);</span>
+    <span style="color:#111">}</span>
+<span style="color:#111">}</span>
+</code></pre></div><h2 id="a-nameoefalabo-oefeningen"><a name="oef"></a>Labo oefeningen</h2>
 <ol>
 <li>Teken in een eigen <code>QWidget</code> implementatie een eenvoudig mannetje met hulp van wat simpele rechthoeken. Laat dat mannetje naar links en rechts bewegen door keyboard events op te vangen. Herinner je vanuit <a href="../../gba-in-cpp/labo-10">labo 10</a> dat dit met slots en signals kan. Implementeer hiervoor <code>void keyPressEvent(QKeyEvent *event);</code> en luister naar <code>event-&gt;key()</code>.</li>
 <li>Download <a href="../../teaching/cpp/gba-arkanoid.zip">gba-arkanoid</a>, een C++ implementatie van de oefening uit <a href="../../gba-in-c/labo-4#oef">labo 4</a>. Dit CMake/CLion project is opgesplitst in 2 submappen: <em>domain</em> en <em>gba</em>. Het domein bevat methodes als <code>collidesWith</code> en <code>updatePosition</code>. De OAM GBA impelemntatie leeft in de gba submap. <br/>Port dit werkend minimalistisch spel naar Qt door de domein submap volledig <em>intact</em> te laten! De makkelijkste start is een nieuw project via Qt Creator waarbij je de domein code kopiëert.</li>
 </ol>
-
 <h2 id="denkvragen">Denkvragen</h2>
-
 <ol>
 <li>Beargumenteer waarom het principe van &ldquo;separation of concerns&rdquo; belangrijk kan zijn. Geef twee concrete voorbeelden waarom dit het geval is.</li>
 <li>Wanneer beslis je om code te kopiëren, en wanneer beslis je om code te herbruiken? Beschrijf twee situaties waarin je het ene of het andere zou handhaven.</li>
@@ -1638,19 +1596,17 @@ timer.start(timeoutTime(), this);</code></pre></div>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1617260502"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1617260502"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1617260502"></script>
-    <script src="../../js/jquery.sticky.js?1617260502"></script>
-    <script src="../../js/featherlight.min.js?1617260502"></script>
-    <script src="../../js/highlight.pack.js?1617260502"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1617260502"></script>
-    <script src="../../js/learn.js?1617260502"></script>
-    <script src="../../js/hugo-learn.js?1617260502"></script>
+    <script src="../../js/clipboard.min.js?1627373191"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1627373191"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1627373191"></script>
+    <script src="../../js/jquery.sticky.js?1627373191"></script>
+    <script src="../../js/featherlight.min.js?1627373191"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1627373191"></script>
+    <script src="../../js/learn.js?1627373191"></script>
+    <script src="../../js/hugo-learn.js?1627373191"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1617260502"></script>
+            <script src="../../mermaid/mermaid.js?1627373191"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

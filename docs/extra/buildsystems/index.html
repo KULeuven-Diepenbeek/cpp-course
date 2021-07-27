@@ -12,21 +12,19 @@
     <title>Een introductie in C(&#43;&#43;) Build Systemen :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1617260502" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1617260502" rel="stylesheet">
-    <link href="../../css/hybrid.css?1617260502" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1617260502" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1617260502" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1617260502" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1617260502" rel="stylesheet">
-    <link href="../../css/theme.css?1617260502" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1617260502" rel="stylesheet">
+    <link href="../../css/nucleus.css?1627373191" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1627373191" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1627373191" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1627373191" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1627373191" rel="stylesheet">
+    <link href="../../css/theme.css?1627373191" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1627373191" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1617260502" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1627373191" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1617260502"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1627373191"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -38,28 +36,7 @@
         }
       
     </style>
-      <script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-
-<script>
-window.MathJax = {
-  chtml: {
-    scale: 2,                      
-    minScale: .5,                  
-    matchFontHeight: true,         
-    mtextInheritFont: false,       
-    merrorInheritFont: true,       
-    mathmlSpacing: false,          
-    skipAttributes: {},            
-    exFactor: .5,                  
-    displayAlign: 'center',        
-    displayIndent: '0'             
-  }
-};
-</script>
-
-<script src=../../js/osc.js></script>
+    
   </head>
   <body class="" data-url="../../extra/buildsystems/">
     <nav id="sidebar" class="">
@@ -82,14 +59,14 @@ window.MathJax = {
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1617260502"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1617260502"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1627373191"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1627373191"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1617260502"></script>
+<script type="text/javascript" src="../../js/search.js?1627373191"></script>
 
     
   </div>
@@ -926,22 +903,21 @@ window.MathJax = {
                     <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#hoe-compileer-ik-één-file">Hoe compileer ik één file?</a></li>
-<li><a href="#hoe-vergemakkelijk-ik-het-compileren-van-één-project">Hoe vergemakkelijk ik het compileren van één project?</a></li>
-<li><a href="#hoe-vergemakkelijk-ik-het-maken-van-een-makefile">Hoe vergemakkelijk ik het maken van een Makefile?</a>
-<ul>
-<li><a href="#a-gebruik-cmake">A. Gebruik CMake</a></li>
-<li><a href="#b-gebruik-qmake">B. Gebruik QMake</a></li>
-</ul></li>
-<li><a href="#hoe-vergemakkelijk-ik-het-compileren-zonder-makefiles">Hoe vergemakkelijk ik het compileren zonder Makefiles?</a>
-<ul>
-<li><a href="#a-gebruik-scons">A. Gebruik SCons</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#hoe-compileer-ik-één-file">Hoe compileer ik één file?</a></li>
+    <li><a href="#hoe-vergemakkelijk-ik-het-compileren-van-één-project">Hoe vergemakkelijk ik het compileren van één project?</a></li>
+    <li><a href="#hoe-vergemakkelijk-ik-het-maken-van-een-makefile">Hoe vergemakkelijk ik het maken van een Makefile?</a>
+      <ul>
+        <li><a href="#a-gebruik-cmake">A. Gebruik CMake</a></li>
+        <li><a href="#b-gebruik-qmake">B. Gebruik QMake</a></li>
+      </ul>
+    </li>
+    <li><a href="#hoe-vergemakkelijk-ik-het-compileren-zonder-makefiles">Hoe vergemakkelijk ik het compileren zonder Makefiles?</a>
+      <ul>
+        <li><a href="#a-gebruik-scons">A. Gebruik SCons</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -965,12 +941,8 @@ window.MathJax = {
         
 
 
-
-
 <p>Zie ook <a href="../../c/labo-1#compiling">labo 1: (herhaaldelijk) compileren</a></p>
-
 <p>Een greep uit de mogelijkheden, schematisch samengevat:</p>
-
 <script defer src="../../mermaid/mermaid.min.js">
 	mermaid.initialize({
 		startOnLoad: true,
@@ -995,27 +967,18 @@ graph LR;
     shell --> compiler
 
 </div>
-
 <h2 id="hoe-compileer-ik-één-file">Hoe compileer ik één file?</h2>
-
 <p>We gebruiken de UNIX GNU gcc compiler om C soure files om te zetten in binaries. Het simpelste om iets te compileren is:</p>
-
 <blockquote>
 <p><code>g++ [bestand.cpp] -o [output.bin]</code></p>
 </blockquote>
-
 <p>Het programma uitvoeren doe je dan met <code>./output.bin</code>. Normaal gezien kent het OS de execute flag automatisch toe, anders moet je nog <code>chmod +x output.bin</code> uitvoeren.</p>
-
 <p>Dit kan je makkelijk automatiseren met een shell script door de compilatie en de executie in twee regels onder elkaar te plaatsen. De C(++) wereld voorziet echter flexibelere tools die dit voor je kunnen vergemakkelijken.</p>
-
 <h2 id="hoe-vergemakkelijk-ik-het-compileren-van-één-project">Hoe vergemakkelijk ik het compileren van één project?</h2>
-
 <p>Gebruik daarvoor <code>Makefile</code> bestanden. Een Makefile is platte tekst die informatie bevat over je bronbestanden, libraries, binaries, &hellip; zodat je met één enkel commando:</p>
-
 <blockquote>
 <p><code>make</code></p>
 </blockquote>
-
 <p>Een aantal instructies kan ontketenen. Een Makefile is opgesplitst in verschillende <strong>blokken</strong>. Elke blok bevat één <em>keyword</em> gevolgd door <code>:</code>, met op de volgende regels (voorafgaand met tab!) de uit te voeren instructies. Bijvoorbeeld:</p>
 <pre><code>.DEFAULT_GOAL := all
 
@@ -1031,62 +994,44 @@ compile:
 link:
     $(CC) -o main.out main.o
 
-all: clean compile link</code></pre>
-<p>Bovenstaande Makefile bevat de volgende blokken:</p>
-
+all: clean compile link
+</code></pre><p>Bovenstaande Makefile bevat de volgende blokken:</p>
 <ol>
 <li>clean</li>
 <li>compile</li>
 <li>link</li>
 <li>all</li>
 </ol>
-
 <p>Merk op dat als géén blok als argument op <code>make</code> voorzien is, dat dan de &ldquo;all&rdquo; block uitgevoerd wordt (<code>.DEFAULT_GOAL</code>, eerste regel). Op die manier kan je met het commando <code>make compile</code> de compilatiestap uitvoeren, maar met <code>make</code> of <code>make all</code> een hele reeks aan stappen.</p>
-
 <p>Makefiles verzorgen dus het uitvoeren van de compilatie, zodat wij nooit meer rechtstreeks <code>g++</code> of <code>gcc</code> moeten uitvoeren.</p>
-
 <p>Deze configuratiebestanden komen niet zonder nadelen:</p>
-
 <ol>
 <li>De syntax is erg cryptisch.</li>
 <li>Makefiles kunnen énorm groot, en dus verwarrend, worden.</li>
 </ol>
-
 <p><a href="ftp://ftp.gnu.org/old-gnu/Manuals/make-3.79.1/html_chapter/make_2.html">Meer info over Makefiles</a>.</p>
-
 <h2 id="hoe-vergemakkelijk-ik-het-maken-van-een-makefile">Hoe vergemakkelijk ik het maken van een Makefile?</h2>
-
 <p>Om tekortkomingen van de archaïsche Makefile bestanden goed te maken zijn er nieuwe tools ontwikkeld die Makefiles genereren. Er zijn twee grote varianten voorzien: CMake en QMake.</p>
-
 <h3 id="a-gebruik-cmake">A. Gebruik CMake</h3>
-
 <p>CMake genereert <code>Makefile</code> bestanden door middel van <code>CMakeLists.txt</code> configuratie bestanden. Hierin <strong>beschrijf</strong> je je project, met een eenvoudigere syntax, waarna CMake het genereren van de Makefile uit handen neemt. Dit wil zeggen dat je nog steeds 2 stappen dient uit te voeren: het genereren, én het uiteindelijk uitvoeren van de Makefile zelf. <strong>Make blijft dus je comipler aanroepen!</strong>.</p>
-
 <p>Een typisch <code>CMakeLists.txt</code> bestand ziet er als volgt uit:</p>
 <pre><code>cmake_minimum_required(VERSION 3.10)
 project(mijn_project)
 SET(CMAKE_CXX_STANDARD 11)
 
-add_executable(mijn_binary main.cpp bla.h bla.cpp)</code></pre>
-<p>De volgende eigenschappen zijn beschreven:</p>
-
+add_executable(mijn_binary main.cpp bla.h bla.cpp)
+</code></pre><p>De volgende eigenschappen zijn beschreven:</p>
 <ol>
 <li>Welke compiler toolchain gebruik je? (C++ STD. 11 of hoger)</li>
 <li>Hoe heet je project? (mijn_project)</li>
 <li>Welke source en header files moeten gecompileerd worden? (main.cpp bla.h bla.cpp)</li>
 <li>Hoe heet je binary? (mijn_bindary)</li>
 </ol>
-
 <p>Extra bestanden compileren is een kwestie van bestanden toe te voegen aan het lijstje.</p>
-
 <p>CMake is de standaard build tool in CLion. Je kan met CMake ook eenvoudig <strong>subprojecten</strong> maken, bijvoorbeeld een productie stukje in /src en een test stukje in /test. Download een <a href="../../teaching/cpp/labo-7-unittest.zip">CMake voorbeeld project met unittesten</a> hier.</p>
-
 <p><a href="https://cmake.org/cmake-tutorial/">Meer info over CMake files</a>.</p>
-
 <h3 id="b-gebruik-qmake">B. Gebruik QMake</h3>
-
 <p>Qt heeft zijn eigen Makefile generatie systeem dat <code>QMake</code> heet. Dit voornamelijk om de tussencompilatie stap te voorzien omdat Qt eigen keywords bij &ldquo;verzonnen&rdquo; heeft in de C++ standaard, zoals <code>signals:</code> en <code>slots:</code>. Omdat QMake deel is van een product is het nooit een goed idee om hier voor te kiezen als je geen Qt project gaat aanmaken. Uiteraard is QMake de standaard build tool in Qt Designer/Creator.</p>
-
 <p>QMake gebruikt projectfiles om de configuratie in op te slaan. Een voorbeeld projectfile (gegenereerd):</p>
 <pre><code>#-------------------------------------------------
 #
@@ -1127,33 +1072,26 @@ FORMS += \
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target</code></pre>
-<p>Deze bestanden worden beheerd door de IDE, niet door jezelf. Dat betekent dat toevoegingen niet manueel dienen te gebeuren.</p>
-
+!isEmpty(target.path): INSTALLS += target
+</code></pre><p>Deze bestanden worden beheerd door de IDE, niet door jezelf. Dat betekent dat toevoegingen niet manueel dienen te gebeuren.</p>
 <p><a href="http://doc.qt.io/archives/qt-4.8/qmake-project-files.html">Meer info over qmake project files</a>.</p>
-
 <h2 id="hoe-vergemakkelijk-ik-het-compileren-zonder-makefiles">Hoe vergemakkelijk ik het compileren zonder Makefiles?</h2>
-
 <p>QMake en CMake bouwen nog steeds verder op het <code>Makefile</code> model. Er zijn echter buildsystemen die hier volledig los van staan, waarvan de populairste SCons is.</p>
-
 <h3 id="a-gebruik-scons">A. Gebruik SCons</h3>
-
 <p>In SCons beschrijf je je project met <strong>python</strong>! Er is gekozen voor een bestaande programmeertaal, in plaats van weeral een configuratie taaltje te verzinnen. Dit maakt SCons bijzonder flexibel: loopen over files in het systeem om ze te pipen naar een compiler, of een zipfile maken als distributiestap, zijn simpele zaken die met bovenstaande tools moeilijker te realiseren zijn.</p>
-
 <p>SCons verwacht één <code>SConstruct</code> bestand. Een voorbeeld <code>SConstruct</code> file:</p>
-<pre><code>env = Environment(CXX = &#39;g++&#39;)
+<pre><code>env = Environment(CXX = 'g++')
 
-gtest = env.SConscript(&#39;lib/gtest/SConscript&#39;, &#39;env&#39;)
-src = env.SConscript(&#39;src/SConscript&#39;, &#39;env&#39;)
-out = env.SConscript(&#39;test/SConscript&#39;, &#39;env gtest src&#39;)
+gtest = env.SConscript('lib/gtest/SConscript', 'env')
+src = env.SConscript('src/SConscript', 'env')
+out = env.SConscript('test/SConscript', 'env gtest src')
 
 # output is an array with path to built binaries. We only built one file - run it (includes gtest_main).
-test = Command( target = &#34;testoutput&#34;,
+test = Command( target = &quot;testoutput&quot;,
                 source = str(out[0]),
                 action = str(out[0]) )
-AlwaysBuild(test)</code></pre>
-<p>SCons vereist een python interpreter (en wat python kennis), en valt daarom buiten de scope van deze cursus. Voor de geïnteresseerden: lees ook <a href="../../post/scons-building/">SCons building in practice</a>.</p>
-
+AlwaysBuild(test)
+</code></pre><p>SCons vereist een python interpreter (en wat python kennis), en valt daarom buiten de scope van deze cursus. Voor de geïnteresseerden: lees ook <a href="../../post/scons-building/">SCons building in practice</a>.</p>
 <p><a href="https://scons.org/doc/production/HTML/scons-man.html">Meer info over SCons</a>.</p>
 
 
@@ -1732,19 +1670,17 @@ AlwaysBuild(test)</code></pre>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1617260502"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1617260502"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1617260502"></script>
-    <script src="../../js/jquery.sticky.js?1617260502"></script>
-    <script src="../../js/featherlight.min.js?1617260502"></script>
-    <script src="../../js/highlight.pack.js?1617260502"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1617260502"></script>
-    <script src="../../js/learn.js?1617260502"></script>
-    <script src="../../js/hugo-learn.js?1617260502"></script>
+    <script src="../../js/clipboard.min.js?1627373191"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1627373191"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1627373191"></script>
+    <script src="../../js/jquery.sticky.js?1627373191"></script>
+    <script src="../../js/featherlight.min.js?1627373191"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1627373191"></script>
+    <script src="../../js/learn.js?1627373191"></script>
+    <script src="../../js/hugo-learn.js?1627373191"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1617260502"></script>
+            <script src="../../mermaid/mermaid.js?1627373191"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
