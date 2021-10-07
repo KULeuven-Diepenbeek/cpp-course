@@ -12,19 +12,19 @@
     <title>Labo 2b: De stack VS de heap :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1627373191" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1627373191" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1627373191" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1627373191" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1627373191" rel="stylesheet">
-    <link href="../../css/theme.css?1627373191" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1627373191" rel="stylesheet">
+    <link href="../../css/nucleus.css?1633591538" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1633591538" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1633591538" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1633591538" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1633591538" rel="stylesheet">
+    <link href="../../css/theme.css?1633591538" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1633591538" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1627373191" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1633591538" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1627373191"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1633591538"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1627373191"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1627373191"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1633591538"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1633591538"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1627373191"></script>
+<script type="text/javascript" src="../../js/search.js?1633591538"></script>
 
     
   </div>
@@ -909,7 +909,6 @@
         <li><a href="#program-memory">Program Memory</a></li>
         <li><a href="#the-stack">The Stack</a></li>
         <li><a href="#the-heap">The Heap</a></li>
-        <li><a href="#inspecting-program-memory-in-the-os">Inspecting program memory in the OS</a></li>
         <li><a href="#should-i-use-the-stack-or-the-heap">Should I use the stack or the heap?</a></li>
       </ul>
     </li>
@@ -1022,14 +1021,6 @@ Set size. Contains <em>automatic variables</em>: variables created when (automat
 	</div>
 </div>
 <p>As another side node, it is possible to resize variables on the heap, using <code>realloc()</code>. This is simply not possible on the stack: they cannot be resized. Also, using <a href="https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm">calloc</a> instead of malloc initializes the allocated memory to zero instead of &ldquo;nothing&rdquo;. So now you know how to use <code>malloc</code>, <code>calloc</code>, <code>realloc</code>, and <code>free</code>.</p>
-<h3 id="inspecting-program-memory-in-the-os">Inspecting program memory in the OS</h3>
-<p>Unix-like operating systems implement <a href="https://en.wikipedia.org/wiki/Procfs">procfs</a>, a special filesystem mapped to <code>/proc</code>, that makes it easy for us to inspect program running program state. You will need the process ID (PID) as it is the subdir name. Interesting files to inspect are:</p>
-<ul>
-<li><code>/proc/PID/maps</code>, a text file containing information about mapped files and blocks (like heap and stack).</li>
-<li><code>/proc/PID/mem</code>, a binary image representing the process&rsquo;s virtual memory, can only be accessed by a ptrace&rsquo;ing process.</li>
-</ul>
-<p>We will take a closer look at these during the labs.</p>
-<p>Mac OSX Does not have <em>procfs</em>. Instead, you will have to rely on commandline tools such as <code>sysctl</code> to query process information.</p>
 <h3 id="should-i-use-the-stack-or-the-heap">Should I use the stack or the heap?</h3>
 <p>Good question. The answer is obviously <strong>both</strong>. Use the stack when:</p>
 <ul>
@@ -1843,17 +1834,17 @@ main:
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1627373191"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1627373191"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1627373191"></script>
-    <script src="../../js/jquery.sticky.js?1627373191"></script>
-    <script src="../../js/featherlight.min.js?1627373191"></script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1627373191"></script>
-    <script src="../../js/learn.js?1627373191"></script>
-    <script src="../../js/hugo-learn.js?1627373191"></script>
+    <script src="../../js/clipboard.min.js?1633591538"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1633591538"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1633591538"></script>
+    <script src="../../js/jquery.sticky.js?1633591538"></script>
+    <script src="../../js/featherlight.min.js?1633591538"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1633591538"></script>
+    <script src="../../js/learn.js?1633591538"></script>
+    <script src="../../js/hugo-learn.js?1633591538"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1627373191"></script>
+            <script src="../../mermaid/mermaid.js?1633591538"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
