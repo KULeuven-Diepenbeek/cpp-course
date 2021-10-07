@@ -87,16 +87,6 @@ What happens when you omit `malloc()` and simply write `Data *heap_data = memcpy
 
 As another side node, it is possible to resize variables on the heap, using `realloc()`. This is simply not possible on the stack: they cannot be resized. Also, using [calloc](https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm) instead of malloc initializes the allocated memory to zero instead of "nothing". So now you know how to use `malloc`, `calloc`, `realloc`, and `free`.
 
-### Inspecting program memory in the OS
-
-Unix-like operating systems implement [procfs](https://en.wikipedia.org/wiki/Procfs), a special filesystem mapped to `/proc`, that makes it easy for us to inspect program running program state. You will need the process ID (PID) as it is the subdir name. Interesting files to inspect are:
-
-* `/proc/PID/maps`, a text file containing information about mapped files and blocks (like heap and stack).
-* `/proc/PID/mem`, a binary image representing the process's virtual memory, can only be accessed by a ptrace'ing process.
-
-We will take a closer look at these during the labs.
-
-Mac OSX Does not have _procfs_. Instead, you will have to rely on commandline tools such as `sysctl` to query process information. 
 
 ### Should I use the stack or the heap?
 
