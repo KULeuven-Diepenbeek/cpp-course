@@ -127,41 +127,41 @@ Elke zichtbare bit stelt een kleur voor die in het palet is opgeslagen, aangedui
     <div class="col-md-6">
         <u>Palet tabel</u>:
 
-        <table class="table table-hover">
-            <tr>
-                <th>index</th>
-                <th>kleur</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> -> zwart</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td> -> groen</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td> -> rood</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td> -> wit</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td> -> blauw</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td> -> paars (transparant)</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td> -> geel</td>
-            </tr>
-        </table>
-    </div>
+<table class="table table-hover">
+    <tr>
+        <th>index</th>
+        <th>kleur</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td> -> zwart</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td> -> groen</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td> -> rood</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td> -> wit</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td> -> blauw</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td> -> paars (transparant)</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td> -> geel</td>
+    </tr>
+</table>
+</div>  
 </div>
 
 We onderscheiden dus 4 belangrijke concepten om een image te renderen op de Gameboy Advance:
