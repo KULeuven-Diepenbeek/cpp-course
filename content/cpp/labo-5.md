@@ -234,7 +234,7 @@ Oeps. Voorzie in dat geval je eigen copy constructor met `Getal(const Getal& oth
 
 ### Methodes in Klassen en Reference types
 
-Herinner je uit [labo 2](/c/labo-2) reference type definities zoals `int &getal`. Deze notatie ga je veel tegen komen in C++ methode argumenten. Objecten die meegegeven worden zijn bijna altijd reference types in plaats van pointers. Waarom legt de [C++ FAQ](https://isocpp.org/wiki/faq/references#refs-vs-ptrs) uit:
+Herinner je uit [labo 2](/c/labo-2) **reference type definities** zoals `int &getal`. Dit kan enkel worden gecompileerd met `g++` en niet `gcc`. Deze notatie ga je veel tegen komen in C++ methode argumenten. Objecten die meegegeven worden zijn bijna altijd reference types in plaats van pointers. Waarom legt de [C++ FAQ](https://isocpp.org/wiki/faq/references#refs-vs-ptrs) uit:
 
 > Use references when you can, and pointers when you have to.
 References are usually preferred over pointers whenever you don’t need “reseating”. This usually means that references are most useful in a class’s public interface. References typically appear on the skin of an object, and pointers on the inside.
@@ -280,38 +280,19 @@ void telOpManualClean() {
 
 `Getal(3)` zonder new ziet er vreemd uit als je talen als C# en Java gewoon bent, maar de constructor wordt evenzeer aangeroepen en een object wordt evenzeer voor je geïnstantieerd.
 
-#### De Stack
+**Zonder `new`**: object op de _stack_---dit is géén pointer. Denk aan C's `struct` type.
 
-Lokale variabelen worden op de **stack** bewaard. De stack bevat een tijdelijke workspace aan geheugen wanneer functies aangeroepen worden, die automatisch opgeruimd worden als die functies klaar zijn met hun werk. De Stack is een LIFO lijst.
+**Met `new`**: object op de _heap_---dit is wél een pointer. Denk aan C's `*struct` type.
 
-#### De Heap
+#### C++ & De Stack/Heap
 
-De heap is geheugen dat opzij gezet wordt voor dynamische allocatie. Zodra je een pointer aanmaakt komt dit op de heap terecht en ben je zelf verantwoordelijk voor het opruimen hiervan. In Java zijn instance variabelen en objecten deel van de heap, in C++ is dat wat complexer.
+Zoals gekend uit [het hoofdstuk over de stack & de heap](/cpp-course/c/stack-vs-heap/) worden lokale variabelen op de **stack** bewaard. De stack bevat een tijdelijke workspace aan geheugen wanneer functies aangeroepen worden, die automatisch opgeruimd worden als die functies klaar zijn met hun werk. De Stack is een LIFO lijst.
 
-{{<mermaid>}}
-graph TD;
-    subgraph De Stack
-      D[Getal ptr_getal = new Getal]
-      C[Getal getal = Getal]
-      A[int main]
-      B[void telOp]
-      B --> A
-      C --> B
-      D --> B
-    end
-    subgraph De Heap
-      E[Getal geheugen]
-      D -.-> E
-    end
-{{< /mermaid >}}
-
-Het adres in `ptr_getal` leeft op de stack binnen de `telOp()` methode, maar het geheugen waar het naar verwijst leeft op de heap. Het adres verdwijnt als alles van telOp weggegooid wordt in de stack - maar het getal geheugen blijft bestaan totdat iemand met `delete` de opkuis doet.
-
-De dotted pijl van ptr_getal naar getal in de heap verdwijnt en is nooit meer toegankelijk: dit noemt men "_leaking_". Moderne C++ programma's maken zelden gebruik van "raw pointers" (`*`) en laten de compiler en het OS beslissen of zaken op de stack of de heap moeten komen.
+Deze functionaliteit verandert _niet_ als we de `gcc` compiler vervangen door `g++`! Je kan echter dankzij functionaliteiten van C++11 bepaalde tekortkomingen gedeeltelijk wegwerken, zoals het automatisch opruimen van dangling pointers. Daar dienen _smart pointers_ voor. 
 
 #### Smart pointers in C++ 11
 
-In plaats van zelf geheugen te managen - we hebben immers wel wat beters te doen - laten we dat over aan de taal door "smart pointers" te gebruiken. Dit zijn STL wrappers (zie onder) die een object encapsuleren. Als een block stopt, kuist deze smart variabele je wrapped object zelf ook op:
+In plaats van zelf geheugen te beheren---we hebben immers wel wat beters te doen---laten we dat over aan de taal door "smart pointers" te gebruiken. Dit zijn STL wrappers (zie onder) die een object encapsuleren. Als een block stopt, kuist deze smart variabele je wrapped object zelf ook op:
 
 ```C
 unique_ptr<Getal> g (new Getal());                // zonder auto
@@ -321,7 +302,7 @@ nieuwGetal->telOpMet(*g);
 
 We komen later nog op de template `<>` notatie terug. Neem hier aan dat dit werkt als Generics in Java.
 
-Zie p.470 of [Smart pointers in modern C++](https://docs.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp).
+Zie p.470 van [Smart pointers in modern C++](https://docs.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp) van de Microsoft docs, of de [Smart pointer reference](https://en.cppreference.com/book/intro/smart_pointers) van `cppreference.com`.
 
 Vergeet niet dat smart pointers niet werken in combinatie met variabelen op de stack (dus altijd `new` gebruiken). Stel dat een klasse een referentie naar een `unique_ptr` heeft die automatisch de pointer zou moeten opkuisen:
 
