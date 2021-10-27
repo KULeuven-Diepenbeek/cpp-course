@@ -12,19 +12,19 @@
     <title>Labo 5: Weg met C, Hallo C&#43;&#43; :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1634732757" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1634732757" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1634732757" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1634732757" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1634732757" rel="stylesheet">
-    <link href="../../css/theme.css?1634732757" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1634732757" rel="stylesheet">
+    <link href="../../css/nucleus.css?1635337570" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1635337570" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1635337570" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1635337570" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1635337570" rel="stylesheet">
+    <link href="../../css/theme.css?1635337570" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1635337570" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1634732757" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1635337570" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1634732757"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1635337570"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1634732757"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1634732757"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1635337570"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1635337570"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1634732757"></script>
+<script type="text/javascript" src="../../js/search.js?1635337570"></script>
 
     
   </div>
@@ -1147,7 +1147,7 @@ fatal error: too many errors emitted, stopping now [-ferror-limit=]
 </span><span style="color:#75715e"></span><span style="color:#111">}</span>
 </code></pre></div><p>Oeps. Voorzie in dat geval je eigen copy constructor met <code>Getal(const Getal&amp; other) : x(new int(*(other.x))) {}</code>. Copy constructors kan je ook defaulten.</p>
 <h3 id="methodes-in-klassen-en-reference-types">Methodes in Klassen en Reference types</h3>
-<p>Herinner je uit <a href="../../c/labo-2">labo 2</a> reference type definities zoals <code>int &amp;getal</code>. Deze notatie ga je veel tegen komen in C++ methode argumenten. Objecten die meegegeven worden zijn bijna altijd reference types in plaats van pointers. Waarom legt de <a href="https://isocpp.org/wiki/faq/references#refs-vs-ptrs">C++ FAQ</a> uit:</p>
+<p>Herinner je uit <a href="../../c/labo-2">labo 2</a> <strong>reference type definities</strong> zoals <code>int &amp;getal</code>. Dit kan enkel worden gecompileerd met <code>g++</code> en niet <code>gcc</code>. Deze notatie ga je veel tegen komen in C++ methode argumenten. Objecten die meegegeven worden zijn bijna altijd reference types in plaats van pointers. Waarom legt de <a href="https://isocpp.org/wiki/faq/references#refs-vs-ptrs">C++ FAQ</a> uit:</p>
 <blockquote>
 <p>Use references when you can, and pointers when you have to.
 References are usually preferred over pointers whenever you don’t need “reseating”. This usually means that references are most useful in a class’s public interface. References typically appear on the skin of an object, and pointers on the inside.</p>
@@ -1181,45 +1181,18 @@ References are usually preferred over pointers whenever you don’t need “rese
 </span><span style="color:#75715e"></span>  <span style="color:#111">delete</span> <span style="color:#111">g</span><span style="color:#111">;</span>
 <span style="color:#111">}</span>
 </code></pre></div><p><code>Getal(3)</code> zonder new ziet er vreemd uit als je talen als C# en Java gewoon bent, maar de constructor wordt evenzeer aangeroepen en een object wordt evenzeer voor je geïnstantieerd.</p>
-<h4 id="de-stack">De Stack</h4>
-<p>Lokale variabelen worden op de <strong>stack</strong> bewaard. De stack bevat een tijdelijke workspace aan geheugen wanneer functies aangeroepen worden, die automatisch opgeruimd worden als die functies klaar zijn met hun werk. De Stack is een LIFO lijst.</p>
-<h4 id="de-heap">De Heap</h4>
-<p>De heap is geheugen dat opzij gezet wordt voor dynamische allocatie. Zodra je een pointer aanmaakt komt dit op de heap terecht en ben je zelf verantwoordelijk voor het opruimen hiervan. In Java zijn instance variabelen en objecten deel van de heap, in C++ is dat wat complexer.</p>
-<script defer src="../../mermaid/mermaid.min.js">
-	mermaid.initialize({
-		startOnLoad: true,
-		flowchart: {
-			useMaxWidth: true
-		}
-	});
-</script>
-<div class="mermaid" align="center" >
-	
-graph TD;
-    subgraph De Stack
-      D[Getal ptr_getal = new Getal]
-      C[Getal getal = Getal]
-      A[int main]
-      B[void telOp]
-      B --> A
-      C --> B
-      D --> B
-    end
-    subgraph De Heap
-      E[Getal geheugen]
-      D -.-> E
-    end
-
-</div>
-<p>Het adres in <code>ptr_getal</code> leeft op de stack binnen de <code>telOp()</code> methode, maar het geheugen waar het naar verwijst leeft op de heap. Het adres verdwijnt als alles van telOp weggegooid wordt in de stack - maar het getal geheugen blijft bestaan totdat iemand met <code>delete</code> de opkuis doet.</p>
-<p>De dotted pijl van ptr_getal naar getal in de heap verdwijnt en is nooit meer toegankelijk: dit noemt men &ldquo;<em>leaking</em>&rdquo;. Moderne C++ programma&rsquo;s maken zelden gebruik van &ldquo;raw pointers&rdquo; (<code>*</code>) en laten de compiler en het OS beslissen of zaken op de stack of de heap moeten komen.</p>
+<p><strong>Zonder <code>new</code></strong>: object op de <em>stack</em>&mdash;dit is géén pointer. Denk aan C&rsquo;s <code>struct</code> type.</p>
+<p><strong>Met <code>new</code></strong>: object op de <em>heap</em>&mdash;dit is wél een pointer. Denk aan C&rsquo;s <code>*struct</code> type.</p>
+<h4 id="c--de-stackheap">C++ &amp; De Stack/Heap</h4>
+<p>Zoals gekend uit <a href="../../cpp-course/c/stack-vs-heap/">het hoofdstuk over de stack &amp; de heap</a> worden lokale variabelen op de <strong>stack</strong> bewaard. De stack bevat een tijdelijke workspace aan geheugen wanneer functies aangeroepen worden, die automatisch opgeruimd worden als die functies klaar zijn met hun werk. De Stack is een LIFO lijst.</p>
+<p>Deze functionaliteit verandert <em>niet</em> als we de <code>gcc</code> compiler vervangen door <code>g++</code>! Je kan echter dankzij functionaliteiten van C++11 bepaalde tekortkomingen gedeeltelijk wegwerken, zoals het automatisch opruimen van dangling pointers. Daar dienen <em>smart pointers</em> voor.</p>
 <h4 id="smart-pointers-in-c-11">Smart pointers in C++ 11</h4>
-<p>In plaats van zelf geheugen te managen - we hebben immers wel wat beters te doen - laten we dat over aan de taal door &ldquo;smart pointers&rdquo; te gebruiken. Dit zijn STL wrappers (zie onder) die een object encapsuleren. Als een block stopt, kuist deze smart variabele je wrapped object zelf ook op:</p>
+<p>In plaats van zelf geheugen te beheren&mdash;we hebben immers wel wat beters te doen&mdash;laten we dat over aan de taal door &ldquo;smart pointers&rdquo; te gebruiken. Dit zijn STL wrappers (zie onder) die een object encapsuleren. Als een block stopt, kuist deze smart variabele je wrapped object zelf ook op:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#111">unique_ptr</span><span style="color:#f92672">&lt;</span><span style="color:#111">Getal</span><span style="color:#f92672">&gt;</span> <span style="color:#111">g</span> <span style="color:#111">(</span><span style="color:#111">new</span> <span style="color:#111">Getal</span><span style="color:#111">());</span>                <span style="color:#75715e">// zonder auto
 </span><span style="color:#75715e"></span><span style="color:#00a8c8">auto</span> <span style="color:#111">nieuwGetal</span> <span style="color:#f92672">=</span> <span style="color:#111">unique_ptr</span><span style="color:#f92672">&lt;</span><span style="color:#111">Getal</span><span style="color:#f92672">&gt;</span><span style="color:#111">(</span><span style="color:#111">new</span> <span style="color:#111">Getal</span><span style="color:#111">());</span> <span style="color:#75715e">// met auto
 </span><span style="color:#75715e"></span><span style="color:#111">nieuwGetal</span><span style="color:#f92672">-&gt;</span><span style="color:#111">telOpMet</span><span style="color:#111">(</span><span style="color:#f92672">*</span><span style="color:#111">g</span><span style="color:#111">);</span>
 </code></pre></div><p>We komen later nog op de template <code>&lt;&gt;</code> notatie terug. Neem hier aan dat dit werkt als Generics in Java.</p>
-<p>Zie p.470 of <a href="https://docs.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp">Smart pointers in modern C++</a>.</p>
+<p>Zie p.470 van <a href="https://docs.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp">Smart pointers in modern C++</a> van de Microsoft docs, of de <a href="https://en.cppreference.com/book/intro/smart_pointers">Smart pointer reference</a> van <code>cppreference.com</code>.</p>
 <p>Vergeet niet dat smart pointers niet werken in combinatie met variabelen op de stack (dus altijd <code>new</code> gebruiken). Stel dat een klasse een referentie naar een <code>unique_ptr</code> heeft die automatisch de pointer zou moeten opkuisen:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#111">class</span> <span style="color:#111">Holder</span> <span style="color:#111">{</span>
   <span style="color:#111">public</span><span style="color:#111">:</span>
@@ -1912,17 +1885,17 @@ graph TD;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1634732757"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1634732757"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1634732757"></script>
-    <script src="../../js/jquery.sticky.js?1634732757"></script>
-    <script src="../../js/featherlight.min.js?1634732757"></script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1634732757"></script>
-    <script src="../../js/learn.js?1634732757"></script>
-    <script src="../../js/hugo-learn.js?1634732757"></script>
+    <script src="../../js/clipboard.min.js?1635337570"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1635337570"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1635337570"></script>
+    <script src="../../js/jquery.sticky.js?1635337570"></script>
+    <script src="../../js/featherlight.min.js?1635337570"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1635337570"></script>
+    <script src="../../js/learn.js?1635337570"></script>
+    <script src="../../js/hugo-learn.js?1635337570"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1634732757"></script>
+            <script src="../../mermaid/mermaid.js?1635337570"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
