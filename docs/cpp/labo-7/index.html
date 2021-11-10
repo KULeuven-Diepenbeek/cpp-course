@@ -12,19 +12,19 @@
     <title>Labo 7: Software ontwerpen :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1635337570" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1635337570" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1635337570" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1635337570" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1635337570" rel="stylesheet">
-    <link href="../../css/theme.css?1635337570" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1635337570" rel="stylesheet">
+    <link href="../../css/nucleus.css?1636552269" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1636552269" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1636552269" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1636552269" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1636552269" rel="stylesheet">
+    <link href="../../css/theme.css?1636552269" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1636552269" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1635337570" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1636552269" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1635337570"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1636552269"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1635337570"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1635337570"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1636552269"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1636552269"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1635337570"></script>
+<script type="text/javascript" src="../../js/search.js?1636552269"></script>
 
     
   </div>
@@ -1190,7 +1190,7 @@ Door het te testen.</p>
   <span style="color:#111">EXPECT_EQ</span><span style="color:#111">(</span><span style="color:#111">Factorial</span><span style="color:#111">(</span><span style="color:#ae81ff">3</span><span style="color:#111">),</span> <span style="color:#ae81ff">6</span><span style="color:#111">);</span>
   <span style="color:#111">EXPECT_EQ</span><span style="color:#111">(</span><span style="color:#111">Factorial</span><span style="color:#111">(</span><span style="color:#ae81ff">8</span><span style="color:#111">),</span> <span style="color:#ae81ff">40320</span><span style="color:#111">);</span>
 <span style="color:#111">}</span>
-</code></pre></div><p>Google Test is deel van het xUnit framework dat we kennen in de Java wereld van JUnit. Zie bovenstaande link voor assertion documentatie. <a href="https://github.com/google/googletest/releases">Download De laatste Google Test Release</a> op Github.</p>
+</code></pre></div><p>Google Test is deel van het xUnit framework dat we kennen in de Java wereld van JUnit. Zie bovenstaande link voor assertion documentatie. <a href="https://github.com/google/googletest/releases">Download De laatste Google Test Release</a> op Github (<code>gba-sprite-engine</code> is compatibel met <code>v1.10.0</code>).</p>
 <h4 id="in-clion">In CLion</h4>
 <p><img src="../../img/teaching/cpp/clion_gtest.png" class="bordered" /></p>
 <p>Volg de volgende stappen:</p>
@@ -1212,12 +1212,17 @@ Door het te testen.</p>
 </ul>
 </li>
 </ul>
+
+<div class="notices warning" ><p>Errors tijdens het builden van Google Test?<br/>
+<a href="../../cpp-course/extra/faq/">Controleer in de FAQ</a> of het geen vaak voorkomend probleem is (al dan niet gebonden aan je OS), en hoe dit aan te pakken.</p>
+</div>
+
 <p>Het CMakeLists.txt ziet er dan als volgt uit:</p>
 <pre>
 cmake_minimum_required(VERSION 3.10)
 project(unittest)
 
-SET(google_test_dir "/Users/wgroenev/CLionProjects/googletest-release-1.8.0/googletest")
+SET(google_test_dir "/Users/wgroenev/CLionProjects/googletest-release-1.10.0/googletest")
 include_directories(${google_test_dir}/include)
 set(CMAKE_CXX_STANDARD 11)
 
@@ -1923,17 +1928,17 @@ To be equal to: 5
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1635337570"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1635337570"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1635337570"></script>
-    <script src="../../js/jquery.sticky.js?1635337570"></script>
-    <script src="../../js/featherlight.min.js?1635337570"></script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1635337570"></script>
-    <script src="../../js/learn.js?1635337570"></script>
-    <script src="../../js/hugo-learn.js?1635337570"></script>
+    <script src="../../js/clipboard.min.js?1636552269"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1636552269"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1636552269"></script>
+    <script src="../../js/jquery.sticky.js?1636552269"></script>
+    <script src="../../js/featherlight.min.js?1636552269"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1636552269"></script>
+    <script src="../../js/learn.js?1636552269"></script>
+    <script src="../../js/hugo-learn.js?1636552269"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1635337570"></script>
+            <script src="../../mermaid/mermaid.js?1636552269"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

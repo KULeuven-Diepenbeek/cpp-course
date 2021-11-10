@@ -175,8 +175,8 @@ Problemen met build omgevingen SH.exe was found in your path Fout:
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
       <guid>https://kuleuven-diepenbeek.github.io/cpp-course/extra/installaties/</guid>
       <description>Onderstaande instructies gaan uit van Ubuntu als besturingssysteem. Windows of OSX is ook mogelijk, alle tools zijn platformonafhankelijk. Voor Windows installeer je MinGW 64 als compiler toolchain.
-Basisvereisten De volgende tools worden verwacht geïnstalleerd te worden via de package tool apt-get bij Ubuntu:
- build-essential als gcc/g++ build tools (preinstalled?) git  Optionele editors (VSCode, Subl) zijn ook via de package tool te installeren. sublime-text (vereist toevoegen van een repository).</description>
+Installatie gefaald? Errors verschenen? Controleer in de FAQ of het geen vaak voorkomend probleem is (al dan niet gebonden aan je OS), en hoe dit aan te pakken.
+ Basisvereisten De volgende tools worden verwacht geïnstalleerd te worden via de package tool apt-get bij Ubuntu:</description>
     </item>
     
     <item>
