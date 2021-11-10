@@ -271,7 +271,7 @@ TEST(FactorialTest, HandlesPositiveInput) {
 }
 ```
 
-Google Test is deel van het xUnit framework dat we kennen in de Java wereld van JUnit. Zie bovenstaande link voor assertion documentatie. [Download De laatste Google Test Release](https://github.com/google/googletest/releases) op Github.
+Google Test is deel van het xUnit framework dat we kennen in de Java wereld van JUnit. Zie bovenstaande link voor assertion documentatie. [Download De laatste Google Test Release](https://github.com/google/googletest/releases) op Github (`gba-sprite-engine` is compatibel met `v1.10.0`).
 
 #### In CLion
 
@@ -290,13 +290,18 @@ Volg de volgende stappen:
   * Link de libraries met `target_link_libraries()`
   * En (voor later) voorzie een omgevingsvariabele `$GTEST_DIR`.
 
+{{% notice warning %}}
+Errors tijdens het builden van Google Test?<br/>
+[Controleer in de FAQ](/cpp-course/extra/faq/) of het geen vaak voorkomend probleem is (al dan niet gebonden aan je OS), en hoe dit aan te pakken. 
+{{% /notice %}}
+
 Het CMakeLists.txt ziet er dan als volgt uit:
 
 <pre>
 cmake_minimum_required(VERSION 3.10)
 project(unittest)
 
-SET(google_test_dir "/Users/wgroenev/CLionProjects/googletest-release-1.8.0/googletest")
+SET(google_test_dir "/Users/wgroenev/CLionProjects/googletest-release-1.10.0/googletest")
 include_directories(${google_test_dir}/include)
 set(CMAKE_CXX_STANDARD 11)
 

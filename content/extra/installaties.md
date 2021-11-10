@@ -6,6 +6,12 @@ disableComments: true
 
 Onderstaande instructies gaan uit van Ubuntu als besturingssysteem. Windows of OSX is ook mogelijk, alle tools zijn platformonafhankelijk. Voor Windows installeer je [MinGW 64](https://sourceforge.net/projects/mingw-w64/) als compiler toolchain. 
 
+{{% notice warning %}}
+Installatie gefaald? Errors verschenen?<br/>
+[Controleer in de FAQ](/cpp-course/extra/faq/) of het geen vaak voorkomend probleem is (al dan niet gebonden aan je OS), en hoe dit aan te pakken. 
+{{% /notice %}}
+
+
 ## Basisvereisten
 
 De volgende tools worden verwacht geïnstalleerd te worden via de package tool `apt-get` bij Ubuntu:
