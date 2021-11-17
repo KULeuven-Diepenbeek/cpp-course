@@ -349,6 +349,10 @@ Vergeet de `-c` optie dus niet. Door de symbol table van de machine code van sou
 0000000000000088 S punt1() (.eh)
 </pre>
 
+{{% notice note %}}
+De `c++filt` pipe is nodig omdat C++ vervelenderwijs voor gecompileerde objecten naamgeving helemaal overhoop gooit. Zonder zou je nooit `punt1()` kunnen zien, maar verandert die lijn in iets als `000000000000004c T __Z4puntIiET_S0_`. Niet erg begrijpbaar dus. Lees ook: [c++filt Linux manpage](https://www.man7.org/linux/man-pages/man1/c++filt.1.html).
+{{% /notice %}}
+
 Je ziet op adres `00000000000000b0` de nieuwe functie die als `<int>` gecompileerd is. Dit zit dubbel en ook in source2.cpp! Dit lossen we op door in één van de twee cpp bestanden `extern template int punt(int x);` toe te voegen zodat de compiler dit niet opnieuw behandelt:
 
 <pre>
