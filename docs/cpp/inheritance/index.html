@@ -12,19 +12,19 @@
     <title>6. Inheritance, templates, ops :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1637147183" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1637147183" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1637147183" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1637147183" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1637147183" rel="stylesheet">
-    <link href="../../css/theme.css?1637147183" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1637147183" rel="stylesheet">
+    <link href="../../css/nucleus.css?1637153201" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1637153201" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1637153201" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1637153201" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1637153201" rel="stylesheet">
+    <link href="../../css/theme.css?1637153201" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1637153201" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1637147183" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1637153201" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1637147183"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1637153201"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1637147183"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1637147183"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1637153201"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1637153201"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1637147183"></script>
+<script type="text/javascript" src="../../js/search.js?1637153201"></script>
 
     
   </div>
@@ -1261,6 +1261,10 @@ clang: error: linker command failed with exit code 1 (use -v to see invocation)
 0000000000000000 T punt1()
 0000000000000088 S punt1() (.eh)
 </pre>
+
+<div class="notices note" ><p>De <code>c++filt</code> pipe is nodig omdat C++ vervelenderwijs voor gecompileerde objecten naamgeving helemaal overhoop gooit. Zonder zou je nooit <code>punt1()</code> kunnen zien, maar verandert die lijn in iets als <code>000000000000004c T __Z4puntIiET_S0_</code>. Niet erg begrijpbaar dus. Lees ook: <a href="https://www.man7.org/linux/man-pages/man1/c++filt.1.html">c++filt Linux manpage</a>.</p>
+</div>
+
 <p>Je ziet op adres <code>00000000000000b0</code> de nieuwe functie die als <code>&lt;int&gt;</code> gecompileerd is. Dit zit dubbel en ook in source2.cpp! Dit lossen we op door in één van de twee cpp bestanden <code>extern template int punt(int x);</code> toe te voegen zodat de compiler dit niet opnieuw behandelt:</p>
 <pre>
 Wouters-MacBook-Air:cmake-build-debug wgroenev$ nm source1.o | c++filt
@@ -1914,17 +1918,17 @@ Wouters-MacBook-Air:cmake-build-debug wgroenev$ nm source1.o | c++filt
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1637147183"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1637147183"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1637147183"></script>
-    <script src="../../js/jquery.sticky.js?1637147183"></script>
-    <script src="../../js/featherlight.min.js?1637147183"></script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1637147183"></script>
-    <script src="../../js/learn.js?1637147183"></script>
-    <script src="../../js/hugo-learn.js?1637147183"></script>
+    <script src="../../js/clipboard.min.js?1637153201"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1637153201"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1637153201"></script>
+    <script src="../../js/jquery.sticky.js?1637153201"></script>
+    <script src="../../js/featherlight.min.js?1637153201"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1637153201"></script>
+    <script src="../../js/learn.js?1637153201"></script>
+    <script src="../../js/hugo-learn.js?1637153201"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1637147183"></script>
+            <script src="../../mermaid/mermaid.js?1637153201"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
