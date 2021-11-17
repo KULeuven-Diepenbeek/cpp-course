@@ -9,83 +9,33 @@
     <managingEditor>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</managingEditor>
     <webMaster>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</webMaster><atom:link href="https://kuleuven-diepenbeek.github.io/cpp-course/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Voorbereiding Thuis</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/prep/</link>
+      <title>0. Voorbereiding Thuis</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/preparation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/prep/</guid>
-      <description>Installaties Volg de installatieinstructies en zorg ervoor dat de basisvereisten geïnstalleerd zijn:
- Een C compiler geïnstalleerd is (build essentials) Je vlot toegang hebt tot cmdline (Op Windows: met cmder, zie bovenstaande instructies) git geïnstalleerd is  Controle  Controleer of git werkt door git version uit te voeren in cmdline. Controleer of je compiler correct is geïnstalleerd door gcc -v uit te voeren, en make -v. Kopiëer het eerste voorbeeld in de tekst van labo 1 (&amp;ldquo;vergelijkingen met Java&amp;rdquo;) en probeer dit zelf te compileren in C met gcc [bestand.</description>
-    </item>
-    
-    <item>
-      <title>Voorbereiding Thuis</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/prep/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/prep/</guid>
-      <description>Installaties Volg de installatieinstructies en zorg ervoor dat:
- CMake geïnstalleerd is een C++ compiler geïnstalleerd is De google test instructies doorgelopen zijn en geïnstalleerd is  Controle  Controleer of g++ werkt in cmdline. Download gcctest.cpp en compileer het met de g++ compiler (++ gcctest.cpp &amp;amp;&amp;amp; ./a.out). Is de output &amp;ldquo;het werkt!&amp;rdquo;, dan is alles ok.  </description>
-    </item>
-    
-    <item>
-      <title>Voorbereiding Thuis</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/prep/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/prep/</guid>
-      <description>Installaties Volg de installatieinstructies en zorg ervoor dat de devkitPro tools geïnstalleerd zijn:
- DevkitPro installatie om te cross-compilen en toe te voegen aan je PATH variabele. Download een GBA emulator, bij voorkeur mGBA, via mgba.io.  Controle  Controleer in cmdnline of arm-eabi-none-gcc in eender welke locatie werkt. Ga naar de labo 3 opgave en probeer eerste opgave te downloaden en compileren met de Makefile. Oplossen hoeft nog niet. Controleer of de .</description>
-    </item>
-    
-    <item>
-      <title>Voorbereiding Thuis</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/prep/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/prep/</guid>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/preparation/</guid>
       <description>Installaties Volg de installatieinstructies en zorg ervoor dat:
  CLion geïnstalleerd is indien gewenst (of een Een andere geïntegreerde IDE geïnstalleerd is)  Controle  Compileer gba-sprite-engine Lees de README Controleer of de demo&amp;rsquo;s werken door een .gba bestand te openen in de mGBA emulator  </description>
     </item>
     
     <item>
-      <title>Labo 8: GBA Programming in C&#43;&#43;: een abstractielaag</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/labo-8/</link>
+      <title>8. Abstractielagen</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/abstractions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/labo-8/</guid>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/abstractions/</guid>
       <description>Het zal je ondertussen wel al duidelijk zijn dat technische details zoals IO pointers en OAM vanuit labo 4 de code er niet bepaald duidelijker op maken. Jammer genoeg voorziet de GBA geen andere mogelijkheden. Een oplossing zal van de ontwikkelaar zelf moeten komen, in de vorm van de principes uit labo 7.
 Abstracties creëren Als ontwikkelaar wil ik niet altijd bezig zijn met de juiste hexadecimale waarde voor IO pointer aan te spreken om een sprite te renderen.</description>
     </item>
     
     <item>
-      <title>Labo 9: GBA Programming in C&#43;&#43;: scrolling backgrounds</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/labo-9/</link>
+      <title>9. Scrolling backgrounds</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/scrolling-backgrounds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/labo-9/</guid>
-      <description>Uit labo 4 weten we hoe het VRAM van de GBA in elkaar steekt: het bestaat uit char en screen blocks. Character blocks 0 tot en met 3 vanaf 0x6010000 zijn gereserveerd voor achtergrond lagen: dat is in totaal meer geheugen dan voor sprites. De Gameboy Advance voorziet aparte registers om de 4 achtergrond lagen te configureren.
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/scrolling-backgrounds/</guid>
+      <description>Uit hoofdstuk 4 weten we hoe het VRAM van de GBA in elkaar steekt: het bestaat uit char en screen blocks. Character blocks 0 tot en met 3 vanaf 0x6010000 zijn gereserveerd voor achtergrond lagen: dat is in totaal meer geheugen dan voor sprites. De Gameboy Advance voorziet aparte registers om de 4 achtergrond lagen te configureren.
 Voor sprites speelde een tilemap geen rol, voor grote achtergronden wel: het kost immers minder ruimte om de tile data apart op te slaan en in een map per tile te refereren naar die data.</description>
-    </item>
-    
-    <item>
-      <title>Labo 10: Een introductie in GUI ontwerp met C&#43;&#43; in Qt</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/labo-10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/labo-10/</guid>
-      <description>UI Frameworks De C++ taal is een krachtige tool om native code te compileren voor specifieke CPU en OS systemen. Daardoor is het ook vaak een logische keuze om complexe interfaces in te ontwerpen en ontwikkelen, van Photoshop tot Google Chrome. Interfaces brengen echter weer andere problemen met zich mee: elk besturingssysteem heeft ondertussen zijn eigen interpretatie.
-De Windows standaard was MFC die de WinAPI wrapt, voor OSX was dit de Carbon API.</description>
-    </item>
-    
-    <item>
-      <title>Labo 11: een GBA spel porten naar Qt</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/labo-11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/labo-11/</guid>
-      <description>Eigen widgets implementeren De objectenboom uit labo 10 leert ons dat heel wat Qt objecten afleiden van QWidget. Dat is de ideale startplaats om zelf een widget te implementeren. Veel Qt objecten voorzien een override om het tekenen zelf af te kunnen handelen, vergelijkbaar met de while loop in een typisch gameboy spel.
-void paintEvent(QPaintEvent *event) override; In het Textrix Qt Voorbeeld wordt er gebruikt gemaakt van custom QFrame en QWidget implementaties die eigen objecten bijhouden die de tetris blokken voorstellen.</description>
     </item>
     
     <item>
@@ -100,6 +50,46 @@ De opdracht is niet vrij te kiezen. Het criteria &amp;lsquo;originaliteit&amp;rs
     </item>
     
     <item>
+      <title>0. Voorbereiding Thuis</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/preparation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/preparation/</guid>
+      <description>Installaties Volg de installatieinstructies en zorg ervoor dat de basisvereisten geïnstalleerd zijn:
+ Een C compiler geïnstalleerd is (build essentials) Je vlot toegang hebt tot cmdline (Op Windows: met cmder, zie bovenstaande instructies) git geïnstalleerd is  Controle  Controleer of git werkt door git version uit te voeren in cmdline. Controleer of je compiler correct is geïnstalleerd door gcc -v uit te voeren, en make -v. Kopiëer het eerste voorbeeld in de tekst van hoofdstuk 1 (&amp;ldquo;vergelijkingen met Java&amp;rdquo;) en probeer dit zelf te compileren in C met gcc [bestand.</description>
+    </item>
+    
+    <item>
+      <title>0. Voorbereiding Thuis</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/preparation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/preparation/</guid>
+      <description>Installaties Volg de installatieinstructies en zorg ervoor dat:
+ CMake geïnstalleerd is een C++ compiler geïnstalleerd is De google test instructies doorgelopen zijn en geïnstalleerd is  Controle  Controleer of g++ werkt in cmdline. Download gcctest.cpp en compileer het met de g++ compiler (++ gcctest.cpp &amp;amp;&amp;amp; ./a.out). Is de output &amp;ldquo;het werkt!&amp;rdquo;, dan is alles ok.  </description>
+    </item>
+    
+    <item>
+      <title>0. Voorbereiding Thuis</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/preparation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/preparation/</guid>
+      <description>Installaties Volg de installatieinstructies en zorg ervoor dat de devkitPro tools geïnstalleerd zijn:
+ DevkitPro installatie om te cross-compilen en toe te voegen aan je PATH variabele. Download een GBA emulator, bij voorkeur mGBA, via mgba.io.  Controle  Controleer in cmdnline of arm-eabi-none-gcc in eender welke locatie werkt. Ga naar de hoofdstuk B1 opgave en probeer eerste opgave te downloaden en compileren met de Makefile. Oplossen hoeft nog niet. Controleer of de .</description>
+    </item>
+    
+    <item>
+      <title>1. Introductie in C</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/intro/</guid>
+      <description>De C programmeertaal De C taal is een programmeertaal in de jaren &amp;lsquo;70 ontwikkeld om makkelijk hardware te kunnen aanspreken. C was/is in essentie niet veel meer dan een kleine abstractielaag bovenop assembly.
+C is een imperatieve programmeertaal. Dat zal je bij het oefenen wel merken: we schrijven instructies als statements. Deze regels of statements zijn gestructureerd in functies en struct types. Het jammere hier aan is dat er weinig declarativiteit aan de pas komt.</description>
+    </item>
+    
+    <item>
       <title>1. Introductie in C/C&#43;&#43;: context, ecosysteem</title>
       <link>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -109,12 +99,63 @@ De opdracht is niet vrij te kiezen. Het criteria &amp;lsquo;originaliteit&amp;rs
     </item>
     
     <item>
+      <title>10. GUI ontwerp met C&#43;&#43; in Qt</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/qt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/qt/</guid>
+      <description>UI Frameworks De C++ taal is een krachtige tool om native code te compileren voor specifieke CPU en OS systemen. Daardoor is het ook vaak een logische keuze om complexe interfaces in te ontwerpen en ontwikkelen, van Photoshop tot Google Chrome. Interfaces brengen echter weer andere problemen met zich mee: elk besturingssysteem heeft ondertussen zijn eigen interpretatie.
+De Windows standaard was MFC die de WinAPI wrapt, voor OSX was dit de Carbon API.</description>
+    </item>
+    
+    <item>
+      <title>11. Een GBA spel porten naar Qt</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/gba-to-qt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-cpp/gba-to-qt/</guid>
+      <description>Eigen widgets implementeren De objectenboom uit labo 10 leert ons dat heel wat Qt objecten afleiden van QWidget. Dat is de ideale startplaats om zelf een widget te implementeren. Veel Qt objecten voorzien een override om het tekenen zelf af te kunnen handelen, vergelijkbaar met de while loop in een typisch gameboy spel.
+void paintEvent(QPaintEvent *event) override; In het Textrix Qt Voorbeeld wordt er gebruikt gemaakt van custom QFrame en QWidget implementaties die eigen objecten bijhouden die de tetris blokken voorstellen.</description>
+    </item>
+    
+    <item>
+      <title>2. Pointers in C en C&#43;&#43;</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/pointers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/pointers/</guid>
+      <description>In onderstaande schematische voorbeelden zijn de volgende concepten expliciet te onderscheiden:
+ Een naam van een variabele Een waarde van een variabele  En de volgende impliciet:
+ Het type van een variabele Het adres van een variabele  Het type van een variabele bepaalt de hoeveelheid geheugen die vrijgemaakt wordt om de waarde te kunnen bewaren. De waarde is ofwel een actuele waarde ofwel een adres dat refereert naar een andere waarde.</description>
+    </item>
+    
+    <item>
       <title>2. Pointers in C, dynamisch geheugen in C&#43;&#43;</title>
       <link>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
       <guid>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-2/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>2.1. De stack VS de heap</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/stack-vs-heap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/stack-vs-heap/</guid>
+      <description>De Stack en de Heap Dit hoofdstuk is een kopie van hoofdstuk 8.1: Stack VS Heap uit het vak Besturingssystemen en C voor 2de bachelor ICT/Electronica. Voor het vak Softwareontwerp in C/C++ wordt er eveneens verwacht de nodige kennis te bezitten over de werking van de stack en de heap. Optionele begeleidende videos en oefeningen zijn beschikbaar in hoofdstuk 8.2 en 8.3 in bovesntaande cursus.
+ Program Memory  Compiled computer programs are divided into different sections, each with their own specific needs and properties.</description>
+    </item>
+    
+    <item>
+      <title>3. Introductie in GBA Programming</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/gba-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/gba-intro/</guid>
+      <description>Je hebt nu een crashcrusus C achter de kiezen met een grondige focus op pointers. Hoog tijd om die kennis om te zetten in iets concreet én plezant. We gaan een héél simpel Gameboy Advance (GBA) spel ontwikkelen.
+De GBA is een goede keuze om de kracht (en zwakheden) van C te demonstreren. Er is immers géén besturingsyssteem aanwezig. Er zijn géén libraries aanwezig voor memory management, IO, files, error handling, &amp;hellip; Het is een embedded hardware systeem dat een cross-compiler vereist: een compiler op onze PC&amp;rsquo;s dat compileert voor een ander platform en CPU, namelijk een 32-bit ARM op 16.</description>
     </item>
     
     <item>
@@ -133,6 +174,48 @@ De opdracht is niet vrij te kiezen. Het criteria &amp;lsquo;originaliteit&amp;rs
       <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
       <guid>https://kuleuven-diepenbeek.github.io/cpp-course/hoorcolleges/slides-4/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>4. GBA Tilesets, een simpel spel</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/tilesets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/tilesets/</guid>
+      <description>In hoofdstuk 3 maakten we kennis met de Gameboy Advance en het ontwikkelplatform - als je het zo kan noemen. We gebruikten mode 3 om pixels te manipuleren. Natuurlijk is dat erg onpraktisch en veel te belastend wanneer er veel op het scherm getekend moet worden. Als doelstelling voor dit hoofdstuk willen we een simpel geïntegreerd spelletje maken waar we video mode 1 en tilesets voor nodig hebben.
+Het overzicht van I/O registers leert ons dat 0x06000000 - 0x06017FFF 96kb aan Video RAM of VRAM voorziet waar we mee kunnen spelen zonder pixel per pixel te manipuleren.</description>
+    </item>
+    
+    <item>
+      <title>5. Van C naar C&#43;&#43;</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/cpp-intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/cpp-intro/</guid>
+      <description>De ++ in C++ De introductie van C++ in 1985 geeft de ervaren C programmeur enkele extra mogelijkheden om zijn of haar code te structureren. C++ wordt nog steeds omschreven als een &amp;ldquo;general purpose&amp;rdquo; low-level taal op Wikipedia:
+ C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.
+ &amp;ldquo;Object-oriented&amp;rdquo; en &amp;ldquo;generic&amp;rdquo; zijn de sleutelwoorden hier. De C++ taal is geschreven als een extensie van C waarbij high-level features gebruikt kunnen worden om code te structureren.</description>
+    </item>
+    
+    <item>
+      <title>6. Inheritance, templates, ops</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/inheritance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/inheritance/</guid>
+      <description>C++ Classes revisited Nu je een basis van klassen hebt opgedaan in C++ gaan we erving introduceren. Gegeven de volgende modellen:
+mermaid.initialize({ startOnLoad: true, flowchart: { useMaxWidth: true } });  graph TD; A[Dier] B[Viervoeter] C[Hond] D[Kat] E[Vlinder] F[Vlees] G[Groenten] H[Voedsel] B -- A C -- B D -- B E -- A F -- H G -- H  Gegeven de volgende acceptatie criteria:
+ Elk dier kan een aantal centimeter bewegen.</description>
+    </item>
+    
+    <item>
+      <title>7. Software ontwerp en design</title>
+      <link>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/software-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
+      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/software-design/</guid>
+      <description>Een programmeertaal als C++ leren vereist het achteroverslaan van heel wat syntaxtische cryptologie als decltype(), template&amp;lt;typename T&amp;gt; en *(x-&amp;gt;o). Met programmeren alleen kom je er echter niet: software ontwerpen vereist heel wat meer inzicht dan de juiste code op de juiste plaats typen.
+Software Modelleren Als software ontwikkelaar ben jij de uitvoerende kracht die vereisten van de klant implementeert in het software systeem. Een analist staat tussen de klant en de ontwikkelaar in die de vertaalslag tussen de grillen van klanten en vereisten in de vorm van business regels maakt.</description>
     </item>
     
     <item>
@@ -177,90 +260,6 @@ Problemen met build omgevingen SH.exe was found in your path Fout:
       <description>Onderstaande instructies gaan uit van Ubuntu als besturingssysteem. Windows of OSX is ook mogelijk, alle tools zijn platformonafhankelijk. Voor Windows installeer je MinGW 64 als compiler toolchain.
 Installatie gefaald? Errors verschenen? Controleer in de FAQ of het geen vaak voorkomend probleem is (al dan niet gebonden aan je OS), en hoe dit aan te pakken.
  Basisvereisten De volgende tools worden verwacht geïnstalleerd te worden via de package tool apt-get bij Ubuntu:</description>
-    </item>
-    
-    <item>
-      <title>Labo 1: Introductie in C</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/labo-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/labo-1/</guid>
-      <description>De C programmeertaal De C taal is een programmeertaal in de jaren &amp;lsquo;70 ontwikkeld om makkelijk hardware te kunnen aanspreken. C was/is in essentie niet veel meer dan een kleine abstractielaag bovenop assembly.
-C is een imperatieve programmeertaal. Dat zal je bij het oefenen wel merken: we schrijven instructies als statements. Deze regels of statements zijn gestructureerd in functies en struct types. Het jammere hier aan is dat er weinig declarativiteit aan de pas komt.</description>
-    </item>
-    
-    <item>
-      <title>Labo 2: Pointers in C en C&#43;&#43;</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/labo-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/labo-2/</guid>
-      <description>In onderstaande schematische voorbeelden zijn de volgende concepten expliciet te onderscheiden:
- Een naam van een variabele Een waarde van een variabele  En de volgende impliciet:
- Het type van een variabele Het adres van een variabele  Het type van een variabele bepaalt de hoeveelheid geheugen die vrijgemaakt wordt om de waarde te kunnen bewaren. De waarde is ofwel een actuele waarde ofwel een adres dat refereert naar een andere waarde.</description>
-    </item>
-    
-    <item>
-      <title>Labo 2b: De stack VS de heap</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/c/stack-vs-heap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/c/stack-vs-heap/</guid>
-      <description>De Stack en de Heap Dit hoofdstuk is een kopie van hoofdstuk 8.1: Stack VS Heap uit het vak Besturingssystemen en C voor 2de bachelor ICT/Electronica. Voor het vak Softwareontwerp in C/C++ wordt er eveneens verwacht de nodige kennis te bezitten over de werking van de stack en de heap.
-Optionele begeleidende videos en oefeningen zijn beschikbaar in hoofdstuk 8.2 en 8.3 in bovesntaande cursus.
-Program Memory  Compiled computer programs are divided into different sections, each with their own specific needs and properties.</description>
-    </item>
-    
-    <item>
-      <title>Labo 3: Introductie in GBA Programming</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/labo-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/labo-3/</guid>
-      <description>Je hebt nu een crashcrusus C achter de kiezen met een grondige focus op pointers. Hoog tijd om die kennis om te zetten in iets concreet én plezant. We gaan een héél simpel Gameboy Advance (GBA) spel ontwikkelen.
-De GBA is een goede keuze om de kracht (en zwakheden) van C te demonstreren. Er is immers géén besturingsyssteem aanwezig. Er zijn géén libraries aanwezig voor memory management, IO, files, error handling, &amp;hellip; Het is een embedded hardware systeem dat een cross-compiler vereist: een compiler op onze PC&amp;rsquo;s dat compileert voor een ander platform en CPU, namelijk een 32-bit ARM op 16.</description>
-    </item>
-    
-    <item>
-      <title>Labo 4: GBA Tilesets, een simpel spel</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/labo-4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/gba-in-c/labo-4/</guid>
-      <description>In labo 3 maakten we kennis met de Gameboy Advance en het ontwikkelplatform - als je het zo kan noemen. We gebruikten mode 3 om pixels te manipuleren. Natuurlijk is dat erg onpraktisch en veel te belastend wanneer er veel op het scherm getekend moet worden. Als doelstelling voor labo 4 willen we een simpel geïntegreerd spelletje maken waar we video mode 1 en tilesets voor nodig hebben.
-Het overzicht van I/O registers leert ons dat 0x06000000 - 0x06017FFF 96kb aan Video RAM of VRAM voorziet waar we mee kunnen spelen zonder pixel per pixel te manipuleren.</description>
-    </item>
-    
-    <item>
-      <title>Labo 5: Weg met C, Hallo C&#43;&#43;</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/labo-5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/labo-5/</guid>
-      <description>De ++ in C++ De introductie van C++ in 1985 geeft de ervaren C programmeur enkele extra mogelijkheden om zijn of haar code te structureren. C++ wordt nog steeds omschreven als een &amp;ldquo;general purpose&amp;rdquo; low-level taal op Wikipedia:
- C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.
- &amp;ldquo;Object-oriented&amp;rdquo; en &amp;ldquo;generic&amp;rdquo; zijn de sleutelwoorden hier. De C++ taal is geschreven als een extensie van C waarbij high-level features gebruikt kunnen worden om code te structureren.</description>
-    </item>
-    
-    <item>
-      <title>Labo 6: C&#43;&#43; Class Inheritance, operators en templates</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/labo-6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/labo-6/</guid>
-      <description>C++ Classes revisited Nu je een basis van klassen hebt opgedaan in C++ gaan we erving introduceren. Gegeven de volgende modellen:
-mermaid.initialize({ startOnLoad: true, flowchart: { useMaxWidth: true } });  graph TD; A[Dier] B[Viervoeter] C[Hond] D[Kat] E[Vlinder] F[Vlees] G[Groenten] H[Voedsel] B -- A C -- B D -- B E -- A F -- H G -- H  Gegeven de volgende acceptatie criteria:
- Elk dier kan een aantal centimeter bewegen.</description>
-    </item>
-    
-    <item>
-      <title>Labo 7: Software ontwerpen</title>
-      <link>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/labo-7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>&lt;i&gt;fname&lt;/i&gt;.&lt;i&gt;lname&lt;/i&gt;A T&lt;i&gt;kuleuven.be&lt;/i&gt; (Wouter Groeneveld, Kris Aerts)</author>
-      <guid>https://kuleuven-diepenbeek.github.io/cpp-course/cpp/labo-7/</guid>
-      <description>Een programmeertaal als C++ leren vereist het achteroverslaan van heel wat syntaxtische cryptologie als decltype(), template&amp;lt;typename T&amp;gt; en *(x-&amp;gt;o). Met programmeren alleen kom je er echter niet: software ontwerpen vereist heel wat meer inzicht dan de juiste code op de juiste plaats typen.
-Software Modelleren Als software ontwikkelaar ben jij de uitvoerende kracht die vereisten van de klant implementeert in het software systeem. Een analist staat tussen de klant en de ontwikkelaar in die de vertaalslag tussen de grillen van klanten en vereisten in de vorm van business regels maakt.</description>
     </item>
     
     <item>
