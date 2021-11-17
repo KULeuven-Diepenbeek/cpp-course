@@ -1,7 +1,7 @@
 ---
-title: 'Labo 3: Introductie in GBA Programming'
-accent: "#008eb3"
-disableComments: true
+title: '3. Introductie in GBA Programming'
+aliases:
+    - /gba-in-c/labo-3/
 ---
 
 Je hebt nu een crashcrusus C achter de kiezen met een grondige focus op pointers. Hoog tijd om die kennis om te zetten in iets concreet én plezant. We gaan een héél simpel Gameboy Advance (GBA) spel ontwikkelen.
@@ -208,7 +208,7 @@ Het plastieken omhulsel open gevezen geeft zicht op het bord:
     <img src="/img/teaching/cpp/ezflash.jpg" class="bordered" />
 </center>
 
-Dit is een deel van [labo 4](/gba-in-c/labo-4) op de eigenlijke hardware:
+Dit is een deel van [hoofdstuk 4](/gba-in-c/labo-4) op de eigenlijke hardware:
 
 <center>
     <img src="/img/teaching/cpp/gba_labo3.gif" style="width: 75%" class="bordered" />
@@ -245,7 +245,7 @@ x mask:                         0000 0001 1111 1111
 y mask:                         0000 0000 1111 1111
 ```
 
-## <a name="oef"></a>Labo oefeningen
+## <a name="oef"></a>Oefeningen
 
 1. Vorm het voorbeeld in de tekst om naar een "hi!" hello world applicatie. Teken de symbolen per pixel. [Download het labo-3-gbabg.c hier](/teaching/cpp/labo-3-gbabg.c). [Download een Makefile voor gba dev hier](/teaching/cpp/labo-3-gba.Makefile). Probeer eerst het bestaande te compileren met `make`.
 2. Laten we het iets dynamischer maken. Lees het key input register in en maak gebruik van de pijltjes om je "hi!" tekst te verschuiven. Wat een spannend spel is dit aan het worden! Definiëer het input register op exact dezelfde manier als `vram` in de tekst.

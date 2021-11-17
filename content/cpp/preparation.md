@@ -1,6 +1,7 @@
 ---
-title: Voorbereiding Thuis
-weight: 1
+title: '0. Voorbereiding Thuis'
+aliases:
+    - /cpp/prep/
 ---
 
 ### Installaties

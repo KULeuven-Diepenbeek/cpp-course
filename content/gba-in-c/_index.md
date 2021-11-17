@@ -1,5 +1,5 @@
 ---
-title: "2. GBA programming in C"
+title: "B. GBA programming in C"
 weight: 2
 chapter: true
 ---

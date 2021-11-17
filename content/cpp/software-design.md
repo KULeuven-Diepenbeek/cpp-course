@@ -1,7 +1,7 @@
 ---
-title: 'Labo 7: Software ontwerpen'
-accent: "#008eb3"
-disableComments: true
+title: '7. Software ontwerp en design'
+aliases:
+    - /cpp/labo-7/
 ---
 
 Een programmeertaal als C++ leren vereist het achteroverslaan van heel wat syntaxtische cryptologie als `decltype()`, `template<typename T>` en `*(x->o)`. Met programmeren alleen kom je er echter niet: software **ontwerpen** vereist heel wat meer inzicht dan de juiste code op de juiste plaats typen.

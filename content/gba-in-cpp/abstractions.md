@@ -1,6 +1,8 @@
 ---
-title: 'Labo 8: GBA Programming in C++: een abstractielaag'
+title: '8. Abstractielagen'
 weight: 2
+aliases:
+    - /gba-in-cpp/labo-8/
 ---
 
 Het zal je ondertussen wel al duidelijk zijn dat technische details zoals IO pointers en OAM vanuit [labo 4](/gba-in-c/labo-4) de code er niet bepaald duidelijker op maken. Jammer genoeg voorziet de GBA geen andere mogelijkheden. Een oplossing zal van de ontwikkelaar zelf moeten komen, in de vorm van de principes uit [labo 7](/cpp/labo-7).

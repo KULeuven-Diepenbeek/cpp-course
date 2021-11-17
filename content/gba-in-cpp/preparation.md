@@ -1,6 +1,8 @@
 ---
-title: Voorbereiding Thuis
+title: '0. Voorbereiding Thuis'
 weight: 1
+aliases:
+    - /gba-in-cpp/prep/
 ---
 
 ### Installaties

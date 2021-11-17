@@ -1,12 +1,12 @@
 ---
-title: 'Labo 2b: De stack VS de heap'
+title: '2.1. De stack VS de heap'
 ---
 
 ## De Stack en de Heap
 
-Dit hoofdstuk is een kopie van [hoofdstuk 8.1: Stack VS Heap](https://kuleuven-diepenbeek.github.io/osc-course/ch8-stack/stackvsheap/) uit het vak Besturingssystemen en C voor 2de bachelor ICT/Electronica. Voor het vak Softwareontwerp in C/C++ wordt er eveneens verwacht de nodige kennis te bezitten over de werking van de stack en de heap. 
-
-Optionele begeleidende videos en oefeningen zijn beschikbaar in hoofdstuk 8.2 en 8.3 in bovesntaande cursus. 
+{{% notice note %}}
+Dit hoofdstuk is een kopie van [hoofdstuk 8.1: Stack VS Heap](https://kuleuven-diepenbeek.github.io/osc-course/ch8-stack/stackvsheap/) uit het vak Besturingssystemen en C voor 2de bachelor ICT/Electronica. Voor het vak Softwareontwerp in C/C++ wordt er eveneens verwacht de nodige kennis te bezitten over de werking van de stack en de heap. <br/>Optionele begeleidende videos en oefeningen zijn beschikbaar in hoofdstuk 8.2 en 8.3 in bovesntaande cursus. 
+{{% /notice %}}
 
 ### Program Memory
 

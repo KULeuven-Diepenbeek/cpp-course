@@ -1,11 +1,13 @@
 ---
-title: 'Labo 9: GBA Programming in C++: scrolling backgrounds'
+title: '9. Scrolling backgrounds'
 weight: 2
+aliases:
+    - /gba-in-cpp/labo-9/
 ---
 
-Uit [labo 4](/gba-in-c/labo-4) weten we hoe het VRAM van de GBA in elkaar steekt: het bestaat uit char en screen blocks. Character blocks 0 tot en met 3 vanaf `0x6010000` zijn gereserveerd voor achtergrond lagen: dat is in totaal meer geheugen dan voor sprites. De Gameboy Advance voorziet aparte registers om de 4 achtergrond lagen te configureren.
+Uit [hoofdstuk 4](/gba-in-c/labo-4) weten we hoe het VRAM van de GBA in elkaar steekt: het bestaat uit char en screen blocks. Character blocks 0 tot en met 3 vanaf `0x6010000` zijn gereserveerd voor achtergrond lagen: dat is in totaal meer geheugen dan voor sprites. De Gameboy Advance voorziet aparte registers om de 4 achtergrond lagen te configureren.
 
-Voor sprites speelde een **tilemap** geen rol, voor grote achtergronden wel: het kost immers minder ruimte om de tile data apart op te slaan en in een map per tile te refereren naar die data. Achtergrond art is typisch iets herhalend: veel wolkjes, dezelfde soorten muren, plafond en vloeren. Uit labo 4:
+Voor sprites speelde een **tilemap** geen rol, voor grote achtergronden wel: het kost immers minder ruimte om de tile data apart op te slaan en in een map per tile te refereren naar die data. Achtergrond art is typisch iets herhalend: veel wolkjes, dezelfde soorten muren, plafond en vloeren. Uit hoofdstuk 4:
 
 >Om tegen de GBA te zeggen welke tile op welke plaats in het scherm moet komen hebben we een **tilemap** nodig. Een tilemap kan wél heel groot worden en stelt letterlijk het "level" of de "map" voor, met op elke plaats in de 2-dimensionele lijst een referentie naar een tile. Zie [Metroid Level voorbeeld](https://www.coranac.com/tonc/text/regbg.htm).
 

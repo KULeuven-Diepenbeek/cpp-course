@@ -1,6 +1,7 @@
 ---
-title: Voorbereiding Thuis
-weight: 1
+title: '0. Voorbereiding Thuis'
+aliases:
+    - /gba-in-c/prep/
 ---
 
 ### Installaties
@@ -13,5 +14,5 @@ Volg de [installatieinstructies](/extra/installaties) en zorg ervoor dat de **de
 ### Controle
 
 1. Controleer in cmdnline of `arm-eabi-none-gcc` in eender welke locatie werkt.
-2. Ga naar de labo 3 opgave en probeer eerste opgave te downloaden en compileren met de `Makefile`. Oplossen hoeft nog niet. 
+2. Ga naar de [hoofdstuk B1](/gba-in-c/labo-3) opgave en probeer eerste opgave te downloaden en compileren met de `Makefile`. Oplossen hoeft nog niet. 
 3. Controleer of de `.gba` file werkt door het in de emulator in te laden.

@@ -1,5 +1,5 @@
 ---
-title: "1. Introductie in C"
+title: "A. Introductie in C"
 weight: 1
 chapter: true
 ---

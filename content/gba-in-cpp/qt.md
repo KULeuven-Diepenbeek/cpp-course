@@ -1,6 +1,7 @@
 ---
-title: 'Labo 10: Een introductie in GUI ontwerp met C++ in Qt'
-weight: 3
+title: '10. GUI ontwerp met C++ in Qt'
+aliases:
+    - /gba-in-cpp/labo-10/
 ---
 
 ## UI Frameworks

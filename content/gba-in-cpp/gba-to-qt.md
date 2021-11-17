@@ -1,6 +1,7 @@
 ---
-title: 'Labo 11: een GBA spel porten naar Qt'
-weight: 4
+title: '11. Een GBA spel porten naar Qt'
+aliases:
+    - /gba-in-cpp/labo-11/
 ---
 
 ## Eigen widgets implementeren

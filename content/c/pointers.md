@@ -1,7 +1,7 @@
 ---
-title: 'Labo 2: Pointers in C en C++'
-accent: "#008eb3"
-disableComments: true
+title: '2. Pointers in C en C++'
+aliases:
+    - /c/labo-2/
 ---
 
 In onderstaande schematische voorbeelden zijn de volgende concepten expliciet te onderscheiden:
@@ -35,7 +35,7 @@ Waarbij het type, `int`, afhankelijk van het platform een aantal bytes reserveer
 
 C/C++ gebruikt een _pass-by-value_ systeem om variabelen door te geven aan functies. Dit wil zeggen dat de waarde gekopiëerd wordt, en die functie geen wijzigingen kan aanbrengen aan de originele waarde. Dat is iets positief: **separation of concerns**.
 
-Als we denken aan ons persoon voorbeeld van [labo 1](/c/labo-1), wordt die struct dus telkens overgekopiëerd. Dat kan zeer inefficiënt zijn, naargelang de grootte van de data! Om dit te vermijden, gebruiken we een "pointer": een referentie naar de actuele data. Objecten worden in Java standaard _pass-by-reference_ meegegeven - in C moeten we hier nog iets extra voor doen dus.
+Als we denken aan ons persoon voorbeeld van [hoofdstuk 1](/c/labo-1), wordt die struct dus telkens overgekopiëerd. Dat kan zeer inefficiënt zijn, naargelang de grootte van de data! Om dit te vermijden, gebruiken we een "pointer": een referentie naar de actuele data. Objecten worden in Java standaard _pass-by-reference_ meegegeven - in C moeten we hier nog iets extra voor doen dus.
 
 In plaats van `is_oud(struct Persoon persoon)` wordt de signatuur `is_oud(struct Persoon* persoon)`. Om hier een waarde uit te lezen hebben we twee mogelijkheden:
 
@@ -180,7 +180,7 @@ int main() {
 }
 ```
 
-Laten we de Persoon `struct` van [labo 1](/c/labo-1) eens herbekijken in het licht van pointers (en typedefs):
+Laten we de Persoon `struct` van [hoofdstuk 1](/c/labo-1) eens herbekijken in het licht van pointers (en typedefs):
 
 ```C
 #include <stdio.h>
@@ -329,7 +329,7 @@ Zie pagina 53 - symbolen zoals `*` en `&` in C en C++ hebben verschillende betek
 
 Vergeet niet dat de eerste regel enkel geldig is in C++.
 
-## <a name="oef"></a>Labo oefeningen
+## <a name="oef"></a>Oefeningen
 
 1. Implementeer `int strcmp_own(char *s, char *t)` van `<string.h>` zelf. Geef het getal 0 terug indien strings gelijk zijn, een getal kleiner dan 0 (bvb. -1) indien s < t en een getal groter dan 0 (bvb. 1) indien s > t. Gebruik je pointer kennis om snel het geheugen te scannen.
 2. Jij bent een brave bibliothecaris. En als brave bibliothecaris is het je taak om boeken alfabetisch te sorteren op achternaam. Laat de gebruiker een aantal achternamen ingeven, gescheiden door spatie (tip: [strtok](http://www.cplusplus.com/reference/cstring/strtok/), en druk dan gesorteerd de inventaris af. Uiteraard gebruik je pointers.

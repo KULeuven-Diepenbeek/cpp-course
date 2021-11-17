@@ -1,5 +1,5 @@
 ---
-title: "3. Introductie in C++"
+title: "C. Introductie in C++"
 weight: 3
 chapter: true
 ---

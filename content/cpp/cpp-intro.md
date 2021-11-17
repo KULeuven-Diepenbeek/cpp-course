@@ -1,7 +1,7 @@
 ---
-title: 'Labo 5: Weg met C, Hallo C++'
-accent: "#008eb3"
-disableComments: true
+title: '5. Van C naar C++'
+aliases:
+    - /cpp/labo-5/
 ---
 
 ## De ++ in C++
@@ -31,7 +31,7 @@ Enkele belangrijke zaken die onmiddellijk opvallen:
 
 ## Classes in C++
 
-### Terug naar de is_oud opgave van [labo 1](/c/labo-1), maar dan in C++
+### Terug naar de is_oud opgave van [hoofdstuk 1](/c/labo-1), maar dan in C++
 
 Het is tijd om `malloc()` en `struct` achterwege te laten:
 
@@ -234,7 +234,7 @@ Oeps. Voorzie in dat geval je eigen copy constructor met `Getal(const Getal& oth
 
 ### Methodes in Klassen en Reference types
 
-Herinner je uit [labo 2](/c/labo-2) **reference type definities** zoals `int &getal`. Dit kan enkel worden gecompileerd met `g++` en niet `gcc`. Deze notatie ga je veel tegen komen in C++ methode argumenten. Objecten die meegegeven worden zijn bijna altijd reference types in plaats van pointers. Waarom legt de [C++ FAQ](https://isocpp.org/wiki/faq/references#refs-vs-ptrs) uit:
+Herinner je uit [hoofdstuk 2](/c/labo-2) **reference type definities** zoals `int &getal`. Dit kan enkel worden gecompileerd met `g++` en niet `gcc`. Deze notatie ga je veel tegen komen in C++ methode argumenten. Objecten die meegegeven worden zijn bijna altijd reference types in plaats van pointers. Waarom legt de [C++ FAQ](https://isocpp.org/wiki/faq/references#refs-vs-ptrs) uit:
 
 > Use references when you can, and pointers when you have to.
 References are usually preferred over pointers whenever you don’t need “reseating”. This usually means that references are most useful in a class’s public interface. References typically appear on the skin of an object, and pointers on the inside.
@@ -434,17 +434,17 @@ p.98 of [cppdocs](https://en.cppreference.com/w/cpp/container/vector) bevat basi
 * grootte controleren met `size()` en `empty()` zoals `std::string`
 * correct gebruik van iterators `begin()` en `end()`
 
-## <a name="oef"></a>Labo oefeningen
+## <a name="oef"></a>Oefeningen
 
-1. [bibliothecaris labo 2 redux](/c/labo-2/#oef): herimplementeer de bibliothecaris oefening in C++. Let op de verplichte aanwezigheid van:
+1. [bibliothecaris HF2 redux](/c/labo-2/#oef): herimplementeer de bibliothecaris oefening in C++. Let op de verplichte aanwezigheid van:
   * een klasse `Bibliotheek` die een lijst van boeken (als simpele string) bevat
   * een klasse `Bibliothecaris` die de operaties op de bibliotheek uitvoert
   * `cin >> var` om de boeken van de gebruiker in te lezen.
   * sorteerfuncties van STL
-2. GBA games worden vanwege het beperkt geheugen altijd in C in plaats van C++ ontwikkeld. Wij gaan daar geen rekening mee houden, en toch overschakelen. Herimplementeer [deze Download, de opgave van labo 4](/teaching/cpp/labo-4-gba-2.c), in C++. Welke klasses heb je nodig? Denk aan de `paddle`, de `ball`, enzovoort. De C++ nodige cross-compiler is `arm-none-eabi-g++`.
+2. GBA games worden vanwege het beperkt geheugen altijd in C in plaats van C++ ontwikkeld. Wij gaan daar geen rekening mee houden, en toch overschakelen. Herimplementeer [deze Download, de opgave van hoofdstuk 4](/teaching/cpp/labo-4-gba-2.c), in C++. Welke klasses heb je nodig? Denk aan de `paddle`, de `ball`, enzovoort. De C++ nodige cross-compiler is `arm-none-eabi-g++`.
 3. _Extra_: maak een `Dierentuin` klasse. Een dierentuin kan verschillende _dieren_ (`Dier` klasse) ontvangen (`ontvang()` functie). Elk dier heeft een grootte en een naam: Neushoorn(40), Giraf(25), Poema(10). Elke dierentuin heeft x beschikbare ruimte. Wat doet het bestuur van je dierentuin als het te ontvangen dier te groot is? <br/>Bijvoorbeeld: dierentuin(20), leeuw(15) en panda(10). 15 + 10 > 20.
 4. _Extra_: We starten met een taxi bedrijf dat chauffeurs in dienst neemt en wagens koopt om mee rond te rijden. Welke klassen denk je nodig te gaan hebben, en waarom? Teken eerst een model en trek pijlen die relaties voorstellen. Voorzie ook het concept "klant", die kan vervoerd worden. Welke methodes ga je voorzien in je klassen?
-5. _Extra_: [Orc labo 1 redux](/c/labo-1/#oef): herimplementeer het Orc model in een C++ klasse (opgave 2 en 3). Let op met memory leaks als orcs dood gaan! Hoe ziet de oude C functie `Orc vecht(Orc aanvaller, Orc verdediger)` er nu uit?
+5. _Extra_: [Orc HF1 redux](/c/labo-1/#oef): herimplementeer het Orc model in een C++ klasse (opgave 2 en 3). Let op met memory leaks als orcs dood gaan! Hoe ziet de oude C functie `Orc vecht(Orc aanvaller, Orc verdediger)` er nu uit?
 
 Vergeet het volgende niet:
 

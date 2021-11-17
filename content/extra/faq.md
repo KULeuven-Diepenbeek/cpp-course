@@ -94,6 +94,27 @@ Oorzaak: je Google Test libraries zijn gecompileerd met **een andere Toolchain**
 
 Oplossing: compileer Google Test opnieuw in dezelfde Toolchain - bijvoorbeeld in MinGW. Ga naar `gooletest\googletest\build`, verwijder alle bestaande bestanden met `rm -rf *` en volg opnieuw de [Installatieinstructies](/extra/installaties). 
 
+#### Google Test compile fout bij includen
+
+Indien _Unable to find header file_ fouten **op MacOS omgevingen**:
+
+- Staat je `$GTEST_DIR` pad juist?
+- Is de `-I[folder]` include flag juist ingesteld? Leeft daar de `gtest/gtest.h` subfolder en file?
+
+Bij aanhoudende problemen: verander de `include_directories` lijn in `CMakeLists.txt` naar een _relatief pad_. Van
+
+```
+include_directories(${GTEST_LIBRARY}/include)
+```
+
+naar het volledig pad, hardcoded, zoals bijvoorbeeld:
+
+```
+include_directories(/Users/wouter/googletest/googletest/include)
+```
+
+
+
 #### CMake was unable to find a build program corresponding to "Unix Makefiles"
 
 Bij uitvoeren CMake commando met het `-G` argument in Windows omgevingen.

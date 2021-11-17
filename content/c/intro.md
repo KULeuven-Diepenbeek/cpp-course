@@ -1,7 +1,7 @@
 ---
-title: 'Labo 1: Introductie in C'
-accent: "#008eb3"
-disableComments: true
+title: '1. Introductie in C'
+aliases:
+    - /c/labo-1/
 ---
 
 ## De C programmeertaal
@@ -209,7 +209,7 @@ jaak.geslacht = 1;
 
 Uiteraard kan je structs ook doorgeven in functies en dan members aanspreken met de puntnotatie.
 
-De vraag is dan, kunnen we ook functies definiëren in een `struct`? Ja en neen. Een functie pointer (zie [labo 2](/c/labo-2)) maakt dit wel mogelijk, maar het is niet zoals een C++ member variabele van een klasse. C functie pointers worden gebruikt als _callback methods_:
+De vraag is dan, kunnen we ook functies definiëren in een `struct`? Ja en neen. Een functie pointer (zie [hoofdstuk 2](/c/labo-2)) maakt dit wel mogelijk, maar het is niet zoals een C++ member variabele van een klasse. C functie pointers worden gebruikt als _callback methods_:
 
 ```C
 #include <stdio.h>
@@ -233,7 +233,7 @@ int main() {
 }
 ```
 
-Het toekennen van is_oud aan is_oud is heel gek natuurlijk. Dit is dan ook het emuleren van iets dat ontbreekt in een taal. Met pointers in labo 2 komen we hier nog op terug.
+Het toekennen van is_oud aan is_oud is heel gek natuurlijk. Dit is dan ook het emuleren van iets dat ontbreekt in een taal. Met pointers in hoofdstuk 2 komen we hier nog op terug.
 
 ### Extra definities
 
@@ -434,7 +434,7 @@ graph TD
 {{< /mermaid >}}
 
 
-Functies die in andere source files gedeclareerd zijn moet je dus herdefiniëren (eventueel met het `extern` keyword) in je eigen source file waar je de functie wenst te gebruiken. Zo weet de compiler dat een functie met die signatuur bestaat, maar "zal hij deze nog wel tegenkomen". Hier gaan we nog op verder in [labo 6](/cpp/labo-6/).
+Functies die in andere source files gedeclareerd zijn moet je dus herdefiniëren (eventueel met het `extern` keyword) in je eigen source file waar je de functie wenst te gebruiken. Zo weet de compiler dat een functie met die signatuur bestaat, maar "zal hij deze nog wel tegenkomen". Hier gaan we nog op verder in [hoofdstuk 6](/cpp/labo-6/).
 
 ## De boel compileren
 
@@ -553,7 +553,7 @@ Een simpel CMake bestand is véél eenvoudiger dan een Make bestand. Zie [CMake 
 
 Ubuntu's `apt-get` package manager heeft niet altijd de laatste versie van CMake in zijn repository. Als alternatief kan je op [https://cmake.org/download/](https://cmake.org/download/) de binaries downloaden (shellscript) en dit "ergens" installeren. Aangeraden is een `$CMAKE_HOME` omgevingsvariabele te maken en die toe te voegen aan je `$PATH`. In CLion kan je via [CLion settings](https://www.jetbrains.com/help/clion/configuring-cmake.html) (File - Settings - Build, Execution, Deployment, Toolchains) een andere CMake executable kiezen.
 
-## <a name="oef"></a>Labo oefeningen
+## <a name="oef"></a>Oefeningen
 
 1. Het is oorlog! De orcs vallen aan en zien er hongerig uit! Ze eten al je klinkers op! Schrijf een programma dat de functie `char* omnom(char zin[])` implementeert en alle klinkers uit een zin haalt (of ze verdoezelt met een X). Je moet ook een `main()` functie schrijven die de gebruiker een zin laat ingeven en het resultaat afdrukt op het scherm. (Tip: `scanf` of `fgets`, rara?)  
 2. Laten we die smerige orcs eens modelleren. Vraag de gebruiker om een nummer. Dat nummer is het aantal orcs dat in het leger zit. Maak zoveel orc `struct` instances aan met een random waarde voor de eigenschappen. Druk dit af op het scherm. Een orc heeft de volgende eigenschappen:
