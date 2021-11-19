@@ -1,6 +1,8 @@
 #ifndef _NONFICTION_H
 #define _NONFICTION_H
 
+#include <string>
+
 class Nonfiction : public Book {
 private:
 	std::string title;
