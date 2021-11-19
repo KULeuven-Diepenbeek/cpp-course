@@ -7,7 +7,7 @@ Laatst geupdate voor **Academiejaar 2021 - 2022**.
 
 ## Project opdracht---eerste kans
 
-**Deadline**: dag van het examen eind januari, nog te bepalen.
+**Deadline**: donderdag 27/01/2022, om 12u 's middags.
 
 ---
 

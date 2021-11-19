@@ -162,6 +162,10 @@ private:
 
 Als je de access modifiers in de klasse definitie vergeet wordt `private` aangehouden. Voor een struct is dit standaard `public`.
 
+{{% notice note %}}
+Vergeet niet voor `cmake` onder windows de `-G` flag toe te voegen; zie [installatie instructies cmake](/cpp-course/extra/installaties/).
+{{% /notice %}}
+
 Wat is de output van het volgende programma?
 
 ```C
