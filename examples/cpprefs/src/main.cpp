@@ -3,8 +3,28 @@
 #include "shelf.h"
 #include "nonfiction.h"
 
+void buySpecificNonfictionBooksFor(Shelf& shelf) {
+	for(int i = 1; i <= 10; i++) {
+		// this STACK variable can be stolen thanks to the rvalue reference buy implementation
+		Nonfiction someBook("cool title " + std::to_string(i), i);
+
+		// by using MOVE, we convert lvalue variable someBook to an rvalue reference, avoiding creating another book
+		shelf.buyNonfiction(std::move(someBook));
+
+		// by passing in the lvalue variable someBook as is, we ultimately create a copy, even if the parameter is a REFERENCE
+		//shelf.buyNonfiction(someBook);
+		std::cout << "bought book " << i << std::endl;
+	}
+
+	std::cout << "TOTAL: bought " << shelf.getAmountOfNonfictionBooks() << " books" << std::endl;
+
+	// since readNonfiction returns a REFERENCE, we don't need to bother with ->
+	std::cout << "example 4: " << shelf.readNonfiction(4).getPages() << " pages" << std::endl;
+}
+
+
 void buyRandomBooksFor(Shelf& shelf) {
-	for(int i = 0; i < 3456793; i++) {
+	for(int i = 0; i < 10; i++) {
 		// needs to be an explicit variable because of type/inheritance system
 		// otherwise: non-const lvalue reference to type 'Book' cannot bind to a temporary of type 'Nonfiction'
 
@@ -24,21 +44,24 @@ void buyRandomBooksFor(Shelf& shelf) {
 		//Nonfiction* someBook = new Nonfiction("cool title " + std::to_string(i), i + 1);
 
 		shelf.buy(someBook);
+		std::cout << "bought book " << i << std::endl;
 		someBook.setPages(666); // verify we've modified the object instead of on a copy.
 	}
 
-	std::cout << "bought " << shelf.getAmountOfBooks() << " books" << std::endl;
+	std::cout << "TOTAL: bought " << shelf.getAmountOfBooks() << " books" << std::endl;
+	std::cout << "example 4: " << shelf.read(4)->getPages() << " pages" << std::endl;
 }
 
 int main() {
 	std::cout << "cpp refs example" << std::endl;
 
 	Shelf bookshelf;
-	buyRandomBooksFor(bookshelf);
+	//buyRandomBooksFor(bookshelf);
 
-	std::cout << "currently " << bookshelf.getAmountOfBooks() << " books" << std::endl;
-	std::cout << "example 100: " << bookshelf.read(100)->getPages() << " pages" << std::endl;
+	buySpecificNonfictionBooksFor(bookshelf);
 
+	std::cout << " -- all done!" << std::endl;
+	// all "killed book x" statements beyond this point are because of variable 'bookshelf's end of life.
 
 	return 0;
 }
