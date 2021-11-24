@@ -442,6 +442,19 @@ auto result = som(1, 2.0, 3);
 
 Zie [docs](https://en.cppreference.com/w/cpp/language/parameter_pack).
 
+#### C++, Const, References, Templates, Inheritance
+
+Een geïntegreerd voorbeeld met:
+
+- Correct gebruik van `= const`
+- Correct gebruik van `const SomeObj&`
+- Correct gebruik van verhuizen van references met `std::move`
+- Voorbeelden van assignment en copy constructoren
+- Bovenstaande in combinatie met abstracte klassen gebruiken
+
+Kan je terugvinden in de repository van deze cursus, onder `examples/cpprefs`: https://github.com/KULeuven-Diepenbeek/cpp-course/tree/master/examples/cpprefs.
+
+
 ## <a name="oef"></a>Oefeningen
 
 1. Implementeer de volgende business criteria. Werk eerst een snel model uit op papier. Elke schuin gedrukte term verwacht ik terug te zien als een klasse of methode:

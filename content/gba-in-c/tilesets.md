@@ -399,6 +399,8 @@ De geïnteresseerden kunnen hieronder eens kijken hoe je externe sprites met hun
 * [png2gba](https://github.com/IanFinlayson/png2gba) converter tool
 * [wingrit](https://www.coranac.com/man/grit/html/wingrit.htm) bitmap converter tool (bestaat ook een UNIX versie van)
 
+Zie ook [hoofdstuk 8: abstractielagen](/gba-in-cpp/abstractions/) waar bovenstaande tools effectief worden gebruikt.
+
 ## <a name="oef"></a>Oefeningen
 
 Er ontbreken nog een aantal belangrijke zaken in ons spel.

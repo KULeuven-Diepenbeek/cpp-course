@@ -155,7 +155,10 @@ void copy_image_data() {
 
 OAM attributes maken het eenvoudig om de image horizontaal of verticaal te _flippen_, bijvoorbeeld bij sprite animaties die naar links of naar rechts lopen. Transformatiematriches zijn nodig om te roteren.
 
-Export tool [Grit](http://www.coranac.com/projects/#grit) (Voor Windows gebruikers: [Wingrit](https://www.coranac.com/man/grit/html/wingrit.htm)) geeft meer mogelijkheden, om bijvoorbeeld stukken van een palet te exporteren met `./grit piskel.png -p -gt -gB4 -ftc -pe 16` - zie [handleiding](http://www.coranac.com/man/grit/html/grit.htm). Maak op [piskelapp.com](www.piskelapp.com) je eigen pixel art.
+{{% notice note %}}
+Export tool [Grit](http://www.coranac.com/projects/#grit) (Voor Windows gebruikers: [Wingrit](https://www.coranac.com/man/grit/html/wingrit.htm)) geeft meer mogelijkheden, om bijvoorbeeld stukken van een palet te exporteren met `./grit piskel.png -p -gt -gB4 -ftc -pe 16` - zie [handleiding](http://www.coranac.com/man/grit/html/grit.htm). Maak op [piskelapp.com](www.piskelapp.com) je eigen pixel art.<br/>
+In de praktijk en voor het project is Grit de aangewezen oplossing. Grit is een onderweel van DevkitPro en is reeds geïnstalleerd---onder MacOS in `/opt/devkitpro/tools/bin/grit`.
+{{% /notice %}}
 
 ### Een kijkje achter de schermen
 

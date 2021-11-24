@@ -52,6 +52,15 @@ void buyRandomBooksFor(Shelf& shelf) {
 	std::cout << "example 4: " << shelf.read(4)->getPages() << " pages" << std::endl;
 }
 
+
+/**
+ * Inspect "best practices" by browsing through "decent" C++ codebases, such as:
+ * https://github.com/lballabio/QuantLib
+ * https://github.com/catchorg/Catch2
+ * https://github.com/scummvm/scummvm
+ * Conclusion? Lots of const Type& references, no std::ref() usages, little ::move(), reduce raw pointer usage to bare minimum
+ * Performance-based code such as some Scumm engines do rely on * more often than other codebases. 
+ */ 
 int main() {
 	std::cout << "cpp refs example" << std::endl;
 
