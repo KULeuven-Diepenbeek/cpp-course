@@ -12,19 +12,19 @@
     <title>8. Abstractielagen :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1637321429" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1637321429" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1637321429" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1637321429" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1637321429" rel="stylesheet">
-    <link href="../../css/theme.css?1637321429" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1637321429" rel="stylesheet">
+    <link href="../../css/nucleus.css?1637760392" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1637760392" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1637760392" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1637760392" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1637760392" rel="stylesheet">
+    <link href="../../css/theme.css?1637760392" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1637760392" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1637321429" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1637760392" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1637321429"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1637760392"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1637321429"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1637321429"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1637760392"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1637760392"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1637321429"></script>
+<script type="text/javascript" src="../../js/search.js?1637760392"></script>
 
     
   </div>
@@ -1069,7 +1069,11 @@ graph TD;
     <span style="color:#111">memcpy</span><span style="color:#111">(</span><span style="color:#f92672">&amp;</span><span style="color:#111">tile_mem</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">][</span><span style="color:#ae81ff">0</span><span style="color:#111">],</span> <span style="color:#111">kul_data</span><span style="color:#111">,</span> <span style="color:#00a8c8">sizeof</span><span style="color:#111">(</span><span style="color:#111">kul_data</span><span style="color:#111">));</span>
 <span style="color:#111">}</span>
 </code></pre></div><p>OAM attributes maken het eenvoudig om de image horizontaal of verticaal te <em>flippen</em>, bijvoorbeeld bij sprite animaties die naar links of naar rechts lopen. Transformatiematriches zijn nodig om te roteren.</p>
-<p>Export tool <a href="http://www.coranac.com/projects/#grit">Grit</a> (Voor Windows gebruikers: <a href="https://www.coranac.com/man/grit/html/wingrit.htm">Wingrit</a>) geeft meer mogelijkheden, om bijvoorbeeld stukken van een palet te exporteren met <code>./grit piskel.png -p -gt -gB4 -ftc -pe 16</code> - zie <a href="http://www.coranac.com/man/grit/html/grit.htm">handleiding</a>. Maak op <a href="www.piskelapp.com">piskelapp.com</a> je eigen pixel art.</p>
+
+<div class="notices note" ><p>Export tool <a href="http://www.coranac.com/projects/#grit">Grit</a> (Voor Windows gebruikers: <a href="https://www.coranac.com/man/grit/html/wingrit.htm">Wingrit</a>) geeft meer mogelijkheden, om bijvoorbeeld stukken van een palet te exporteren met <code>./grit piskel.png -p -gt -gB4 -ftc -pe 16</code> - zie <a href="http://www.coranac.com/man/grit/html/grit.htm">handleiding</a>. Maak op <a href="www.piskelapp.com">piskelapp.com</a> je eigen pixel art.<br/>
+In de praktijk en voor het project is Grit de aangewezen oplossing. Grit is een onderweel van DevkitPro en is reeds geïnstalleerd&mdash;onder MacOS in <code>/opt/devkitpro/tools/bin/grit</code>.</p>
+</div>
+
 <h3 id="een-kijkje-achter-de-schermen">Een kijkje achter de schermen</h3>
 <p>Emulators zoals mGBA zijn krachtige tools voor de beginnende GBA ontwikkelaar om te graven in hun favoriete ROM. Ze bieden de mogelijkheid om tiles, palettes, sprites, geheugenwaardes, &hellip; allemaal in te kijken. Een van mijn favoriete games is Castlevania: Aria of Sorrow. Ik kan met mGBA zien hoe de sprites zijn opgedeeld in het scherm.</p>
 <p>Probeer aan de hand van deze animatie maar eens te bepalen welke sprites gebrukt worden, en welke achtergronden:</p>
@@ -1700,17 +1704,17 @@ Er zal dus ook een soort van OAM manager nodig zijn die beide sprites aan elkaar
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1637321429"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1637321429"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1637321429"></script>
-    <script src="../../js/jquery.sticky.js?1637321429"></script>
-    <script src="../../js/featherlight.min.js?1637321429"></script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1637321429"></script>
-    <script src="../../js/learn.js?1637321429"></script>
-    <script src="../../js/hugo-learn.js?1637321429"></script>
+    <script src="../../js/clipboard.min.js?1637760392"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1637760392"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1637760392"></script>
+    <script src="../../js/jquery.sticky.js?1637760392"></script>
+    <script src="../../js/featherlight.min.js?1637760392"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1637760392"></script>
+    <script src="../../js/learn.js?1637760392"></script>
+    <script src="../../js/hugo-learn.js?1637760392"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1637321429"></script>
+            <script src="../../mermaid/mermaid.js?1637760392"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

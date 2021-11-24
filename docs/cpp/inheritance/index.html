@@ -12,19 +12,19 @@
     <title>6. Inheritance, templates, ops :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1637321429" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1637321429" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1637321429" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1637321429" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1637321429" rel="stylesheet">
-    <link href="../../css/theme.css?1637321429" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1637321429" rel="stylesheet">
+    <link href="../../css/nucleus.css?1637760392" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1637760392" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1637760392" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1637760392" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1637760392" rel="stylesheet">
+    <link href="../../css/theme.css?1637760392" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1637760392" rel="stylesheet">
     
-    <link href="../../css/theme-kul.css?1637321429" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1637760392" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1637321429"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1637760392"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -59,14 +59,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1637321429"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1637321429"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1637760392"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1637760392"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1637321429"></script>
+<script type="text/javascript" src="../../js/search.js?1637760392"></script>
 
     
   </div>
@@ -1320,6 +1320,16 @@ Wouters-MacBook-Air:cmake-build-debug wgroenev$ nm source1.o | c++filt
 <span style="color:#111">}</span>
 <span style="color:#00a8c8">auto</span> <span style="color:#111">result</span> <span style="color:#f92672">=</span> <span style="color:#111">som</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">2.0</span><span style="color:#111">,</span> <span style="color:#ae81ff">3</span><span style="color:#111">);</span>
 </code></pre></div><p>Zie <a href="https://en.cppreference.com/w/cpp/language/parameter_pack">docs</a>.</p>
+<h4 id="c-const-references-templates-inheritance">C++, Const, References, Templates, Inheritance</h4>
+<p>Een geïntegreerd voorbeeld met:</p>
+<ul>
+<li>Correct gebruik van <code>= const</code></li>
+<li>Correct gebruik van <code>const SomeObj&amp;</code></li>
+<li>Correct gebruik van verhuizen van references met <code>std::move</code></li>
+<li>Voorbeelden van assignment en copy constructoren</li>
+<li>Bovenstaande in combinatie met abstracte klassen gebruiken</li>
+</ul>
+<p>Kan je terugvinden in de repository van deze cursus, onder <code>examples/cpprefs</code>: <a href="https://github.com/KULeuven-Diepenbeek/cpp-course/tree/master/examples/cpprefs">https://github.com/KULeuven-Diepenbeek/cpp-course/tree/master/examples/cpprefs</a>.</p>
 <h2 id="a-nameoefaoefeningen"><a name="oef"></a>Oefeningen</h2>
 <ol>
 <li>Implementeer de volgende business criteria. Werk eerst een snel model uit op papier. Elke schuin gedrukte term verwacht ik terug te zien als een klasse of methode:</li>
@@ -1922,17 +1932,17 @@ Wouters-MacBook-Air:cmake-build-debug wgroenev$ nm source1.o | c++filt
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1637321429"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1637321429"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1637321429"></script>
-    <script src="../../js/jquery.sticky.js?1637321429"></script>
-    <script src="../../js/featherlight.min.js?1637321429"></script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1637321429"></script>
-    <script src="../../js/learn.js?1637321429"></script>
-    <script src="../../js/hugo-learn.js?1637321429"></script>
+    <script src="../../js/clipboard.min.js?1637760392"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1637760392"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1637760392"></script>
+    <script src="../../js/jquery.sticky.js?1637760392"></script>
+    <script src="../../js/featherlight.min.js?1637760392"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1637760392"></script>
+    <script src="../../js/learn.js?1637760392"></script>
+    <script src="../../js/hugo-learn.js?1637760392"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1637321429"></script>
+            <script src="../../mermaid/mermaid.js?1637760392"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
