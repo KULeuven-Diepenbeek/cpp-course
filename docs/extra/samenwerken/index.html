@@ -12,19 +12,24 @@
     <title>Hoe werk ik samen aan een project? :: Software Ontwerp in C(&#43;&#43;)</title>
 
     
-    <link href="../../css/nucleus.css?1639585932" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1639585932" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1639585932" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1639585932" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1639585932" rel="stylesheet">
-    <link href="../../css/theme.css?1639585932" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1639585932" rel="stylesheet">
-    
-    <link href="../../css/theme-kul.css?1639585932" rel="stylesheet">
-    
+    <link href="../../css/nucleus.css?1647622137" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1647622137" rel="stylesheet">
+    <link href="../../css/hybrid.css?1647622137" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1647622137" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1647622137" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1647622137" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1647622137" rel="stylesheet">
+    <link href="../../css/theme.css?1647622137" rel="stylesheet">
+    <link href="../../css/devselector.css?1647622137" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1647622137" rel="stylesheet">
+    <link href="../../css/theme-kul.css?1647622137" rel="stylesheet">
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1639585932"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1647622137"></script>
+    <script src="../../js/devselector.js?1647622137"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -46,10 +51,10 @@
   <div id="header-wrapper">
     <div id="header">
       <a href="https://www.kuleuven.be/kuleuven/" target="_blank">
-	<img src="../../img/style/kul.png" alt="KU Leuven" /><br/>
+  <img src="../../images/kul.png" alt="KU Leuven" /><br/>
 </a>
 <a href="https://www.uhasselt.be/" target="_blank">
-	<img src="../../img/style/uhasselt.svg" alt="UHasselt" id="uhlogo" />
+  <img src="../../images/uhasselt.svg" alt="UHasselt" id="uhlogo" />
 </a>
     </div>
     
@@ -59,21 +64,23 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1639585932"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1639585932"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1647622137"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1647622137"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/kuleuven-diepenbeek.github.io\/cpp-course\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1639585932"></script>
+<script type="text/javascript" src="../../js/search.js?1647622137"></script>
 
     
   </div>
 
     <div class="highlightable">
-    <h3><a href="../../">Inhoudsopgave</a></h3>
+
+      <h3><a href="../../">Course Contents</a></h3>
     <ul class="topics">
+
         
           
           
@@ -84,7 +91,7 @@
  
   
     
-    <li data-nav-id="/hoorcolleges/" title="Hoorcolleges" class="dd-item 
+    <li data-nav-id="/hoorcolleges/" title="Hoorcolleges" class="dd-item
         
         
         
@@ -99,7 +106,7 @@
           
           
           
-          
+
         
           
             
@@ -188,7 +195,7 @@
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -202,7 +209,7 @@
  
   
     
-    <li data-nav-id="/c/" title="A. Introductie in C" class="dd-item 
+    <li data-nav-id="/c/" title="A. Introductie in C" class="dd-item
         
         
         
@@ -217,7 +224,7 @@
           
           
           
-          
+
         
           
             
@@ -306,7 +313,7 @@
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -320,7 +327,7 @@
  
   
     
-    <li data-nav-id="/gba-in-c/" title="B. GBA programming in C" class="dd-item 
+    <li data-nav-id="/gba-in-c/" title="B. GBA programming in C" class="dd-item
         
         
         
@@ -335,7 +342,7 @@
           
           
           
-          
+
         
           
             
@@ -403,7 +410,7 @@
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -417,7 +424,7 @@
  
   
     
-    <li data-nav-id="/cpp/" title="C. Introductie in C&#43;&#43;" class="dd-item 
+    <li data-nav-id="/cpp/" title="C. Introductie in C&#43;&#43;" class="dd-item
         
         
         
@@ -432,7 +439,7 @@
           
           
           
-          
+
         
           
             
@@ -521,7 +528,7 @@
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -535,7 +542,7 @@
  
   
     
-    <li data-nav-id="/gba-in-cpp/" title="D. GBA Programming in C&#43;&#43;" class="dd-item 
+    <li data-nav-id="/gba-in-cpp/" title="D. GBA Programming in C&#43;&#43;" class="dd-item
         
         
         
@@ -550,7 +557,7 @@
           
           
           
-          
+
         
           
             
@@ -660,7 +667,7 @@
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -674,7 +681,7 @@
  
   
     
-    <li data-nav-id="/extra/" title="E. Extras" class="dd-item 
+    <li data-nav-id="/extra/" title="E. Extras" class="dd-item
         parent
         
         
@@ -689,7 +696,7 @@
           
           
           
-          
+
         
           
             
@@ -841,13 +848,13 @@
           
         
         </ul>
-              
+      
     </li>
   
  
 
           
-         
+        
     </ul>
 
     
@@ -856,11 +863,11 @@
         <h3>More</h3>
         <ul>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://www.uhasselt.be/studiegids"><i class='fa fa-university'></i> ECTS Sheet</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://toledo.kuleuven.be/portal/"><i class='fa fa-university'></i> Toledo</a>
               </li>
           
@@ -963,7 +970,13 @@
 <p>Goede afspraken maken goede vrienden&mdash;dat geldt ook voor medestudenten binnen één project. Afspraken maken kan uiteraard via <strong>Discord</strong> of <strong>Slack</strong>.</p>
 <p>Die systemen zijn echter erg <em>vluchtig</em>: om een project aan te pakken moet je de opdracht opknippen in <strong>kleine taakjes</strong> en die verdelen, waarbij iedereen zijn eigen verantwoordelijkheid heeft. Hoe deel je die taken? Hoe kan je laten zien welke taak klaar is en met welke jij bezig bent?</p>
 <p>Daarvoor is Discord niet genoeg&mdash;je hebt een project planner nodig. De eenvoudigste daarvan is <strong>Trello</strong>: <a href="https://trello.com/">https://trello.com/</a> die een mooi overzicht geeft over TODO - DOING - DONE items:</p>
-<p><img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/product/89d378b845766a8f0c48e955336266f8/board.png" alt=""></p>
+<p><figure>
+	<a href="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/product/89d378b845766a8f0c48e955336266f8/board.png" data-featherlight="image">
+		<img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/spirit/product/89d378b845766a8f0c48e955336266f8/board.png"  >
+	</a>
+	
+</figure>
+</p>
 <p>Ook hier zijn alternatieven voor (Basecamp, Workzone, ProofHub, &hellip;) Je kan steeds collaboratie sessies inlassen en samen tekenen via tools als <a href="https://www.anondraw.com/collab">https://www.anondraw.com/collab</a> of natuurlijk gewoon Zoom/Google Meet en de desktop sharen.</p>
 <h2 id="code-delen">Code delen</h2>
 <h3 id="1-code-doorsturen-naar-elkaar">1. Code doorsturen naar elkaar</h3>
@@ -979,7 +992,13 @@
 <p>Dit is nog steeds niet ideaal en geeft vaak conflicten als je in dezelfde bestanden werkt als je collega&rsquo;s. <strong>Afspraken maken</strong> wie wat doet in welke file doet wonderen!</p>
 <h3 id="3-in-live-code-editing-omgevingen">3. In live code editing omgevingen</h3>
 <p>Maak allemaal accounts aan op systemen zoals <a href="https://replit.com/">https://replit.com/</a>. Daar kan je live code zien wijzigen door collega&rsquo;s, samen live coden in één file, en zit er nog eens voice streaming, desktop sharing, &hellip; in.</p>
-<p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5glKXbCFOpE%2Fmaxresdefault.jpg&amp;f=1&amp;nofb=1" alt=""></p>
+<p><figure>
+	<a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5glKXbCFOpE%2Fmaxresdefault.jpg&amp;f=1&amp;nofb=1" data-featherlight="image">
+		<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5glKXbCFOpE%2Fmaxresdefault.jpg&amp;f=1&amp;nofb=1"  >
+	</a>
+	
+</figure>
+</p>
 <p>Bovenstaande screenshot toont een live Repl.it Java sessie (zie YouTube voor video tutorials).</p>
 <p>Desktop sharing oplossingen zijn er genoeg, maar <code>repl.it</code> blinkt uit omdat het een programmeer-specifieke omgeving is.</p>
 <p>Een nadeel is dat compileren met bijvoorbeeld JavaFX of andere libraries moeilijk gaat omdat dat allemaal op een andere server gebeurt. In dat geval kan je nog steeds code daar samen schrijven, dat kopiëren, en lokaal verder compileren met de juiste versie van de JDK.</p>
@@ -1580,21 +1599,38 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1639585932"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1639585932"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1639585932"></script>
-    <script src="../../js/jquery.sticky.js?1639585932"></script>
-    <script src="../../js/featherlight.min.js?1639585932"></script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1639585932"></script>
-    <script src="../../js/learn.js?1639585932"></script>
-    <script src="../../js/hugo-learn.js?1639585932"></script>
+    <script src="../../js/clipboard.min.js?1647622137"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1647622137"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1647622137"></script>
+    <script src="../../js/jquery.sticky.js?1647622137"></script>
+    <script src="../../js/featherlight.min.js?1647622137"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1647622137"></script>
+    <script src="../../js/learn.js?1647622137"></script>
+    <script src="../../js/hugo-learn.js?1647622137"></script>
     
         
-            <script src="../../mermaid/mermaid.js?1639585932"></script>
+            <script src="../../mermaid/mermaid.js?1647622137"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
         </script>
+    
+    <script>
+    window.MathJax = {
+      chtml: {
+        scale: 2,                      
+        minScale: .5,                  
+        matchFontHeight: true,         
+        mtextInheritFont: false,       
+        merrorInheritFont: true,       
+        mathmlSpacing: false,          
+        skipAttributes: {},            
+        exFactor: .5,                  
+        displayAlign: 'center',        
+        displayIndent: '0'             
+      }
+    };
+    </script>
     
     
 
