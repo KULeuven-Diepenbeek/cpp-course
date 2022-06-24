@@ -5,6 +5,40 @@ date: 2020-10-05
 
 Laatst geupdate voor **Academiejaar 2021 - 2022**.
 
+## Project opdracht---tweede kans
+
+**Deadline**: maandag 22/08/2022, om 12u 's middags.
+
+Dezelfde **minimumvereisten** gelden als de opdracht in eerste kans. Werk met een volledig _nieuwe_ Github repository, en vertrek opnieuw vanaf de `gba-sprite-engine`. Geregistreerde tijd bijhouden is niet meer nodig. 
+
+De opdracht is _niet_ vrij te kiezen. Het criteria 'originaliteit' (zie onder) zal beoordeeld worden op de manier waarop je deze vaste opdracht hebt ingekleurd. De opdracht is _individueel_ en niet in groep zoals eerste kans. De mondelinge projectverdediging zal ook individueel verlopen. 
+
+#### Opdracht beschrijving
+
+Ontwerp een **Mario Party kloon**. In dit _bordspel_ gaan spelers op een klassieke manier het bord rond om punten te verzamelen. De structuur van het bord is gelijkaardig aan een Ganzenbord spel. Elke plek waar de speler zijn of haar pion terecht komt, brengt een bepaalde actie met zich mee. In Mario Party wordt er meestal een minigame gespeeld, dat indien gewonnen punten oplevert. Hier is een video van de officiële GBA implementatie:
+
+{{< youtube dvC4hgoNOfE >}}
+
+<br/>
+Wat moet minimaal aanwezig zijn?
+
+* Een titelscherm.
+* Een bord. De layout maak je zo simpel of complex als je zelf wenst. 
+* Een pion die de speler voorstelt. De mogelijkheid om vakjes te verschuiven. 
+* Tenminste één (zeer eenvoudig) minigame. De inhoud mag je zelf bepalen. 
+* Zichtbaarheid van de score. 
+
+Wat is optioneel (maar levert extra punten op)?
+
+* Extra spelers in de vorm van AI. 
+* Extra minigames. 
+* Keuze van de pion.
+* Animaties en geluid.
+
+Inleverformaat op dezelfde manier als in de eerste kans. 
+
+---
+
 ## Project opdracht---eerste kans
 
 **Deadline**: donderdag 27/01/2022, om 12u 's middags.
